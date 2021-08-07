@@ -1,0 +1,144 @@
+body {
+  background-color: #b0ebebde;
+  /* background-image: linear-gradient(
+    -180deg,
+    rgb(250, 225, 0),
+    rgb(236, 234, 106),
+    rgb(243, 240, 193),
+    rgb(233, 230, 184)
+  ); */
+  font-family: Arial;
+  /* font-size: 20px; */
+  /* padding: 40px; */
+}
+
+h1,
+h2 {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 20px;
+  color: rgb(0, 0, 0);
+  /* color: #4bfdaa; */
+  position: relative;
+}
+
+h2 {
+  /* margin-top: 30px;
+  text-align: center; */
+  font-size: 35px;
+  /* padding-bottom: 20px;
+  color: rgb(0, 0, 0);
+  position: relative; */
+}
+
+.marker0,
+.marker1 {
+  margin-left: 40%;
+  /* border: 3px solid black; */
+  margin-bottom: 30px;
+  position: relative;
+  height: 60px;
+  width: 20%;
+  background-color: rgb(75, 75, 235);
+  text-align: center;
+  font-size: 40px;
+  align-items: center;
+}
+
+.marker0:hover,
+.marker1:hover {
+  background-color: rgb(7, 255, 160);
+}
+
+.clicked {
+  background-color: rgb(0, 255, 34);
+  padding-bottom: 10px;
+  height: 80px;
+  text-align: center;
+  border: 5px solid black;
+  border-radius: 30px;
+}
+/* .playingbtns{
+    background-color: white;
+} */
+
+.hidden {
+  display: none;
+}
+
+.start,
+.replay {
+  position: center;
+  text-align: center;
+  height: 70px;
+  font-size: 40px;
+  color: rgb(25, 0, 245);
+  margin-left: 30%;
+  width: 40%;
+  background-color: cyan;
+  margin-bottom: 30px;
+}
+
+.start:hover,
+.replay:hover {
+  position: center;
+  text-align: center;
+  height: 70px;
+  font-size: 40px;
+  color: cyan;
+  margin-left: 30%;
+  width: 40%;
+  background-color: rgb(25, 0, 245);
+}
+
+.boxes {
+  width: 81%;
+  margin-left: 13%;
+  /* margin-right: 9.5%; */
+  height: auto;
+  margin-bottom: 40px;
+  /* background-color: black; */
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine {
+  display: inline-block;
+  margin: none;
+  margin-left: 10px;
+  height: 27%;
+  width: 27%;
+  font-size: 40px;
+  background-color: rgb(133, 248, 87);
+  cursor: pointer;
+}
+.empty {
+  background-color: rgb(105, 102, 57);
+}
+.empty:hover {
+  color: rgb(105, 102, 57);
+  background-color: black;
+}
+
+.player1 {
+  background-color: rgb(70, 37, 255);
+}
+.player2 {
+  background-color: rgb(255, 37, 171);
+}
+
+.winner {
+  width: 100%;
+  text-align: center;
+  display: block;
+  height: 50px;
+  font-size: 40px;
+  width: auto;
+}
