@@ -51,6 +51,15 @@ ul {
 li {
   margin-bottom: 10px;
 }
+
+.games {
+  display: left;
+}
+
+.dict {
+  display: right;
+}
+
 footer {
   width: 100%;
   height: auto;
