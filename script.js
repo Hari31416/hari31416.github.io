@@ -1,4 +1,6 @@
 games = document.querySelector(".games");
+games2 = document.querySelector(".games2");
+games3 = document.querySelector(".games3");
 dicts = document.querySelector(".dict");
 btns = document.querySelectorAll(".btns");
 console.log(btns[0].textContent, btns.length);
@@ -21,6 +23,10 @@ btns.forEach((btn) => {
       games.classList.toggle("hidden");
     } else if (btn.textContent == "Dictionaries") {
       dicts.classList.toggle("hidden");
+    } else if (btn.textContent == "Games2") {
+      games2.classList.toggle("hidden");
+    } else if (btn.textContent == "Games3") {
+      games3.classList.toggle("hidden");
     }
   });
 });
