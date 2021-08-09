@@ -52,12 +52,39 @@ li {
   margin-bottom: 10px;
 }
 
-.games {
-  display: left;
+.btns {
+  background-color: aqua;
+  margin-right: 5%;
+  height: 40px;
+  font-size: 25px;
+  width: auto;
+  margin-bottom: 10px;
 }
 
+.btns:hover {
+  color: aqua;
+  background-color: #080808;
+}
+
+.allpages {
+  display: flexbox;
+}
+
+.games {
+  width: 200px;
+  height: 300px;
+  float: left;
+  background-color: bisque;
+  /* padding: 2%; */
+}
 .dict {
-  display: right;
+  /* position: static; */
+  margin-left: 25%;
+  /* float: right; */
+  width: 200px;
+  height: 300px;
+  /* padding: 2%; */
+  background-color: chartreuse;
 }
 
 footer {
@@ -87,6 +114,8 @@ footer {
 }
 
 .disclaimer {
+  /* position: absolute; */
+  margin-top: 200px;
   margin-left: 25%;
   border: 1.5px solid black;
   text-align: center;
@@ -103,4 +132,8 @@ a {
 }
 a:hover {
   color: #62d9fd;
+}
+
+.hidden {
+  display: none;
 }
