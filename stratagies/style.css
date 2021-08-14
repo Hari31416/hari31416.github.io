@@ -9,7 +9,7 @@ h1 {
 
 .bullish {
   display: grid;
-  grid-template-columns: 4 4 2 2;
+  grid-template-columns: auto auto auto auto;
 }
 
 img {
