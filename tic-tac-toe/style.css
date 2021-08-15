@@ -115,7 +115,7 @@ h2 {
   margin-left: 10px;
   height: 27%;
   width: 27%;
-  font-size: 40px;
+  font-size: auto;
   background-color: rgb(133, 248, 87);
   cursor: pointer;
 }
