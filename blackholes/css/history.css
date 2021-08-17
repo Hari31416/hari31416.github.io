@@ -1,0 +1,94 @@
+body{
+   background: linear-gradient(-60deg, #999af2, #d5f7ec);
+ }
+
+.index{
+  list-style-type: none;
+  background-color: rgba(252, 22, 10, 0.4);
+  font-size: 18px;
+  font-family: Robota;
+}
+
+
+
+main {
+  font-size: 19px;
+  line-height: 1.3em;
+  font-style: Courier;
+  text-indent: 1.5em;
+}
+
+.image1{
+  width: 350px;
+  height: 400px;
+  display: inline-block;
+  background-image: url(images/albert.jpg);
+  background-repeat: no-repeat;
+  border: 2px solid black;
+  margin-right: 5px;
+}
+
+.image2 {
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  background-image: url(images/chandra.jpg);
+  background-repeat: no-repeat;
+    border: 2px solid black;
+    margin-left: 2px;
+
+}
+.image3 {
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  background-image: url(images/wheeler.jpg);
+  background-repeat: no-repeat;
+    border: 2px solid black;
+    margin-left: 5px;
+}
+
+.caption {
+ position: relative;
+ top: 85%;
+ float: left;
+ color: white;
+ padding-left: 30px;
+ font-family: 'Dancing Script', cursive;
+ font-style: bold;
+ color: white;
+ font-size: 20px;
+}
+
+a:link{
+  text-decoration: none;
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: purple;
+}
+
+a:active {
+  color: blue;
+}
+
+#aboutme{
+ text-align: left;
+  font-family: cursive;
+  font-size: 15px;
+  line-height: 1.2em;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+}
+
+.profile{
+padding-top: 5px;
+float: left;
+height:110px;
+width:110px;
+}

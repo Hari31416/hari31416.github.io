@@ -1,0 +1,85 @@
+body{
+background: linear-gradient(-60deg, #999af2, #d5f7ec);
+}
+
+main{
+  font-size: 16px;
+  font-style: Courier;
+  line-height: 1.3em;
+  text-indent: 2em;
+  font-family: 'DM Mono', monospace;
+
+}
+
+.caption{
+  position: relative;
+ top: 90%;
+ width: 80%;
+ color: white;
+ padding-left: 30px;
+font-family: 'Dancing Script'; color: white;
+ font-size: 18px;
+}
+
+
+.image{
+ background-image: url(images/M87.jpg);
+ background-size: cover;
+ background-position: center;
+ width: 100%;
+ height: 600px;
+ padding:inherit;
+}
+
+.list{
+  text-indent: 0em;
+
+}
+a:link{
+  text-decoration: none;
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: purple;
+}
+
+a:active {
+  color: blue;
+}
+
+.head{
+  text-transform: full-width;
+  text-transform: uppercase;
+  font-family: cursive;
+  text-align: center;
+  background-color: rgba(180, 40, 245, 0.5);
+  padding: 80px, 0;
+  margin: 30px 0;
+}
+.aboutme{
+  text-align: left;
+  font-family: cursive;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1.2em;
+  font-family: 'Indie Flower', cursive;
+  padding: 10px;
+}
+
+.profile{
+padding-top: 20px;
+display: inline-block;
+float: left;
+height:130px;
+width:130px;
+}
+
+footer{
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+}

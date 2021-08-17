@@ -1,0 +1,93 @@
+body{
+   background: linear-gradient(-60deg, #999af2, #d5f7ec);
+}
+
+.index{
+  padding-left: 4%;
+  list-style-type: none;
+  background-color: rgba(252, 22, 10, 0.4);
+  font-family: Robota;
+  font-size: 18px;
+}
+.index h3{
+  padding-top: 10px;
+}
+.index li{
+line-height: 1.3em;
+padding-bottom: 10px;
+}
+
+.type, h3{
+  text-indent: 0em;
+}
+
+
+main {
+  font-size: 16px;
+  line-height: 1.4em;
+  text-indent: 1.5em;
+  padding: 0% 4%;
+  font-family: 'DM Mono', monospace;
+
+}
+
+.caption{
+  position: relative;
+ top: 90%;
+ width: 20%
+ color: white;
+ padding-left: 30px;
+ font-family: 'Dancing Script', cursive;
+ font-style: bold;
+ color: #fc8d8d;
+ font-size: 20px;
+ opacity: 0.85
+}
+
+
+.image{
+ background-image: url(images/intro1.jpg);
+ background-size: cover;
+ background-position: center;
+ height: 600px;
+ width: 100%;
+}
+
+a:link{
+  text-decoration: none;
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: purple;
+}
+
+a:active {
+  color: blue;
+}
+
+.aboutme{
+  text-align: left;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1.2em;
+  font-family: 'Indie Flower', cursive;
+  padding-left: 10px;
+}
+
+.profile{
+padding-top: 10px;
+display: inline-block;
+float: left;
+height:120px;
+width:120px;
+}
+
+footer{
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+}
