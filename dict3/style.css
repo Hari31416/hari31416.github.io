@@ -19,6 +19,11 @@ h1 {
   position: relative;
 }
 
+.info {
+  margin-top: 20px;
+  color: rgb(103, 8, 255);
+}
+
 .word {
   font-family: "Akaya Kanadaka", cursive;
   height: 50px;
@@ -209,7 +214,8 @@ a:hover {
   background-color: rgb(5, 5, 5);
 }
 
-.reset {
+.reset,
+.using {
   font-family: fantasy;
   position: sticky;
   font-size: 18px;
@@ -231,7 +237,14 @@ a:hover {
   cursor: pointer;
 }
 
-.reset:hover {
+.using {
+  margin-left: 45%;
+  margin-bottom: 20px;
+  float: none;
+  position: relative;
+}
+.reset:hover,
+.using:hover {
   color: rgb(255, 255, 251);
   background-color: rgb(5, 5, 5);
 }
