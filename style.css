@@ -85,7 +85,7 @@ footer {
   margin-top: auto;
   width: 100%;
   height: auto;
-  padding: 0px;
+  /* padding: 0px; */
   display: block;
   border-top: 3px solid black;
 }
@@ -103,6 +103,7 @@ footer {
 
 .social {
   display: flex;
+  /* grid-template-columns: auto auto auto; */
 }
 
 .disclaimer {
