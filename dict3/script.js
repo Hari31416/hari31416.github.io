@@ -15,21 +15,52 @@ const btnCloseSA = document.querySelectorAll(".closeSyns");
 const SandA = document.querySelectorAll(".SandA");
 const overlaySA = document.querySelectorAll(".overlaySA");
 const numWords = document.querySelector(".numWords");
-const usingbtn = document.querySelector(".using");
-const info = document.querySelector(".info");
-// console.log(btnOpenSA[65]);
-const current = [one, two, three, four, five];
-var wordLength = Array.from({ length: word.length }, () => 0);
-// console.log(wordLength);
 
-// Model
+//Choose Correct Modal
 const modal = document.querySelectorAll(".modal");
 const overlay = document.querySelectorAll(".overlay");
 const btnCloseModal = document.querySelectorAll(".close-modal");
 const btnsOpenModal = document.querySelectorAll(".show-modal");
-// console.log(btnsOpenModal);
 
-// console.log(modal.textContent);
+// Info Modal
+const btnOpenModalInfo = document.querySelector(".using");
+const modalInfo = document.querySelector(".info-modal");
+const btnCloseModalInfo = document.querySelector(".close-modal-info");
+const overlayInfo = document.querySelector(".overlay-info");
+
+// Other variables
+const current = [one, two, three, four, five];
+var wordLength = Array.from({ length: word.length }, () => 0);
+
+//Showing Info Modal
+const openModalInfo = function () {
+  numWords.textContent = `There are currently ${wordLength.length} words in the dictionary.`;
+  modalInfo.classList.remove("hidden");
+  overlayInfo.classList.remove("hidden");
+};
+
+const closeModalInfo = function () {
+  modalInfo.classList.add("hidden");
+  overlayInfo.classList.add("hidden");
+};
+
+btnOpenModalInfo.addEventListener("click", openModalInfo);
+btnCloseModalInfo.addEventListener("click", closeModalInfo);
+overlayInfo.addEventListener("click", closeModalInfo);
+
+// Fixing the height of the info modal
+function getMargin() {
+  if (window.innerWidth > 1000) {
+    return "230px";
+  } else if (window.innerWidth > 700) {
+    return "300px";
+  } else if (500 < window.innerWidth < 700) {
+    return "520px";
+  } else if (window.innerWidth < 500) {
+    return "530px";
+  }
+}
+modalInfo.style.marginTop = getMargin();
 
 for (let i = 0; i < word.length; i++) {
   // S and A
@@ -178,9 +209,3 @@ for (let i = 0; i < word.length; i++) {
 
   // Showing the synonyms and antonyms
 }
-
-//How to use?
-numWords.textContent = `There are currently ${wordLength.length} words in the dictionary.`;
-usingbtn.addEventListener("click", function () {
-  info.classList.toggle("hidden");
-});

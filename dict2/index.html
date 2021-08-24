@@ -15,7 +15,7 @@
 <body>
         <h1 id="start">The Dictionary</h1>
         <button class="using">How to Use</button>
-        <div class="info hidden">
+        <div class="info-modal hidden">
                 <h3>General Info</h3>
                 <p class="numWords"></p>
         
@@ -44,7 +44,7 @@
                 <h3>Reset Button</h3>
                 <p>Clicking on this button closes all the meanings. This may become quite useful if you have opened a lot of
                         meanings and want to close them. This button refrain us from keep refreshing the page.</p>
-                <h3>Closing Models
+                <h3>Closing Modals
                 </h3>
                 <p>
                         Once you click on S&N button or find Correct button, a modal opens. There are three ways, to close the
@@ -55,7 +55,10 @@
                         <li><b>Click the Escape button</b></li>
                 </ul>
                 </p>
+        <button class="close-modal-info" type="submit">Got It!</button>
+
         </div>
+        <div class="overlay-info hidden"></div>
         <a id='indexlink' href="#index">Index</a>
         <button class='reset'>Reset</button>
         <div id='index'>
@@ -151,7 +154,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -221,7 +224,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -253,7 +256,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -282,7 +285,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -310,7 +313,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -340,7 +343,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -370,7 +373,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -401,7 +404,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -429,7 +432,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -457,7 +460,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -525,7 +528,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -553,7 +556,7 @@
                 <p class='meaning five hidden'>to utter clear and understandable sounds</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -584,7 +587,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -653,7 +656,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -684,7 +687,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -714,7 +717,7 @@
                 <p class='meaning five hidden'>auditorium</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -819,7 +822,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -886,7 +889,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -918,7 +921,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -947,7 +950,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -976,7 +979,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1004,7 +1007,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1032,7 +1035,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1064,7 +1067,7 @@
                 <p class='meaning five hidden'>sickeningly unpleasant</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1138,7 +1141,7 @@
                 <p class='meaning five hidden'>to impair the quality or effect of</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1169,7 +1172,7 @@
                 </p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1197,7 +1200,7 @@
                 <p class='meaning five hidden'>to cover (young) with the wings</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1276,7 +1279,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1307,7 +1310,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1364,7 +1367,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1393,7 +1396,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1467,7 +1470,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1502,7 +1505,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1532,7 +1535,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1564,7 +1567,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1632,7 +1635,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1697,7 +1700,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1725,7 +1728,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1755,7 +1758,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1786,7 +1789,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1816,7 +1819,7 @@
                 <p class='meaning five hidden'>of or relating to the brain or the intellect</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1847,7 +1850,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1914,7 +1917,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -1988,7 +1991,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2016,7 +2019,7 @@
                 <p class='meaning five hidden'>mounted men-at-arms</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2046,7 +2049,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2079,7 +2082,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2109,7 +2112,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2137,7 +2140,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2166,7 +2169,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2231,7 +2234,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2304,7 +2307,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2332,7 +2335,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2365,7 +2368,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2393,7 +2396,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2424,7 +2427,7 @@
                 <p class='meaning five hidden'>deeply religious</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2457,7 +2460,7 @@
                 <p class='meaning five hidden'>dawdle, fool</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2584,7 +2587,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2614,7 +2617,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2642,7 +2645,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2672,7 +2675,7 @@
                 <p class='meaning five hidden'>prostitute</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2704,7 +2707,7 @@
                 <p class='meaning five hidden'>having an odd or amusing quality</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2771,7 +2774,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2803,7 +2806,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2869,7 +2872,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2897,7 +2900,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2927,7 +2930,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -2999,7 +3002,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3029,7 +3032,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3059,7 +3062,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3087,7 +3090,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3149,7 +3152,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3179,7 +3182,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3207,7 +3210,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3235,7 +3238,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3264,7 +3267,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3292,7 +3295,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3362,7 +3365,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3392,7 +3395,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3422,7 +3425,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3452,7 +3455,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3603,7 +3606,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3633,7 +3636,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3661,7 +3664,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3689,7 +3692,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3723,7 +3726,7 @@
                 <p class='meaning five hidden'>offering serious difficulties</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3754,7 +3757,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3784,7 +3787,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3815,7 +3818,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3845,7 +3848,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3879,7 +3882,7 @@
                 <p class='meaning five hidden'>to feel or handle clumsily</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -3949,7 +3952,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4015,7 +4018,7 @@
                 <p class='meaning five hidden'>to join or unite as if by grafting</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4089,7 +4092,7 @@
                 <p class='meaning five hidden'>to twist the face</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4117,7 +4120,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4187,7 +4190,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4286,7 +4289,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4315,7 +4318,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4343,7 +4346,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4372,7 +4375,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4403,7 +4406,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4453,7 +4456,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4503,7 +4506,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4533,7 +4536,7 @@
                 <p class='meaning five hidden'>perfectly clean</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4563,7 +4566,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4594,7 +4597,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4629,7 +4632,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4734,7 +4737,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4763,7 +4766,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4793,7 +4796,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4823,7 +4826,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4853,7 +4856,7 @@
                 <p class='meaning five hidden'>profoundly imbued</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4883,7 +4886,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4919,7 +4922,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4948,7 +4951,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -4981,7 +4984,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5014,7 +5017,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5042,7 +5045,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5070,7 +5073,7 @@
                 <p class='meaning five hidden'>an unpleasant, mean, or eager glance</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5101,7 +5104,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5132,7 +5135,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5161,7 +5164,7 @@
                 <p class='meaning five hidden'>something for which one is liable</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5191,7 +5194,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5225,7 +5228,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5301,7 +5304,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5329,7 +5332,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5357,7 +5360,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5432,7 +5435,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5472,7 +5475,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5536,7 +5539,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5573,7 +5576,7 @@
                 <p class='meaning five hidden'>grisly, gruesome</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5603,7 +5606,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5635,7 +5638,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5665,7 +5668,7 @@
                 <p class='meaning five hidden'>an act of nibbling</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5693,7 +5696,7 @@
                 <p class='meaning five hidden'>of, relating to, or occurring at night</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5721,7 +5724,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5750,7 +5753,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5855,7 +5858,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5886,7 +5889,7 @@
                         agreement</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5915,7 +5918,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -5986,7 +5989,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -6014,7 +6017,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -6042,7 +6045,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -6070,7 +6073,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -6140,7 +6143,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -6169,7 +6172,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -6199,7 +6202,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -6270,7 +6273,7 @@
                 <p class='meaning five hidden'>showing or having a mean narrow-minded attitude</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -6300,7 +6303,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -6408,7 +6411,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -6436,7 +6439,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -6505,7 +6508,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -6533,7 +6536,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -6562,7 +6565,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -6635,7 +6638,7 @@
                 <p class='meaning five hidden'>serving to debase or defile what is holy</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -6665,7 +6668,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -6701,7 +6704,7 @@
                 <p class='meaning five hidden'>to strew with puddles</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -6818,7 +6821,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -6849,7 +6852,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -6992,7 +6995,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7020,7 +7023,7 @@
                 <p class='meaning five hidden'>smoke</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7049,7 +7052,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7078,7 +7081,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7152,7 +7155,7 @@
                 <p class='meaning five hidden'>prize</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7185,7 +7188,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7213,7 +7216,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7281,7 +7284,7 @@
                 <p class='meaning five hidden'>a short delay</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7315,7 +7318,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7345,7 +7348,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7373,7 +7376,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7440,7 +7443,7 @@
                 <p class='meaning five hidden'>elementary, simple</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7468,7 +7471,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7497,7 +7500,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7528,7 +7531,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7559,7 +7562,7 @@
                 <p class='meaning five hidden'>smart, trim</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7588,7 +7591,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7616,7 +7619,7 @@
                 <p class='meaning five hidden'>whip</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7646,7 +7649,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7674,7 +7677,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7738,7 +7741,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7813,7 +7816,7 @@
                 <p class='meaning five hidden'>to remove slime from (something, such as fish for canning)</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7885,7 +7888,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7913,7 +7916,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7941,7 +7944,7 @@
                 <p class='meaning five hidden'>thick stifling smoke or smudge</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -7975,7 +7978,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -8099,7 +8102,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -8207,7 +8210,7 @@
                 <p class='meaning five hidden'>to speak explosively or confusedly in anger or excitement</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -8235,7 +8238,7 @@
                 <p class='meaning five hidden'>failing to produce or incapable of producing offspring</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -8401,7 +8404,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -8470,7 +8473,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -8501,7 +8504,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -8531,7 +8534,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -8595,7 +8598,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -8624,7 +8627,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -8653,7 +8656,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -8683,7 +8686,7 @@
                 <p class='meaning five hidden'>a nervous laugh</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -8714,7 +8717,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -8826,7 +8829,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -8978,7 +8981,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -9006,7 +9009,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -9036,7 +9039,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
@@ -9069,7 +9072,7 @@
                 <p class='meaning five hidden'>Oops! So Empty!</p>
                 <button class='close hidden'>❌</button>
                 <button class='next hidden'>⏭</button>
-                <button class="show-modal hidden">Find Correct</button>
+                <button class="show-modal hidden empty--modal">Find Correct</button>
                 <div class="modal hidden">
                         <button class="close-modal">&times;</button>
                         <h1>Choose the Right Synonym</h1>
