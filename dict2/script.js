@@ -1,3 +1,4 @@
+// Declaring variables
 const word = document.querySelectorAll(".word");
 const one = document.querySelectorAll(".one");
 const two = document.querySelectorAll(".two");
@@ -13,7 +14,10 @@ const btnOpenSA = document.querySelectorAll(".synsBtn");
 const btnCloseSA = document.querySelectorAll(".closeSyns");
 const SandA = document.querySelectorAll(".SandA");
 const overlaySA = document.querySelectorAll(".overlaySA");
-console.log(btnOpenSA[65]);
+const numWords = document.querySelector(".numWords");
+const usingbtn = document.querySelector(".using");
+const info = document.querySelector(".info");
+// console.log(btnOpenSA[65]);
 const current = [one, two, three, four, five];
 var wordLength = Array.from({ length: word.length }, () => 0);
 // console.log(wordLength);
@@ -23,10 +27,13 @@ const modal = document.querySelectorAll(".modal");
 const overlay = document.querySelectorAll(".overlay");
 const btnCloseModal = document.querySelectorAll(".close-modal");
 const btnsOpenModal = document.querySelectorAll(".show-modal");
-// console.log(modal);
+// console.log(btnsOpenModal);
+
+// console.log(modal.textContent);
 
 for (let i = 0; i < word.length; i++) {
   // S and A
+  // Functions for opening and closing synonyms and antonyms
   const openModalSA = function (i) {
     SandA[i].classList.remove("hidden");
     overlaySA[i].classList.remove("hidden");
@@ -37,24 +44,28 @@ for (let i = 0; i < word.length; i++) {
     overlaySA[i].classList.add("hidden");
   };
 
+  // Showing the S&A
   btnOpenSA[i].addEventListener("click", function () {
     openModalSA(i);
   });
 
+  // Closing the S&A
+  // By clicking on the close button
   btnCloseSA[i].addEventListener("click", function () {
     closeModalSA(i);
   });
+  // By clicking on the overlay
   overlaySA[i].addEventListener("click", function () {
     closeModalSA(i);
   });
-
+  // By clicking the escape button
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && !SandA[i].classList.contains("hidden")) {
       closeModalSA(i);
     }
   });
 
-  // The model
+  // The model for choosing the correct synonyms
   const openModal = function (i) {
     modal[i].classList.remove("hidden");
     overlay[i].classList.remove("hidden");
@@ -82,7 +93,7 @@ for (let i = 0; i < word.length; i++) {
     }
   });
 
-  // Showing the one
+  // Showing the one meaning
   word[i].addEventListener("click", function () {
     var click = wordLength[i];
     click += 1;
@@ -123,11 +134,11 @@ for (let i = 0; i < word.length; i++) {
   next[i].addEventListener("click", function () {
     for (let j = 0; j < current.length; j++) {
       if (j == 4) {
-        console.log(j);
+        // console.log(j);
         one[i].classList.toggle("hidden");
         five[i].classList.toggle("hidden");
       } else if (!current[j][i].classList.contains("hidden")) {
-        console.log(j);
+        // console.log(j);
         current[j + 1][i].classList.remove("hidden");
         current[j][i].classList.add("hidden");
         break;
@@ -167,3 +178,9 @@ for (let i = 0; i < word.length; i++) {
 
   // Showing the synonyms and antonyms
 }
+
+//How to use?
+numWords.textContent = `There are currently ${wordLength.length} words in the dictionary.`;
+usingbtn.addEventListener("click", function () {
+  info.classList.toggle("hidden");
+});

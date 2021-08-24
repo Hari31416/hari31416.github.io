@@ -14,11 +14,13 @@ const btnOpenSA = document.querySelectorAll(".synsBtn");
 const btnCloseSA = document.querySelectorAll(".closeSyns");
 const SandA = document.querySelectorAll(".SandA");
 const overlaySA = document.querySelectorAll(".overlaySA");
-
+const numWords = document.querySelector(".numWords");
+const usingbtn = document.querySelector(".using");
+const info = document.querySelector(".info");
 // console.log(btnOpenSA[65]);
 const current = [one, two, three, four, five];
 var wordLength = Array.from({ length: word.length }, () => 0);
-// console.log(wordLength); 
+// console.log(wordLength);
 
 // Model
 const modal = document.querySelectorAll(".modal");
@@ -26,6 +28,8 @@ const overlay = document.querySelectorAll(".overlay");
 const btnCloseModal = document.querySelectorAll(".close-modal");
 const btnsOpenModal = document.querySelectorAll(".show-modal");
 // console.log(btnsOpenModal);
+
+// console.log(modal.textContent);
 
 for (let i = 0; i < word.length; i++) {
   // S and A
@@ -40,14 +44,13 @@ for (let i = 0; i < word.length; i++) {
     overlaySA[i].classList.add("hidden");
   };
 
-
-// Showing the S&A
+  // Showing the S&A
   btnOpenSA[i].addEventListener("click", function () {
     openModalSA(i);
   });
 
-// Closing the S&A
-// By clicking on the close button
+  // Closing the S&A
+  // By clicking on the close button
   btnCloseSA[i].addEventListener("click", function () {
     closeModalSA(i);
   });
@@ -55,7 +58,7 @@ for (let i = 0; i < word.length; i++) {
   overlaySA[i].addEventListener("click", function () {
     closeModalSA(i);
   });
-// By clicking the escape button
+  // By clicking the escape button
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && !SandA[i].classList.contains("hidden")) {
       closeModalSA(i);
@@ -175,3 +178,9 @@ for (let i = 0; i < word.length; i++) {
 
   // Showing the synonyms and antonyms
 }
+
+//How to use?
+numWords.textContent = `There are currently ${wordLength.length} words in the dictionary.`;
+usingbtn.addEventListener("click", function () {
+  info.classList.toggle("hidden");
+});

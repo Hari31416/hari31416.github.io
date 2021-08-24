@@ -19,11 +19,17 @@ h1 {
   position: relative;
 }
 
+.info {
+  margin-top: 20px;
+  color: rgb(103, 8, 255);
+}
+
 .word {
   font-family: "Akaya Kanadaka", cursive;
   height: 50px;
   position: centre;
   width: auto;
+  /* width: 350px; */
   font-weight: bold;
   font-size: 25px;
   background-color: cyan;
@@ -67,24 +73,8 @@ h1 {
 }
 
 .word:hover {
-  height: 50px;
-  position: relative;
-  width: auto;
-  font-weight: bold;
-  font-size: 25px;
   background-color: red;
   color: cyan;
-  text-align: center;
-  /* padding: auto; */
-  padding-top: 5px;
-  cursor: pointer;
-  margin-left: 30%;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  border: 2.5px solid black;
-  display: inline-block;
-  flex-direction: column;
-  align-items: center;
 }
 
 .close,
@@ -224,7 +214,8 @@ a:hover {
   background-color: rgb(5, 5, 5);
 }
 
-.reset {
+.reset,
+.using {
   font-family: fantasy;
   position: sticky;
   font-size: 18px;
@@ -246,7 +237,14 @@ a:hover {
   cursor: pointer;
 }
 
-.reset:hover {
+.using {
+  margin-left: 45%;
+  margin-bottom: 20px;
+  float: none;
+  position: relative;
+}
+.reset:hover,
+.using:hover {
   color: rgb(255, 255, 251);
   background-color: rgb(5, 5, 5);
 }
@@ -288,7 +286,9 @@ h2 {
 .third {
   background-color: yellow;
 }
-
+.fourth {
+  background-color: rgba(83, 52, 218, 0.418);
+}
 .priorty:hover {
   display: inline-block;
   width: 32%;
@@ -364,6 +364,10 @@ h4 {
   background: none;
 }
 
+.example {
+  color: rgb(0, 0, 0);
+  font-family: cursive;
+}
 .modal {
   position: relative;
   color: rgb(27, 0, 180, 0.7);
@@ -385,7 +389,7 @@ h4 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 60%;
   height: auto;
   background-color: rgb(229, 231, 203);
   padding: 4%;
