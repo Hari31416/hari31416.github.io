@@ -56,10 +56,10 @@ function getMargin() {
     return "300px";
   } else if (500 < window.innerWidth < 700) {
     return "520px";
-  } else if (300<window.innerWidth < 500) {
+  } else if (300 < window.innerWidth < 500) {
     return "630px";
-  } else if (window.innerWidth < 300{
-          return "730"
+  } else if (window.innerWidth < 300) {
+    return "730";
   }
 }
 modalInfo.style.marginTop = getMargin();

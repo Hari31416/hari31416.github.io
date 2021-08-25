@@ -58,6 +58,8 @@ function getMargin() {
     return "520px";
   } else if (window.innerWidth < 500) {
     return "530px";
+  } else if (window.innerWidth < 300) {
+    return "730";
   }
 }
 modalInfo.style.marginTop = getMargin();
