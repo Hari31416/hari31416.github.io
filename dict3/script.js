@@ -49,20 +49,8 @@ btnCloseModalInfo.addEventListener("click", closeModalInfo);
 overlayInfo.addEventListener("click", closeModalInfo);
 
 // Fixing the height of the info modal
-function getMargin() {
-  if (window.innerWidth > 1000) {
-    return "230px";
-  } else if (window.innerWidth > 700) {
-    return "300px";
-  } else if (500 < window.innerWidth < 700) {
-    return "520px";
-  } else if (window.innerWidth < 500) {
-    return "530px";
-  } else if (window.innerWidth < 300) {
-    return "730";
-  }
-}
-modalInfo.style.marginTop = getMargin();
+var rect = priorty[0].getBoundingClientRect();
+modalInfo.style.top = `${rect.top}px`;
 
 for (let i = 0; i < word.length; i++) {
   // S and A
