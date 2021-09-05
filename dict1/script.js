@@ -3,7 +3,10 @@ const meaning = document.querySelectorAll(".meaning");
 const close = document.querySelectorAll(".close");
 const reset = document.querySelectorAll(".reset");
 const priorty = document.querySelectorAll(".priorty");
+const search = document.getElementById("search");
 
+console.log(search);
+console.log(search.textContent);
 for (let i = 0; i < word.length; i++) {
   // Showing the meaning
   word[i].addEventListener("click", function () {

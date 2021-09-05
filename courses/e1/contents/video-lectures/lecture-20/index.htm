@@ -1,0 +1,1257 @@
+<!DOCTYPE html><html lang="en">
+      
+      
+        
+    
+    
+    
+    
+
+      
+      
+      <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">  
+        
+        <title>Lecture 20: Operational Amplifier Circuits | Video Lectures | Circuits and Electronics | Electrical Engineering and Computer Science | MIT OpenCourseWare</title>
+    <!-- Begin Automatic Metadata Insertion -->
+    <meta content="6-002-circuits-and-electronics-spring-2007" name="WT.cg_n">
+    <meta content="Lecture 20: Operational Amplifier Circuits" name="WT.cg_s">
+    <meta content="" name="Description">
+    <meta content="Agarwal, Anant" name="Author">
+    <meta content="6.002,Fundamentals of the lumped circuit abstraction,Resistive elements and networks,independent and dependent sources,switches and MOS devices,digital abstraction,amplifiers,and energy storage elements,Dynamics of first- and second-order networks,design in the time and frequency domains,analog and digital circuits and applications,Electrical Engineering,Electronics" name="keywords">
+    <meta content="6.002 Circuits and Electronics | Lecture 20: Operational Amplifier Circuits" name="Search_Display">
+    <meta content="Electrical Engineering" itemprop="about">
+    <meta content="Electronics" itemprop="about">
+    <!-- End Automatic Metadata Insertion -->
+
+	<link title="default" rel="stylesheet" type="text/css" href="../../../common/styles/grid.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../common/styles/base.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../common/styles/menu.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../common/styles/jquery.bubblepopup.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../common/styles/search.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../common/styles/courses.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../common/styles/courses_new.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../common/styles/jquery.jscrollpane.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../common/styles/media_tabs.css">
+	<link href="../../../common/xml/ocwcc.rdf" type="application/rdf+xml" rel="metadata">
+	<link rel="canonical" href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/video-lectures/lecture-20/">
+	<link rel="apple-touch-icon" href="../../../common/images/apple-touch-icon.png">
+	
+	
+      
+	
+	<script type="text/javascript" src="../../../common/scripts/jquery.js"></script>
+	<script type="text/javascript" src="../../../common/scripts/ocw-media-utils-offline.js"></script>
+	<script type="text/javascript" src="../../../common/scripts/ocw-offline.js"></script>
+	<script type="text/javascript" src="../../../common/scripts/jquery.bubblepopup.min.js"></script>
+	<script type="text/javascript" src="../../../common/scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../../common/scripts/jquery.jscrollpane.min.js"></script>
+	<script type="text/javascript" src="../../../common/scripts/expandy.js"></script>
+	<script type="text/javascript" src="../../../common/scripts/bubble-popup-offline.js"></script>
+	
+	
+	
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#tabs").tabs();
+        IpadScroller();
+      });
+    </script>
+    
+    
+    
+    
+    
+    
+      
+       
+		 
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </head>
+    <body itemscope itemtype="http://schema.org/WebPage">
+        
+	
+
+        <header id="top">
+			<div id="grid">
+				
+				
+					
+<div id="portletwrapper-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d686561646572" class="portletWrapper kssattr-portlethash-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d686561646572">
+<div class="portletStaticText portlet-static-site-header">
+<!--googleoff: index-->
+<div class="grid_6 alpha" id="banner"><a href="https://ocw.mit.edu/"><img src="../../../common/images/ocw_mast.png" class="logo" alt="MIT OpenCourseWare, Massachusetts Institute of Technology"></a></div>
+<div class="grid_6 omega" id="subscribe">
+<aside class="module" aria-label="Connect with OCW">
+<table class="social">
+    <tbody>
+        <tr>
+            <td class="socialbutton"><a aria-label="Subscribe to the OCW Newsletter" href="https://ocw.mit.edu/subscribe/index.htm?utm_source=header"><img src="../../../common/images/trans.gif" alt="An icon depicting an envelope.">Subscribe to the OCW Newsletter</a></td>
+            <td>
+<a aria-label="Facebook" href="https://facebook.com/mitocw"><img src="../../../common/images/icon_fb.png" alt="Click to visit our Facebook page."></a>  <a aria-label="Instagram" href="https://www.instagram.com/mitocw/"><img src="https://ocw.mit.edu/images/icon_ig.png" alt="Click to visit our Instagram page."></a> <a aria-label="Twitter" href="https://twitter.com/mitocw"><img src="https://ocw.mit.edu/images/icon_twitter.png" alt="Click to visit our Twitter feed."></a><a aria-label="YouTube" href="https://www.youtube.com/mitocw" style="font-size: 12.208px;"><img src="https://ocw.mit.edu/images/icon_yt.png" alt="Click to visit our YouTube page."></a><span style="font-size: 12.208px;">   </span><a aria-label="Open Matters blog on WordPress" href="https://www.ocw-openmatters.org/" style="font-size: 12.208px;"><img src="https://ocw.mit.edu/images/icon_wp.png" alt="Click to visit our blog on WordPress."></a>
+</td>
+        </tr>
+    </tbody>
+</table>
+</aside><nav aria-label="Help Links" class="helplinks">     <a aria-label="OCW Site Help" href="https://ocw.mit.edu/help">Help</a><span aria-hidden="true">|</span>     <a href="../../../common/about/contactus.htm">Contact Us</a>   </nav>
+</div>
+<div class="clear"> </div>
+<!--googleon: index-->
+</div>
+
+</div>
+
+<div id="portletwrapper-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a6d6567612d6d656e75" class="portletWrapper kssattr-portlethash-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a6d6567612d6d656e75">
+<div class="portletStaticText portlet-static-mega-menu"><div><nav id="mega" class="grid_8 alpha" aria-label="Site">
+<ul id="menu" role="presentation">
+    <li id="menu_home">
+<a href="https://ocw.mit.edu/" aria-label="Homepage"><img src="../../../common/images/top-nav_home.png" class="home_icon" alt="Click for site home page."></a><!-- Begin Home Item -->
+</li>
+    <!-- End Home Item -->
+    <li id="drop_1" aria-label="Find Courses">
+<a href="#" aria-hidden="true">FIND COURSES</a><!-- Begin 5 columns Item -->
+    <div class="dropdown_5columns-a mega-courses">
+    <div class="col_1a">
+    <div class="row_1a">
+<nav aria-labelledby="mm-find-courses-by">     <span id="mm-find-courses-by" class="nav" aria-hidden="true">Find courses by:</span>
+    <ul class="find_by" role="presentation">
+        <li><a href="https://ocw.mit.edu/courses/find-by-topic/">Topic</a></li>
+        <li><a href="https://ocw.mit.edu/courses/find-by-number/">MIT Course Number</a></li>
+        <li><a href="https://ocw.mit.edu/courses/find-by-department/">Department</a></li>
+    </ul>
+    </nav>     <nav aria-labelledby="mm-collections">     <span id="mm-collections" class="nav" aria-hidden="true">Collections</span>
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/courses/new-courses/">New Courses</a></li>
+        <li><a href="https://ocw.mit.edu/courses/most-visited-courses/">Most Visited Courses</a></li>
+        <li><a href="https://ocw.mit.edu/courses/ocw-scholar/">OCW Scholar Courses</a></li>
+        <li><a href="https://ocw.mit.edu/courses/audio-video-courses/">Audio/Video Lectures</a></li>
+        <li><a href="https://ocw.mit.edu/courses/online-textbooks/">Online Textbooks</a></li>
+        <li><a href="https://ocw.mit.edu/resources/">Supplemental Resources</a></li>
+        <li><a href="https://ocw.mit.edu/high-school/">OCW Highlights for High School</a></li>
+        <li><a href="https://ocw.mit.edu/courses/mitx-related-courseware/">MITx &amp; Related OCW Courses</a></li>
+        <li><a href="https://ocw.mit.edu/courses/mit-open-learning-library/">MIT Open Learning Library</a></li>
+    </ul>
+    </nav>     <nav class="col_1b" aria-labelledby="mm-translated-courses">     <span id="mm-translated-courses" class="nav" aria-hidden="true" style="line-height: 1.3;">Cross-Disciplinary Topic Lists</span>
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/courses/energy-courses">Energy</a></li>
+        <li><a href="https://ocw.mit.edu/courses/entrepreneurship">Entrepreneurship</a></li>
+        <li><a href="https://ocw.mit.edu/courses/environment-courses">Environment</a></li>
+        <li><a href="https://ocw.mit.edu/courses/intro-programming">Introductory Programming</a></li>
+        <li><a href="https://ocw.mit.edu/courses/life-sciences">Life Sciences</a></li>
+        <li><a href="https://ocw.mit.edu/courses/transportation-courses">Transportation</a></li>
+    </ul>
+    </nav>
+</div>
+    <div class="row_1b"><nav aria-labelledby="mm-cross-disciplinary-topic-lists">     <span id="mm-cross-disciplinary-topic-lists" class="nav" aria-hidden="true">Translated Courses</span>
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/courses/translated-courses/traditional-chinese" aria-label="Traditional Chinese">繁體字 / Traditional Chinese</a></li>
+        <li><a href="https://ocw.mit.edu/courses/translated-courses/turkish" aria-label="Turkish">Türkçe / Turkish</a></li>
+        <li><a href="https://ocw.mit.edu/courses/translated-courses/korean" aria-label="Korean">(비디오)한국 / Korean</a></li>
+    </ul>
+    </nav></div>
+    </div>
+    </div>
+    </li>
+    <li id="drop_2">
+<a href="#" aria-label="For Educators">For Educators</a>
+    <div class="dropdown_1column-a" style="width: 270px;"><nav aria-labelledby="mm-find-courses-by">
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/educator/chalk-radio-podcast">Chalk Radio Podcast</a></li>
+        <li><a href="https://ocw.mit.edu/educator/">OCW Educator Portal</a></li>
+    </ul>
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/courses/instructor-insights/">Instructor Insights by Department</a></li>
+        <li><a href="https://openlearning.mit.edu/campus/digital-innovations/">Residential Digital Innovations </a></li>
+    </ul>
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/high-school/">OCW Highlights for High School</a></li>
+    </ul>
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/educator/additional-resources/">Additional Resources</a></li>
+    </ul>
+    </nav></div>
+    </li>
+    <li id="drop_3">
+<a href="#" aria-hidden="true">Give Now</a>
+    <div class="dropdown_1column-a"><nav class="col_1" aria-label="Donate">
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/give/">Make a Donation</a></li>
+        <li><a href="https://ocw.mit.edu/give/why-give/">Why Give?</a></li>
+        <li><a href="https://ocw.mit.edu/give/our-supporters/">Our Supporters</a></li>
+        <li><a href="https://ocw.mit.edu/give/other-ways-to-contribute/">Other Ways to Contribute</a></li>
+        <li><a href="https://ocw.mit.edu/support/">Become a Corporate Sponsor</a></li>
+    </ul>
+    </nav></div>
+    </li>
+    <li id="drop_4">
+<a href="#" aria-hidden="true">About</a>
+    <div class="dropdown_1column-a"><nav class="col_1" aria-label="About">
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/about/">About MIT OpenCourseWare</a></li>
+        <li><a href="https://ocw.mit.edu/about/site-statistics/">Site Statistics</a></li>
+        <li><a href="https://ocw.mit.edu/about/ocw-stories/">OCW Stories</a></li>
+        <li><a href="https://ocw.mit.edu/about/newsletter/">Newsletter</a></li>
+        <li><a href="https://chalk-radio.simplecast.com/">Chalk Radio Podcast</a></li>
+        <li><a href="https://www.ocw-openmatters.org/">Open Matters Blog</a></li>
+    </ul>
+    </nav></div>
+    </li>
+</ul>
+</nav></div></div>
+
+</div>
+
+
+
+
+
+<!--googleoff: index-->
+<script>
+  (function() {
+	var cx = '012626166551961672889:owjdpuboktq';
+	var gcse = document.createElement('script');
+	gcse.type = 'text/javascript';
+	gcse.async = true;
+	gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(gcse, s);
+  })();
+  window.onload = function(){
+	document.getElementById('gsc-i-id1').placeholder = 'Search';	
+  };
+
+$(document).ready(function(){
+
+$('.advanceSearch a').keydown(function(event){showSearchTips($(this),event);})
+$('#searchTipsModal').keydown(function(event){showSearchTips($(this),event);})
+
+function showSearchTips(obj,evt) {
+// if pressed enter key
+	if ( evt.which == 13 || evt.which == 32) {
+		showModal();
+		ga('send', 'pageview', "AdvanceSearch");
+		$(".advanceSearch a").attr('aria-expanded', 'true');
+		$('.searchTipsModal').focus();
+		evt.preventDefault();
+		}
+	if ( evt.which == 27 ) {
+		hideModal();
+		$(".advanceSearch a").attr('aria-expanded', 'false');
+		var modal = document.getElementById('searchTipsModal');
+		modal.style.display = "none";
+		$(".advanceSearch a").focus();
+		evt.preventDefault();
+		}
+}
+
+});
+function showModal(){
+	var modal = document.getElementById('searchTipsModal');
+	modal.style.display = "block";
+	ga('send', 'pageview', "AdvanceSearch");
+	document.getElementById("searchTipsBtn").setAttribute("aria-expanded", true);
+	window.setTimeout(function () {
+    document.getElementById('searchTipsModal').focus(); }, 0);
+}
+
+function hideModal(){
+	var modal = document.getElementById('searchTipsModal');
+	modal.style.display = "none";
+	document.getElementById("searchTipsBtn").setAttribute("aria-expanded", false);
+}
+</script>
+<div id="search" role="search" class="grid_4 omega">
+    	<table class="search">
+				<tbody>
+					<tr>
+						<td><div class="searchboxheader"><searchbox-only resultsurl="/search/ocwsearch.htm"></searchbox-only></div></td>
+						<td>
+							<div class="advanceSearch">
+								<a id="searchTipsBtn" onclick="showModal();" href="#" role="button" aria-label="search tips" aria-expanded="false" aria-describedby="searchtips">Search Tips</a>
+
+								<!-- The Modal -->
+								<div id="searchTipsModal" class="modal" tabindex="-1">
+								  <!-- Modal content -->
+									<div class="modal-content">
+										<div class="modal-body">
+											<button class="close" onclick="hideModal();" aria-label="close">X</button>
+											<span>
+												<b>Exclude words from your search</b>
+												<br>Put - in front of a word you want to leave out. For example, jaguar speed -car
+												<br><br>
+												<b>Search for an exact match</b>
+												<br>Put a word or phrase inside quotes. For example, "tallest building".
+												<br><br>
+												<b>Search for wildcards or unknown words</b>
+												<br>Put a * in your word or phrase where you want to leave a placeholder. For example, "largest * in the world".
+												<br><br>
+												<b>Search within a range of numbers</b>
+												<br>Put .. between two numbers. For example, camera $50..$100.
+												<br><br>
+												<b>Combine searches</b>
+												<br>Put "OR" between each search query. For example,  marathon OR race.
+												<br><br>
+											</span>
+										</div>
+								  </div>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+		</table>
+</div>
+<div class="clear"></div>
+<!--googleon: index-->
+<!-- *end header* -->
+
+				
+				
+			</div>
+<!-- top grid end -->
+		</header><!-- top end -->
+			
+		<div id="center_media">
+      	<div id="grid">
+      		<div id="left">
+        		<nav id="breadcrumb_media" aria-label="Breadcrumb">
+                	<p>
+
+    <a href="https://ocw.mit.edu/">Home</a>
+    
+        »
+        
+    
+    
+        
+            <a href="https://ocw.mit.edu/courses">Courses</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science">Electrical Engineering and Computer Science</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="../../../contents/index.htm">Circuits and Electronics</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="../../../contents/video-lectures/index.htm">Video Lectures</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            
+            
+            Lecture 20: Operational Amplifier Circuits
+         
+    
+</p>
+
+            	</nav>
+            	<div class="clear"></div>
+        		<div id="media_title">
+        		<h1 class="title" itemprop="name" property="dct:title">
+        <span class="" id="parent-fieldname-title">
+            Lecture 20: Operational Amplifier Circuits
+        </span>
+    </h1>
+        		</div>
+           		<div class="clear"></div>
+           		<div id="course_wrapper_media">
+           			<nav id="course_nav" aria-label="Course">
+           				<script language="javascript" type="text/javascript">
+function toggleMenu(objID) {
+  if (!document.getElementById) return;
+  var ob = document.getElementById(objID);
+  ob.className = (ob.className == 'selected')?'': 'selected';
+}
+function toggleClass(id)
+{
+  var divtoggleClass= document.getElementById(id);
+  divtoggleClass.className = (divtoggleClass.className == 'mO')?'mC': 'mO';
+  return false;
+}
+function changeAlt(id)
+{
+  id.alt = (id.alt == 'Expand Menu')?'Collapse Menu' : 'Expand Menu';
+  id.title = (id.title == 'Expand Menu')?'Collapse Menu' : 'Expand Menu';
+}
+</script>
+<!--Left Nav Starts -->
+
+
+	<ul>			  
+	
+	    	
+	    	    <li class="">
+			   			<a href="../../../contents/index.htm">
+		                  Course Home  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="../../../contents/syllabus/index.htm">
+		                  Syllabus  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="../../../contents/calendar/index.htm">
+		                  Calendar  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="../../../contents/lecture-notes/index.htm">
+		                  Lecture Notes  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="../../../contents/readings/index.htm">
+		                  Readings  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="../../../contents/labs/index.htm">
+		                  Labs  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="../../../contents/assignments/index.htm">
+		                  Assignments  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="../../../contents/exams/index.htm">
+		                  Exams  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="../../../contents/tools/index.htm">
+		                  Tools  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    <li class="selected">
+			   			<a href="../../../contents/video-lectures/index.htm">
+		                  Video Lectures  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    
+		    
+         	
+	<!--second tal block close-->  
+	
+</ul>
+
+
+<!--Left Nav Ends -->
+
+
+
+
+
+           			</nav>
+           			<main id="course_inner_media" aria-labelledby="media_title">
+      					 
+        <div class="" id="parent-fieldname-text">
+            
+            
+        </div>
+    
+      					     
+    
+    
+
+
+
+<script type="text/javascript">var caption_embed_1 ={'English - US': '/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/video-lectures/lecture-20/2SwT6JnfCq8.srt'}</script>     
+     <div id="media-embed">
+         <div class="attention_message" id="embed_1">
+<p>Flash and JavaScript are required for this feature.</p>
+<p>Download the video from <a href="https://itunes.apple.com/us/itunes-u/id341597464">iTunes U</a> or the <a href="http://www.archive.org/download/MIT6.002S07/ocw-6.002-lec-mit-10250-20nov2003-220k.mp4">Internet Archive</a>.</p>
+</div>
+     </div>
+    
+     <script type="text/javascript">ocw_embed_chapter_media('embed_1', 'https://www.youtube.com/v/2SwT6JnfCq8', 'youtube', '/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/video-lectures/lecture-20', 'https://img.youtube.com/vi/2SwT6JnfCq8/0.jpg',0,0, 'https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/video-lectures/lecture-20/2SwT6JnfCq8.srt')</script>
+	 
+	 
+	 		
+	 		<div id="transcript1"></div>
+				 <script type="text/javascript">createThreePlayParams(2, 703371, "embed_1", 0, 0)</script>
+			 
+	
+
+     <div id="media_resource_next_prev_nav" style="margin-top: 1em;">
+        <p>
+        
+            <a href="../../../contents/video-lectures/lecture-19/index.htm">
+                <img src="../../../common/images/btn_previous_resource.png" style="margin: 0 30px 0 50px;" alt="Previous track" title="Previous track"></a>
+     	
+     	
+        
+            <a href="../../../contents/video-lectures/lecture-21/index.htm"> 
+                <img src="../../../common/images/btn_next_resource.png" alt="Next track" title="Next track"></a>
+       
+       </p>
+     </div>
+ 
+
+
+<script type="text/javascript">
+		window.onload=function(){
+		init();
+		
+		}
+		var tabLinks = new Array();
+		var contentDivs = new Array();
+		function init() {
+		  // Grab the tab links and content divs from the page
+		  var tabListItems = document.getElementById('tabs').childNodes;
+		  for ( var i = 0; i < tabListItems.length; i++ ) {
+			if ( tabListItems[i].nodeName == "LI" ) {
+			  var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
+			  var id = getHash( tabLink.getAttribute('href') );
+			  tabLinks[id] = tabLink;
+			  contentDivs[id] = document.getElementById( id );
+			}
+		  }
+		  // Assign onclick events to the tab links, and
+		  // highlight the first tab
+		  var i = 0;
+		  for ( var id in tabLinks ) {
+			tabLinks[id].onclick = showTab;
+			tabLinks[id].onfocus = function() { this.blur() };
+			if ( i == 0 ) tabLinks[id].className = 'selected';
+			i++;
+		  }
+		  // Hide all content divs except the first
+		  var i = 0;
+		  for ( var id in contentDivs ) {
+			if ( i != 0 ) contentDivs[id].className = 'tabContent hide';
+			i++;
+		  }
+		}
+		function showTab() {
+		  var selectedId = getHash( this.getAttribute('href') );
+		  // Highlight the selected tab, and dim all others.
+		  // Also show the selected content div, and hide all others.
+		  for ( var id in contentDivs ) {
+			if ( id == selectedId ) {
+			  tabLinks[id].className = 'selected';
+			  contentDivs[id].className = 'tabContent';
+			} else {
+			  tabLinks[id].className = '';
+			  contentDivs[id].className = 'tabContent hide';
+			}
+		  }
+		  // Stop the browser following the link
+		  return false;
+		}
+		function getFirstChildWithTagName( element, tagName ) {
+		  for ( var i = 0; i < element.childNodes.length; i++ ) {
+			if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
+		  }
+		}
+		function getHash( url ) {
+		  var hashPos = url.lastIndexOf ( '#' );
+		  return url.substring( hashPos + 1 );
+		}
+ </script>	
+ 
+
+  <div id="media_tabs">
+     
+        <ul id="tabs">
+            <li class="first">
+                <a href="#vid_about" class="selected">About this Video</a>
+            </li>
+            <li class="">
+                <a href="#vid_index" class="">Playlist</a>
+            </li>
+            <li class="">
+                <a href="#vid_playlist" class="">Related Resources</a>
+            </li>
+            <li class="">
+                <a href="#vid_related" class="">Transcript</a>
+            </li>
+            <li class="">
+                <a href="#vid_transcript" class="">Download this Video</a>
+            </li>
+        </ul>
+   
+        <div id="vid_about" itemprop="description" class="tabContent">
+<p><strong>Topics covered:</strong> Operational amplifier circuits</p> <p><strong>Instructor:</strong> Prof. Anant Agarwal</p>
+</div>
+        <div id="vid_index" itemprop="description" class="tabContent hide">
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-1/index.htm">
+<img src="../../../contents/video-lectures/lecture-1/thumb_lec01.jpg" title="Lecture 1: Introduction and Lumped Abstraction" alt="Lecture 1: Introduction and Lumped Abstraction">
+<p>Lecture 1: Introduction and...</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-2/index.htm">
+<img src="../../../contents/video-lectures/lecture-2/thumb_lec02.jpg" title="Lecture 2: Basic Circuit Analysis Method" alt="Lecture 2: Basic Circuit Analysis Method">
+<p>Lecture 2: Basic Circuit An...</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-3/index.htm">
+<img src="../../../contents/video-lectures/lecture-3/thumb_lec03.jpg" title="Lecture 3: Superposition, Thévenin and Norton" alt="Lecture 3: Superposition, Thévenin and Norton">
+<p>Lecture 3: Superposition, T...</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-4/index.htm">
+<img src="../../../contents/video-lectures/lecture-4/thumb_lec04.jpg" title="Lecture 4: The Digital Abstraction" alt="Lecture 4: The Digital Abstraction">
+<p>Lecture 4: The Digital Abst...</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-5/index.htm">
+<img src="../../../contents/video-lectures/lecture-5/thumb_lec05.jpg" title="Lecture 5: Inside the Digital Gate" alt="Lecture 5: Inside the Digital Gate">
+<p>Lecture 5: Inside the Digit...</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-6/index.htm">
+<img src="../../../contents/video-lectures/lecture-6/thumb_lec06.jpg" title="Lecture 6: Nonlinear Analysis" alt="Lecture 6: Nonlinear Analysis">
+<p>Lecture 6: Nonlinear Analysis</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-7/index.htm">
+<img src="../../../contents/video-lectures/lecture-7/thumb_lec07.jpg" title="Lecture 7: Incremental Analysis" alt="Lecture 7: Incremental Analysis">
+<p>Lecture 7: Incremental Anal...</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-8/index.htm">
+<img src="../../../contents/video-lectures/lecture-8/thumb_lec08.jpg" title="Lecture 8: Dependent Sources and Amplifiers" alt="Lecture 8: Dependent Sources and Amplifiers">
+<p>Lecture 8: Dependent Source...</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-9-part-1/index.htm">
+<img src="../../../contents/video-lectures/lecture-9-part-1/thumb_lec09a.jpg" title="Lecture 9: Mosfet Amplifier Large Signal Analysis (part 1)" alt="Lecture 9: Mosfet Amplifier Large Signal Analysis (part 1)">
+<p>Lecture 9: Mosfet Amplifier...</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-9-part-2/index.htm">
+<img src="../../../contents/video-lectures/lecture-9-part-2/thumb_lec09b.jpg" title="Lecture 9: Mosfet Amplifier Large Signal Analysis (part 2)" alt="Lecture 9: Mosfet Amplifier Large Signal Analysis (part 2)">
+<p>Lecture 9: Mosfet Amplifier...</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-10/index.htm">
+<img src="../../../contents/video-lectures/lecture-10/thumb_lec10.jpg" title="Lecture 10: Amplifiers - Small Signal Model" alt="Lecture 10: Amplifiers - Small Signal Model">
+<p>Lecture 10: Amplifiers - Sm...</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-11/index.htm">
+<img src="../../../contents/video-lectures/lecture-11/thumb_lec11.jpg" title="Lecture 11: Small Signal Circuits" alt="Lecture 11: Small Signal Circuits">
+<p>Lecture 11: Small Signal Ci...</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-12/index.htm">
+<img src="../../../contents/video-lectures/lecture-12/thumb_lec12.jpg" title="Lecture 12: Capacitors and First-Order Systems" alt="Lecture 12: Capacitors and First-Order Systems">
+<p>Lecture 12: Capacitors and ...</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-13/index.htm">
+<img src="../../../contents/video-lectures/lecture-13/thumb_lec13.jpg" title="Lecture 13: Digital Circuit Speed" alt="Lecture 13: Digital Circuit Speed">
+<p>Lecture 13: Digital Circuit...</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-14/index.htm">
+<img src="../../../contents/video-lectures/lecture-14/thumb_lec14.jpg" title="Lecture 14: State and Memory" alt="Lecture 14: State and Memory">
+<p>Lecture 14: State and Memory</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-15-part-1/index.htm">
+<img src="../../../contents/video-lectures/lecture-15-part-1/thumb_lec15a.jpg" title="Lecture 15: Second-Order Systems (part 1)" alt="Lecture 15: Second-Order Systems (part 1)">
+<p>Lecture 15: Second-Order Sy...</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-15-part-2/index.htm">
+<img src="../../../contents/video-lectures/lecture-15-part-2/thumb_lec15b.jpg" title="Lecture 15: Second-Order Systems (part 2)" alt="Lecture 15: Second-Order Systems (part 2)">
+<p>Lecture 15: Second-Order Sy...</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-16/index.htm">
+<img src="../../../contents/video-lectures/lecture-16/thumb_lec16.jpg" title="Lecture 16: Sinusoidal Steady State" alt="Lecture 16: Sinusoidal Steady State">
+<p>Lecture 16: Sinusoidal Stea...</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-17/index.htm">
+<img src="../../../contents/video-lectures/lecture-17/thumb_lec17.jpg" title="Lecture 17: The Impedance Model" alt="Lecture 17: The Impedance Model">
+<p>Lecture 17: The Impedance M...</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-18/index.htm">
+<img src="../../../contents/video-lectures/lecture-18/thumb_lec18.jpg" title="Lecture 18: Filters" alt="Lecture 18: Filters">
+<p>Lecture 18: Filters</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-19/index.htm">
+<img src="../../../contents/video-lectures/lecture-19/thumb_lec19.jpg" title="Lecture 19: The Operational Amplifier Abstraction" alt="Lecture 19: The Operational Amplifier Abstraction">
+<p>Lecture 19: The Operational...</p></a>
+</div>
+<div class="related-media-thumbnail-nolink">
+<div class="now-playing-resource">Now Playing</div>
+<img src="../../../contents/video-lectures/lecture-20/thumb_lec20.jpg" title="Lecture 20: Operational Amplifier Circuits" alt="Lecture 20: Operational Amplifier Circuits">
+<p>Lecture 20: Operational Amp...</p>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-21/index.htm">
+<img src="../../../contents/video-lectures/lecture-21/thumb_lec21.jpg" title="Lecture 21: Op Amps Positive Feedback" alt="Lecture 21: Op Amps Positive Feedback">
+<p>Lecture 21: Op Amps Positiv...</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-22/index.htm">
+<img src="../../../contents/video-lectures/lecture-22/thumb_lec22.jpg" title="Lecture 22: Energy and Power" alt="Lecture 22: Energy and Power">
+<p>Lecture 22: Energy and Power</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-23/index.htm">
+<img src="../../../contents/video-lectures/lecture-23/thumb_lec23.jpg" title="Lecture 23: Energy, CMOS" alt="Lecture 23: Energy, CMOS">
+<p>Lecture 23: Energy, CMOS</p></a>
+</div>
+<div class="related-media-thumbnail">
+<a href="../../../contents/video-lectures/lecture-25/index.htm">
+<img src="../../../contents/video-lectures/lecture-25/thumb_lec25.jpg" title="Lecture 25: Violating the Abstraction Barrier" alt="Lecture 25: Violating the Abstraction Barrier">
+<p>Lecture 25: Violating the A...</p></a>
+</div>
+</div>
+        <div id="vid_playlist" itemprop="description" class="tabContent hide">
+<h2 class="subhead">Related Resources</h2>
+<p>Lecture Notes (<a target="_blank" title="Open in a new window." href="../../../contents/video-lectures/6002_l20.pdf">PDF</a>)<br> Demonstration: Integrator and differentiator op-amp (<a target="_blank" title="Open in a new window." href="../../../contents/video-lectures/demo_17.pdf">PDF</a>)<br> Demonstration: Integrator and differentiator RC network (<a target="_blank" title="Open in a new window." href="../../../contents/video-lectures/demo_17a.pdf">PDF</a>)</p>
+</div>
+        <div id="vid_related" itemprop="description" class="tabContent hide">
+<ul><li><a class="transcript-link" title="Open in a new window." alt="Open in a new window." style="text-decoration: none; font-size: 1.0em;" target="_blank" text-decoration: none font-size: href="../../../contents/video-lectures/lecture-20/2SwT6JnfCq8.pdf"> Download English-US transcript (PDF)</a></li></ul>
+<p><span m="17000">All right. Good morning.</span> </p>
+<p><span m="20000">Let's get going. In today's lecture we continue</span> <span m="26000">with the operational amplifier, "op amp" for short.</span> </p>
+<p><span m="34000">And what we are going to do is just build up a bunch of fun</span> <span m="40000">building blocks using the op amp.</span> </p>
+<p><span m="43000">As a quick review --</span> <span m="57000">To quickly review what we've seen about the op amp --</span> <span m="69000">We represented the op amp as a device that looked like this</span> <span m="76000">where the amplifier had an incredibly high gain.</span> </p>
+<p><span m="83000">So, if I had a small voltage difference here --</span> <span m="90000">I call this v plus and this v minus with respect to ground.</span> </p>
+<p><span m="94000">And if I had a small voltage difference then this gain here</span> <span m="99000">would multiply the difference by a large number and thereby</span> <span m="103000">giving me an output that was on the order of a million times</span> <span m="108000">greater than this difference. And because of that when I use</span> <span m="113000">the op amp in a mode like this without any negative feedback</span> <span m="117000">the output would usually crank up to the positive rail or the</span> <span m="122000">negative rail. We also saw that it had</span> <span m="127000">infinite input resistance so that the current flowing in here</span> <span m="134000">or here was zero and also had zero output resistance.</span> </p>
+<p><span m="140000">This is my ideal op amp where irrespective of what load I</span> <span m="147000">connect here the op amp would supply pretty much any current.</span> </p>
+<p><span m="155000">Now, in practical op amps that's not the case.</span> </p>
+<p><span m="158000">But suffice it to say that when used as an ideal op amp the</span> <span m="162000">output impedance, the output resistance is going</span> <span m="166000">to be zero. The op amp is a huge workhorse</span> <span m="169000">of the analog industry. You will see based both on what</span> <span m="173000">you've done on Tuesday and Wednesday but also today that</span> <span m="177000">it's very, very simple to build circuits using the op amp.</span> </p>
+<p><span m="183000">When you use the amplifier, you don't have to worry about</span> <span m="187000">things like nonlinear analysis. You don't have to worry about</span> <span m="191000">am I really meeting the criteria for saturation limits and so on?</span> </p>
+<p><span m="196000">To some extent you have to think about that with the op</span> <span m="200000">amp, too, because if the output hits the positive rail or</span> <span m="204000">negative rail it isn't going to behave like you expect it to.</span> </p>
+<p><span m="210000">But fundamentally with this primitive model,</span> <span m="213000">this idea model it becomes really simple to build circuits</span> <span m="217000">with the op amp. Therefore it has become a key</span> <span m="221000">building block for circuits. When circuit designers build</span> <span m="225000">analog circuits very often their primitive building blocks are</span> <span m="230000">really an amplifier of this sort, an op amp,</span> <span m="233000">resistors, capacitors and some of our other primitive building</span> <span m="238000">elements. If you look at the course notes</span> <span m="241000">the readings are -- There are a bunch of examples</span> <span m="245000">solved in Chapter 16. And you will see that using the</span> <span m="249000">op amp it is indeed possible to build current sources that look</span> <span m="253000">like more or less ideal current sources.</span> </p>
+<p><span m="255000">It is also possible to build voltage sources and so on.</span> </p>
+<p><span m="258000">It is an incredibly neat building block using which you</span> <span m="262000">can do all kinds of cool stuff.</span> </p>
+<p><span m="273000">In this course you will see a whole bunch of example circuits</span> <span m="278000">using the op amp. In today's lecture you will see</span> <span m="283000">things like a subtractor. You will also see integrators</span> <span m="288000">and a differentiator. And then in your lab,</span> <span m="293000">lab four, you will build a really fun mixed signal circuit</span> <span m="298000">involving both digital and analog components.</span> </p>
+<p><span m="304000">And you will build what is called a digital to an analog</span> <span m="309000">converter using the op amp. And of course I can build all</span> <span m="314000">our good-old amplifiers and circuits of that sort.</span> </p>
+<p><span m="319000">In a later lecture you will also see how we can build</span> <span m="324000">filters using an op amp. This is going to be using the</span> <span m="330000">knowledge you learn in terms of connecting resistors,</span> <span m="333000">capacitors and inductors together and doing a frequency</span> <span m="337000">domain analysis, well we can throw the op amp in</span> <span m="340000">there and build filters, too.</span> </p>
+<p><span m="342000">This is just to give you a preview of upcoming attractions.</span> </p>
+<p><span m="346000">For today I am going to focus on these circuits.</span> </p>
+<p><span m="350000">I won't be covering any new theory or any new set of</span> <span m="353000">foundations but pretty much take the simple properties that I</span> <span m="358000">have explained to you about the op amp.</span> </p>
+<p><span m="362000">And using those simple properties very quickly build up</span> <span m="367000">a bunch of circuits that you can use to analyze signals in a</span> <span m="373000">variety of ways. Let's start with the following</span> <span m="377000">circuit. With op amps I start with this</span> <span m="381000">little guy. And what I am going to do is</span> <span m="385000">use two voltage sources, v1, and this is a resistor,</span> <span m="390000">not an inductor. And value R1,</span> <span m="394000">value R2. So, I have a voltage connected</span> <span m="398000">by a divider, voltage divider to the plus</span> <span m="402000">input. And I am going to provide some</span> <span m="406000">negative feedback in the following way.</span> </p>
+<p><span m="410000">This is going to be R2, the same as this one here,</span> <span m="416000">a resistor R1. And then a voltage source v2</span> <span m="421000">that I connect out here. So notice that- Oh,</span> <span m="425000">and I take the output vOUT out here.</span> </p>
+<p><span m="429000">And that vOUT of course is with respect to ground,</span> <span m="433000">and R2, v1 and v2 are also connected to ground.</span> </p>
+<p><span m="438000">What I am going to do is analyze the circuit it two</span> <span m="442000">different ways, and as I analyze it describe</span> <span m="446000">some other interesting properties to you.</span> </p>
+<p><span m="452000">In the last lecture the technique I used to analyze op</span> <span m="455000">amps was one in which I replaced the op amp with its ideal model</span> <span m="459000">involving a dependent source and so on with a large gain A and</span> <span m="463000">showed that. I wrote the expression and then</span> <span m="466000">I let A increase to infinity to the limits and got an expression</span> <span m="470000">that was independent of A. And then in recitation</span> <span m="473000">yesterday you would have covered another technique which makes it</span> <span m="477000">much simpler to analyze op amps. Let me very quickly review that</span> <span m="484000">method. We fondly call that technique,</span> <span m="487000">there is no formal name for it, but we fondly call that v plus</span> <span m="493000">more or less equal to v minus method.</span> </p>
+<p><span m="497000">This is also variously called the virtual ground method and so</span> <span m="503000">on, but we shall call it the v plus more or less equal to v</span> <span m="509000">minus method. The insight here is that</span> <span m="513000">whenever I use the op amp in a way in which I am giving it</span> <span m="517000">negative feedback, so I am feeding some portion of</span> <span m="521000">the output to its negative input.</span> </p>
+<p><span m="523000">I am giving it negative feedback.</span> </p>
+<p><span m="525000">That's one property. Second property is that my</span> <span m="529000">inputs, v1 and v2, and my resistance values are</span> <span m="532000">chosen such that the output is not in saturation.</span> </p>
+<p><span m="535000">So, the op amp is not at the plus VS rail or minus VS rail.</span> </p>
+<p><span m="541000">Rather it's somewhere in the middle in its active region.</span> </p>
+<p><span m="545000">When that happens we claim that the v minus and v plus for the</span> <span m="550000">op amp are more or less equal. And to give you some intuition</span> <span m="556000">as to why that is so, let's say the output is 6 volts</span> <span m="560000">and my supply is plus/minus 12. This is 6 volts and the</span> <span m="564000">amplifier is a gain of a million, ten to the six.</span> </p>
+<p><span m="570000">To sustain 6 volts at the output all I need is a</span> <span m="573000">difference of 6 microvolts here. Six divided by ten to the six</span> <span m="578000">is the difference between v plus and v minus.</span> </p>
+<p><span m="582000">It's very, very, very small.</span> </p>
+<p><span m="584000">It's so small as to make v plus more or less equal to v minus.</span> </p>
+<p><span m="589000">All it takes is a very small differential voltage here to</span> <span m="594000">give you 6 volts at the output. The key thing to observe is</span> <span m="599000">under negative feedback, when the op amp is not in</span> <span m="603000">saturation the property that v plus equals v minus holds.</span> </p>
+<p><span m="607000">And the way it works is that it's not that it's a magical</span> <span m="611000">property. It is simply that when I apply</span> <span m="614000">negative feedback the negative feedback is such that it will</span> <span m="618000">force this v minus node here to be at more or less the same</span> <span m="623000">voltage as v plus. Remember the when in doubt</span> <span m="626000">simply go back and think about the anti lock brakes example we</span> <span m="630000">did last time. For example if v plus increases</span> <span m="635000">the output will increase and so will the voltage here and tend</span> <span m="639000">to make these two equal. What we can do,</span> <span m="642000">being rather tricky here, what we'll do is say look,</span> <span m="646000">if we know for a fact that under negative feedback the op</span> <span m="650000">amp is going to engineer these two node voltages to be more or</span> <span m="654000">less equal then why don't I just use that fact to begin with and</span> <span m="658000">analyze my circuit assuming that it's true.</span> </p>
+<p><span m="663000">This is just a bit of inverted logic here that says look,</span> <span m="666000">the circuit is going to make that happen.</span> </p>
+<p><span m="668000">If the circuit is going to make that happen to analyze the</span> <span m="671000">circuit in its steady state, why don't I just go ahead and</span> <span m="674000">assume that to begin with? This again goes back to us</span> <span m="677000">wanting to be engineers here and do whatever is simply and find</span> <span m="681000">the simplest possible way of getting some place.</span> </p>
+<p><span m="683000">I want to use that method, the v plus equals v minus</span> <span m="686000">method. Let me just first write down</span> <span m="690000">some values that I know about. I know that v plus is simply a</span> <span m="696000">voltage divider relation here. That's v1 times R2 divided by</span> <span m="702000">R1 plus R2. And by the v plus equals v</span> <span m="705000">minus method I know that this is going to be equal to v minus.</span> </p>
+<p><span m="711000">And this is going to be true because I am giving you negative</span> <span m="717000">feedback here. And we are going to engineer</span> <span m="722000">the values of R1, R2, v1 and v2 such that the op</span> <span m="726000">amp is not in saturation. So, we know that.</span> </p>
+<p><span m="729000">The next thing that we know, let's say this is a current i.</span> </p>
+<p><span m="734000">This current i flows here. Know that there is no current</span> <span m="739000">going in here. Op amp has an infinite input</span> <span m="743000">resistance so there is nothing going in there.</span> </p>
+<p><span m="746000">There is no current going in there.</span> </p>
+<p><span m="751000">If there is no current going in here, what must happen to i?</span> </p>
+<p><span m="755000">Remember, from the foundations of the universe Maxwell's</span> <span m="759000">equations and therefore KVL and KCL hold.</span> </p>
+<p><span m="762000">KVL and KCL simply come straight from nature.</span> </p>
+<p><span m="765000">You and I cannot mess with that.</span> </p>
+<p><span m="767000">Bad things happen to you if you do.</span> </p>
+<p><span m="770000">So, nature, Maxwell's equations, KVL,</span> <span m="772000">KCL. It's simply nature.</span> </p>
+<p><span m="774000">So, KCL applies here. Current comes in here.</span> </p>
+<p><span m="779000">Nothing goes there. Don't argue.</span> </p>
+<p><span m="781000">The current has to go here, period.</span> </p>
+<p><span m="784000">No if, ands or buts. There is i coming in here,</span> <span m="788000">nothing goes there, so that current must flow here.</span> </p>
+<p><span m="792000">It has no choice. It's from basic nature.</span> </p>
+<p><span m="796000">I can write down what my current i is going to look like.</span> </p>
+<p><span m="801000">What is i going to look like? Well, I know v2,</span> <span m="804000">I know v minus. v minus is the same as v plus.</span> </p>
+<p><span m="810000">And v plus is the i expression given here.</span> </p>
+<p><span m="813000">So, I can write i as v2 minus v minus divided by R1.</span> </p>
+<p><span m="818000">Let me keep track of those two and then go ahead and compute</span> <span m="824000">vOUT. So, my goal in life is compute</span> <span m="827000">vOUT as a function of the two input voltages v1 and v2.</span> </p>
+<p><span m="832000">And just for kicks I have gone ahead and computed some of the</span> <span m="838000">intermediate node voltages and currents.</span> </p>
+<p><span m="843000">How do I write vOUT? What is vOUT?</span> </p>
+<p><span m="848000">vOUT is simply v minus from KVL.</span> </p>
+<p><span m="852000">vOUT is simply v minus minus the drop across this resistor.</span> </p>
+<p><span m="861000">So, the drop across that resistor is simply iR2.</span> </p>
+<p><span m="870000">From good-old KVL from the first lecture,</span> <span m="873000">a voltage minus the drop across the resistor is equal to vOUT.</span> </p>
+<p><span m="877000">Therefore it's simply v minus minus iR2.</span> </p>
+<p><span m="880000">One thing to be very cautious about, I will tell you right</span> <span m="885000">now, is that the output here relates to the inversion of the</span> <span m="889000">voltage across this resistor R2. Be very, very careful in that</span> <span m="894000">if I have a voltage across this resistor here that impacts vOUT</span> <span m="899000">with a minus sign attached to it.</span> </p>
+<p><span m="903000">Notice that iR2 is the voltage across R2 and vOUT relates to</span> <span m="908000">the negative of that. Be very cautious.</span> </p>
+<p><span m="912000">That's one of the commonest silly mistakes I have seen</span> <span m="918000">people make in solving problems like this.</span> </p>
+<p><span m="922000">Let's go ahead. I know v minus and I don't know</span> <span m="927000">i. Let me substitute for i for</span> <span m="929000">now, and that is v2 minus v minus divided by R1 times R2.</span> </p>
+<p><span m="937000">Let me go ahead and collect all the v minuses.</span> </p>
+<p><span m="943000">v minus, I get a one here, minus minus becomes a plus,</span> <span m="951000">and so I get R2 divided by R1 out there.</span> </p>
+<p><span m="956000">And then I minus v2 R2 divided by R1.</span> </p>
+<p><span m="963000">That is vOUT. Now let me go ahead and</span> <span m="968000">substitute for v minus. And that is simply v1 R2</span> <span m="975000">divided by R1 plus R2. That is v minus.</span> </p>
+<p><span m="980000">And this character here is simplified to be R1,</span> <span m="987000">R1 plus R2 minus v2 R2 divided by R1.</span> </p>
+<p><span m="994000">What do we get? I cancel these two suckers out</span> <span m="999000">and what I end up with is v1 R2 divided by R1 minus v2 R2</span> <span m="1006000">divided by R1, which is simply R2/R1(v1-v2).</span> </p>
+<p><span m="1011000">What is interesting here is that what I have ended up</span> <span m="1018000">building is a very primitive subtractor.</span> </p>
+<p><span m="1024000">So, my output relates to v1 minus v2 multiplied by the</span> <span m="1028000">constant factor given by R2 divided by R1.</span> </p>
+<p><span m="1039000">Again, as I pointed out to you at the beginning of this</span> <span m="1042000">lecture, no knew foundations today, no new theories,</span> <span m="1045000">no new disciplines, no new laws.</span> </p>
+<p><span m="1046000">We are just going to take what you have learned --</span> <span m="1050000">Three simple things, infinite gain,</span> <span m="1052000">infinite input resistance, zero output resistance,</span> <span m="1056000">plus this new thing v plus equals v minus.</span> </p>
+<p><span m="1059000">And just being armed with those four principles we are just</span> <span m="1064000">going to charge ahead and analyze a bunch of circuits.</span> </p>
+<p><span m="1068000">It is purely intellectual and pure applications today.</span> </p>
+<p><span m="1072000">This is one way of doing it. There is another way of solving</span> <span m="1076000">it. We can solve the circuit.</span> </p>
+<p><span m="1080000">Remember, whenever you see a linear circuit and you see two</span> <span m="1084000">sources or three sources, just think superposition,</span> <span m="1089000">right? You see a linear circuit and</span> <span m="1092000">two or three sources, think superposition.</span> </p>
+<p><span m="1095000">We should be able to apply superposition to this.</span> </p>
+<p><span m="1099000">The op amp is simply another building block.</span> </p>
+<p><span m="1103000">It's a linear circuit. So, let's see if we get the</span> <span m="1107000">same answer. Let's try to solve the circuit</span> <span m="1113000">using superposition and see if we get the same answer.</span> </p>
+<p><span m="1118000">To do superposition what I am going to do is build two</span> <span m="1123000">subcircuits. One subcircuit in which v1 is</span> <span m="1128000">zero, and that subcircuit looks like this.</span> </p>
+<p><span m="1132000">If I set v1 to be zero then I get R1 parallel R2 going to</span> <span m="1138000">ground. So, if v1 is set to zero then</span> <span m="1143000">R1 goes to ground. And I get R1 parallel R2 here.</span> </p>
+<p><span m="1149000">And of course I have v2 as before.</span> </p>
+<p><span m="1153000">And this was R1, this was R2,</span> <span m="1156000">and let me call that vOUT1. Oh, I'm sorry.</span> </p>
+<p><span m="1161000">Let me call it vOUT2 corresponding to that component</span> <span m="1168000">of the output that relates to v2 acting alone.</span> </p>
+<p><span m="1175000">Remember superposition? Build two subcircuits,</span> <span m="1178000">one that depends on v2 and another one that depends on v1.</span> </p>
+<p><span m="1183000">Let's do the second one, too.</span> </p>
+<p><span m="1186000">Second one is v2 going to zero. Here is my little op amp.</span> </p>
+<p><span m="1191000">And what I will do is simply flip the op amp just to see if</span> <span m="1196000">you can identify some interesting patterns.</span> </p>
+<p><span m="1201000">Just flip the op amp around. And this is v1 as before.</span> </p>
+<p><span m="1207000">And recall that v1 was going to the plus node through a resistor</span> <span m="1215000">R1. And then I had a R2 to ground.</span> </p>
+<p><span m="1219000">And then let me short v2 to ground.</span> </p>
+<p><span m="1223000">And when I short v2 to ground what happens?</span> </p>
+<p><span m="1230000">When I short v2 to ground what happens is that the tail of R1</span> <span m="1235000">here goes to ground. And so it is as if the output</span> <span m="1240000">is connected to the node v minus through a resistor,</span> <span m="1244000">so it as if the output v R2 is connected to the minus input</span> <span m="1250000">through a resistor. We will draw it like this.</span> </p>
+<p><span m="1254000">And the minus input goes through a resistor R1,</span> <span m="1258000">to ground. If you thought that patterns</span> <span m="1262000">were important in the earlier part of the course doing voltage</span> <span m="1267000">divider patterns and current divider patterns and amplifier</span> <span m="1271000">pattern, the source follower pattern, op amps is all about</span> <span m="1274000">patterns. You should remember two or</span> <span m="1277000">three simple patterns and be able to write down the</span> <span m="1280000">expression for those just by observation.</span> </p>
+<p><span m="1283000">So, this is one common pattern that you have seen before in the</span> <span m="1287000">very first lecture. And I just wrote it down in</span> <span m="1292000">that manner. Let me go ahead and solve this</span> <span m="1295000">circuit. It turns out that this is also</span> <span m="1297000">a pattern. I will analyze it today but in</span> <span m="1300000">the future v2 going to this node through R1 and then R2 to the</span> <span m="1305000">output. You have probably also seen</span> <span m="1307000">this in your recitation. This one is called an inverting</span> <span m="1312000">connection and this one here is called a non-inverting</span> <span m="1315000">connection. Let's go ahead and do vOUT2.</span> </p>
+<p><span m="1320000">vOUT2 is simply given by, notice that since this is</span> <span m="1325000">ground, no current flowing here, this voltage is zero.</span> </p>
+<p><span m="1330000">If this voltage is zero, this voltage is zero by the v</span> <span m="1335000">plus equals v minus method. If this is zero,</span> <span m="1339000">the current that goes through here is v2 divided by R1.</span> </p>
+<p><span m="1345000">And that same current must flow through the resistance R2 as</span> <span m="1351000">well. If the current v2 divided by R1</span> <span m="1355000">flows through this resistor, the drop across this resistor</span> <span m="1360000">is simply given by, let me hide this for a second,</span> <span m="1364000">is simply given by v2. So, v2 divided by R1 is the</span> <span m="1368000">current here. This is zero.</span> </p>
+<p><span m="1370000">So, the drop across this resistor is v2 R1 multiplied by</span> <span m="1374000">R2. That's a drop across this</span> <span m="1377000">resistor. This voltage is simply zero</span> <span m="1381000">minus a drop across the resistor.</span> </p>
+<p><span m="1383000">So, it's zero minus the drop across the resistor and that</span> <span m="1388000">gives me v2. Again, remember this minus sign</span> <span m="1391000">comes in when I want to convert this to get the output voltage</span> <span m="1396000">from that. This is a very common pattern.</span> </p>
+<p><span m="1400000">It's called an inverting connection where the output is</span> <span m="1404000">some factor of the input voltage and the factor is given by R2</span> <span m="1409000">divided by R1. Let's go ahead and analyze this</span> <span m="1415000">guy now. What is vOUT1 equal to?</span> </p>
+<p><span m="1419000">I should have called this vOUT1 because it relates to v1.</span> </p>
+<p><span m="1427000">vOUT1. There is a v plus here.</span> </p>
+<p><span m="1430000">From our first lecture I know that vOUT1 relates to v plus in</span> <span m="1438000">the following way. I know that it is v plus times</span> <span m="1444000">the sum of the resistances divided by R1.</span> </p>
+<p><span m="1448000">Based on the first lecture this is true.</span> </p>
+<p><span m="1452000">vOUT1 is simply an amplified version of v plus where the</span> <span m="1457000">amplification factor is given by R1 plus R2 divided by R1.</span> </p>
+<p><span m="1463000">And I know v plus is simply a voltage divider action here.</span> </p>
+<p><span m="1470000">And I can take a simple voltage divider action here because the</span> <span m="1475000">current going in is zero. Looking in here this is as if</span> <span m="1480000">it's an infinite resistance, so it is as if the element</span> <span m="1485000">simply does not exist. The voltage here is simply v1</span> <span m="1490000">divided by R1 plus R2 multiplied by R2, our voltage divider</span> <span m="1496000">pattern. So, I get v1 times R2 divided</span> <span m="1499000">by R1 plus R2 times R1 plus R2 divided by R1.</span> </p>
+<p><span m="1505000">These two cancel out which gives me vOUT1 is simply v1 R2</span> <span m="1514000">divided by R1. To get vOUT I add up the two.</span> </p>
+<p><span m="1521000">vOUT is vOUT1 plus vOUT2, which is my goal.</span> </p>
+<p><span m="1528000">And that is simply v1 R2 by R1 minus v2 R2 by R1.</span> </p>
+<p><span m="1537000">Thankfully what we have here is the same as here.</span> </p>
+<p><span m="1540000">Again, there is really nothing new that I am going to cover</span> <span m="1545000">today. Simply apply,</span> <span m="1547000">apply, apply, four simple principles.</span> </p>
+<p><span m="1550000">Here I have used superposition and I am showing you a circuit.</span> </p>
+<p><span m="1555000">So, it turns out with op amps you should really remember that</span> <span m="1560000">pattern. You will see it again and again</span> <span m="1564000">and again. And each time you see it,</span> <span m="1567000">it will save you six minutes of having to solve the circuit</span> <span m="1571000">without knowing the pattern. So, remember this pattern.</span> </p>
+<p><span m="1576000">You can pick up another three or four minutes by remembering</span> <span m="1580000">this pattern here. This pattern is simply v2 R2</span> <span m="1584000">divided by R1. Imprint those two patterns into</span> <span m="1588000">your brains. OK, so those are a couple of</span> <span m="1592000">simple circuits using the op amp.</span> </p>
+<p><span m="1595000">We built a subtractor. The next step,</span> <span m="1598000">let's go ahead and try to build an integrator.</span> </p>
+<p><span m="1602000">Using this little building block we can go ahead and try to</span> <span m="1607000">build a bunch of circuits. We can build filters,</span> <span m="1611000">A to D converters and so on. Let's build an integrator.</span> </p>
+<p><span m="1615000">Abstractly I need to build this box.</span> </p>
+<p><span m="1620000">Which when fed a vI, I want that box to integrate</span> <span m="1624000">and give me a vO which is vI integrated over time.</span> </p>
+<p><span m="1628000">That is what I want to build. How do I go about building it?</span> </p>
+<p><span m="1633000">What I would like to do next is give you some flavor for design.</span> </p>
+<p><span m="1639000">How do you go about designing things with an op amp?</span> </p>
+<p><span m="1643000">Knowing that you do not know the pattern for this yet,</span> <span m="1648000">how do you go about designing things?</span> </p>
+<p><span m="1653000">Well, let's start with the following intuition.</span> </p>
+<p><span m="1656000">The intuition that I begin with is that if I have a current i,</span> <span m="1661000">and remember that capacitors and inductors related to,</span> <span m="1666000">you saw differentiation and integration happening when we</span> <span m="1671000">dealt with capacitors and inductors.</span> </p>
+<p><span m="1673000">So, I think we have to invoke a capacitor here or an inductor.</span> </p>
+<p><span m="1680000">In this example I invoke a capacitor.</span> </p>
+<p><span m="1684000">Notice that if I stick a capacitor in here this current</span> <span m="1690000">is i, capacitance C, then my voltage vO is given by</span> <span m="1696000">what? Voltage is simply the integral</span> <span m="1700000">of the current flowing through it or vice versa i is C dv/dt.</span> </p>
+<p><span m="1708000">If i is C dv/dt then v is simply one by C integral.</span> </p>
+<p><span m="1716000">If I can pass the current through a capacitor then the</span> <span m="1724000">voltage across the capacitor must be a current.</span> </p>
+<p><span m="1732000">Notice then that vO is related to i dt.</span> </p>
+<p><span m="1740000">I have some multiplying constants and so on,</span> <span m="1742000">but fundamentally what I have found is if I can stick a</span> <span m="1746000">current through a capacitor then the voltage across the capacitor</span> <span m="1751000">relates to the integral of the current.</span> </p>
+<p><span m="1753000">OK, that's interesting. So, I have an integral in</span> <span m="1757000">there. But I have a current.</span> </p>
+<p><span m="1758000">Notice my goal was to integrate a voltage.</span> </p>
+<p><span m="1761000">What I figured out how to do was if I can turn that voltage</span> <span m="1765000">into a current -- If I can turn that voltage into</span> <span m="1771000">a proportional current and then pump that current through a</span> <span m="1778000">capacitor I will get the integration that I want.</span> </p>
+<p><span m="1784000">How do I convert my vI to i? How do I do that?</span> </p>
+<p><span m="1790000">Well, let's take a stab at it. Here is my vI.</span> </p>
+<p><span m="1795000">Let's take the resistor R. And remember I need to stick</span> <span m="1802000">the capacitor here. I have some current I here.</span> </p>
+<p><span m="1806000">I don't know what the current is yet.</span> </p>
+<p><span m="1809000">And I stick a voltage here. And what I am trying to do is</span> <span m="1813000">trying to see if I stick a voltage and a resistance in</span> <span m="1818000">series then there is some relationship between the current</span> <span m="1823000">and this voltage. Recall that I am trying to make</span> <span m="1827000">this current be directly proportional to the voltage vI.</span> </p>
+<p><span m="1833000">But it turns out that i here is not equal to vI divided by R.</span> </p>
+<p><span m="1838000">If i was vI divided by R somehow, I am done.</span> </p>
+<p><span m="1842000">If i was vI divided by R, by some magic,</span> <span m="1846000">then I have converted my voltage to a current,</span> <span m="1850000">I feed that current through my capacitor and vO is my integral</span> <span m="1856000">that I am looking for. But unfortunately i is not</span> <span m="1861000">equal to vI divided by R. You know that.</span> </p>
+<p><span m="1864000">i relates to vI minus the capacitor voltage divided by R.</span> </p>
+<p><span m="1869000">So, i is not simply vI divided by R for all time but i is</span> <span m="1874000">really vI minus the capacitor voltage divided by R.</span> </p>
+<p><span m="1879000">And, in fact, when we did RC circuits you</span> <span m="1882000">wrote this equation to represent the dynamics of the circuit,</span> <span m="1888000">RC dvO by dt plus vO equals vI. We wrote down this circuit for</span> <span m="1894000">a first order RC, wrote this equation for a first</span> <span m="1899000">order RC circuit. Now, it does turn out,</span> <span m="1903000">to wrap up on this wild goose chase that we went on,</span> <span m="1908000">it does turn out that if this term here is much bigger than</span> <span m="1913000">that term. If this term is much bigger</span> <span m="1917000">than that term then I can ignore that term and write down RC dvO</span> <span m="1923000">by dt more or less equal to vI. If that were true,</span> <span m="1930000">this would be true, and then vO would be more or</span> <span m="1935000">less equal to one by RC integral of vI dt.</span> </p>
+<p><span m="1940000">Again, if this were true. If this were true for all time</span> <span m="1947000">then vO would be integral of vI dt.</span> </p>
+<p><span m="1952000">Again, remember this is all a wild goose chase.</span> </p>
+<p><span m="1955000">Just write down WGC there just so you don't get confused.</span> </p>
+<p><span m="1959000">I am on this wild goose hunt here trying to find a way to get</span> <span m="1963000">a current from a voltage which I can then feed into a capacitor.</span> </p>
+<p><span m="1968000">This was one thing I knew, but this was not what I want.</span> </p>
+<p><span m="1972000">But it does turn out to be what I want when vO is very,</span> <span m="1976000">very small. So, I see some glimmer of hope</span> <span m="1978000">but not quite. It turns that in R and C,</span> <span m="1983000">if I make R and C very, very big, if I have a huge time</span> <span m="1988000">constant, with a huge time constant the voltage vO looks</span> <span m="1992000">like an integral of vI, but only when I have a very</span> <span m="1997000">huge time constant. So, I give up on that track.</span> </p>
+<p><span m="2001000">Instead I try something else.</span> </p>
+<p><span m="2014000">Another try. I would like you to notice if</span> <span m="2018000">you take your op amp, here is your op amp,</span> <span m="2022000">if you take this op amp and you stick the positive terminal to</span> <span m="2028000">ground, under reasonable feedback, under reasonable</span> <span m="2033000">negative feedback what do you notice about the current?</span> </p>
+<p><span m="2040000">If I had a current i flowing here what did you notice?</span> </p>
+<p><span m="2044000">Look at this picture. I had a current i flowing in</span> <span m="2049000">here, v2 divided by R1. And because this resistance was</span> <span m="2054000">infinite all the current went through the upper terminal.</span> </p>
+<p><span m="2059000">So, this is zero volts. And by the v plus equals v</span> <span m="2064000">minus method this is also more or less equal to zero.</span> </p>
+<p><span m="2070000">And I have a current i flowing in here, nothing goes here,</span> <span m="2075000">so then the i must flow up there.</span> </p>
+<p><span m="2077000">So, all I am doing here is causing a reflection of the</span> <span m="2082000">current from this grounded node. My current is being reflected</span> <span m="2088000">into, or deflected if you feel like it, the upper edge here</span> <span m="2093000">after coming in through this edge.</span> </p>
+<p><span m="2096000">That is interesting. We are just one step away from</span> <span m="2100000">the key insight.</span> </p>
+<p><span m="2110000">I have an i coming in here, an i going out there.</span> </p>
+<p><span m="2114000">Notice that, as I said before,</span> <span m="2116000">this is zero volts. How do I get my voltage vI to</span> <span m="2121000">look like a current, to become proportional to a</span> <span m="2125000">current? It is simple now.</span> </p>
+<p><span m="2127000">All I do is put a voltage vI and put a resistor R out there.</span> </p>
+<p><span m="2134000">If I do that, and since this is zero,</span> <span m="2136000">the current i is given by vI divided by R.</span> </p>
+<p><span m="2139000">I have gotten to where I want to be.</span> </p>
+<p><span m="2142000">So, by using an op amp and using the fact that the minus</span> <span m="2146000">node here, v minus is at the same potential as v plus when</span> <span m="2151000">there is negative feedback then I can stick a resistor here.</span> </p>
+<p><span m="2155000">And because this is zero the current here is simply vI</span> <span m="2159000">divided by R. I have gotten to the first</span> <span m="2164000">place. Now all I need to do is simply</span> <span m="2167000">pump this current through a capacitor and I get the integral</span> <span m="2173000">of the, the voltage becomes an integral of the current.</span> </p>
+<p><span m="2178000">That is easy. I stick my capacitor here and I</span> <span m="2182000">get my answer out there as vO. Notice that when I do this,</span> <span m="2187000">let's say this is plus/minus VC.</span> </p>
+<p><span m="2192000">This is zero. So, vO is minus VC.</span> </p>
+<p><span m="2194000">Again, I will keep emphasizing it maybe 17 times throughout</span> <span m="2198000">this course that if this is zero then the output here is related</span> <span m="2203000">to the negative of this voltage, common, common,</span> <span m="2207000">common mistake. I will be very upset after</span> <span m="2210000">doing all this if I see this mistake happen in any of the</span> <span m="2214000">future homeworks or finals or whatever.</span> </p>
+<p><span m="2217000">This should not happen. So, vO is a minus sign here VC.</span> </p>
+<p><span m="2225000">And I know that if I have a current i through a capacitor</span> <span m="2235000">what is VC? If I have current i through a</span> <span m="2242000">capacitor than this is simply t i dt.</span> </p>
+<p><span m="2249000">And i by design is -- So, I have my integrator.</span> </p>
+<p><span m="2256000">It is a two-step process. I stuck a resistor here,</span> <span m="2260000">so the current became equal to vI divided by R.</span> </p>
+<p><span m="2264000">Then I took that current and pumped it through a capacitor</span> <span m="2269000">through this terminal here, and the voltage across the</span> <span m="2274000">capacitor for a current i is given by this expression.</span> </p>
+<p><span m="2280000">This is Capacitors 101. OK Capacitors 101 says that the</span> <span m="2284000">voltage across the capacitor is simply one by C integral i dt.</span> </p>
+<p><span m="2289000">Another way of looking at it is the voltage across the capacitor</span> <span m="2294000">is C, I'm sorry, the current through a capacitor</span> <span m="2297000">is C dv/dt. This is simply the integral</span> <span m="2300000">form of that equation. And I am done with my</span> <span m="2304000">integrator. So, this is another very common</span> <span m="2307000">building block. Remember this.</span> </p>
+<p><span m="2311000">Most of the circuits we will be seeing with op amps simply</span> <span m="2316000">involve something here and some there.</span> </p>
+<p><span m="2319000">And the output in this inverting connection is the</span> <span m="2323000">output times, if it is a resistance it is</span> <span m="2327000">simply R2 divided by R1, if it's a capacitor I get the</span> <span m="2331000">integral form looking like this. Yes.</span> </p>
+<p><span m="2341000">Can someone tell me where the negative sign went?</span> </p>
+<p><span m="2345000">The blackboard ate it up. Good catch.</span> </p>
+<p><span m="2367000">After all that lecture about watching the negative sign.</span> </p>
+<p><span m="2370000">After this little bit of faux pas here, now I will be doubly</span> <span m="2374000">mad if you guys make that mistake.</span> </p>
+<p><span m="2376000">All right. Now that we have built the</span> <span m="2378000">integrator, I could give this out as a homework problem.</span> </p>
+<p><span m="2382000">And you should be able to design a differentiator based on</span> <span m="2385000">what you've learned here. You now have the tools to go</span> <span m="2389000">and do some design like this, but we don't have any more</span> <span m="2392000">homeworks left so I guess I will go ahead and solve this for you</span> <span m="2396000">right here and do the design for you.</span> </p>
+<p><span m="2400000">The building block that we need looks like this,</span> <span m="2406000">d/dt here. Let me take a vI and stick a vI</span> <span m="2411000">in there. That's what I want to build.</span> </p>
+<p><span m="2416000">And what I built here is that different integrator box.</span> </p>
+<p><span m="2423000">And what I would like to do now is build a differentiator box.</span> </p>
+<p><span m="2433000">How do I go about doing it? I will go really slow here so</span> <span m="2437000">you will have some time to think about it for yourselves and see</span> <span m="2442000">if you folks are crack op amp circuit designers already,</span> <span m="2446000">if you have the right instincts here.</span> </p>
+<p><span m="2449000">Again, when you see differentiation integration</span> <span m="2453000">think capacitors or inductors, it doesn't matter.</span> </p>
+<p><span m="2457000">In fact, as a homework exercise, you may want to go</span> <span m="2460000">back and see how you can get a similar effect using inductors.</span> </p>
+<p><span m="2467000">Can you play with inductors and get a similar effect?</span> </p>
+<p><span m="2471000">So, inductors are devices that are a dual of the capacitor.</span> </p>
+<p><span m="2475000">Whatever we will do with capacitors, there must be a</span> <span m="2480000">corresponding way with inductors.</span> </p>
+<p><span m="2482000">You can try it out in your spare time.</span> </p>
+<p><span m="2485000">Let's go back to this one here. I will stick with the capacitor</span> <span m="2493000">way of looking at things. I need a differentiation now.</span> </p>
+<p><span m="2500000">Remember this. If I have a vI and I stick this</span> <span m="2505000">across a capacitor, I have a current C and some</span> <span m="2511000">voltage vc across the capacitor, what does i relate to?</span> </p>
+<p><span m="2520000">i is simply C dv/dt and vc in this case is simply C dvI/dt.</span> </p>
+<p><span m="2529000">If I can stick a voltage across a capacitor, if my input voltage</span> <span m="2538000">is stuck across a capacitor then the resulting current relates to</span> <span m="2548000">dvI/dt. Here we have the opposite</span> <span m="2553000">problem. By doing this simple trick,</span> <span m="2556000">I can obtain a current that has the right form.</span> </p>
+<p><span m="2561000">Now what I need to do is somehow convert that current</span> <span m="2566000">into a voltage because the abstraction that I need is a</span> <span m="2571000">voltage to voltage. The next step,</span> <span m="2574000">what I need to do is somehow convert a current to a voltage.</span> </p>
+<p><span m="2579000">How do I go about doing that? Again, remember for the op amp,</span> <span m="2587000">if I have a current i flowing here then by the reflection</span> <span m="2594000">property i gets pushed up into this edge, provided that the</span> <span m="2602000">whole circuit is working with descent negative feedback.</span> </p>
+<p><span m="2610000">Given this trick what I can do is say look, suppose I did this.</span> </p>
+<p><span m="2615000">Remember, my goal here is how do I convert a current to a</span> <span m="2620000">voltage? I have a current i coming in</span> <span m="2623000">here, and I can turn that into a voltage because I know the</span> <span m="2628000">current must come out here, I know this current must come</span> <span m="2634000">out there. All I have to do is stick a</span> <span m="2637000">resistor in there. If I stick a resistor in there</span> <span m="2643000">what is vO equal to? vO is simply iR,</span> <span m="2648000">right? That's right.</span> </p>
+<p><span m="2651000">vO, I get i here, so i pumps through here.</span> </p>
+<p><span m="2656000">Remember, what comes in here must get reflected up because</span> <span m="2664000">the current going in here is zero.</span> </p>
+<p><span m="2670000">All the i must come out here. So, that i must pump through</span> <span m="2675000">this resistor. The drop across this resistor</span> <span m="2680000">is iR. That's the voltage drop across</span> <span m="2683000">that resistor. And since this at a virtual</span> <span m="2687000">ground the output here is simply zero minus this drop which is</span> <span m="2693000">minus iR. So, I have gotten to where I</span> <span m="2697000">want to be. I have my current i being</span> <span m="2702000">converted to a voltage. I have taken my current,</span> <span m="2706000">and I have been able to convert that into a voltage by sticking</span> <span m="2711000">a resistor in here. As a final step,</span> <span m="2714000">I simply need to produce the current.</span> </p>
+<p><span m="2718000">And that is pretty easy to do. Abstractly what I need to do,</span> <span m="2723000">again, this is design here so we will talk about abstract</span> <span m="2728000">stuff. If I had a voltage vI,</span> <span m="2732000">I need to produce a current which relates to C dvI/dt.</span> </p>
+<p><span m="2739000">And I know I can do that by simply doing this.</span> </p>
+<p><span m="2744000">By doing this I know my i is C dvI, correct?</span> </p>
+<p><span m="2750000">If I can get this effect, I put this in quotes because</span> <span m="2756000">that's my pattern. I am looking for a pattern,</span> <span m="2763000">where a voltage vI is directly applied across a capacitor.</span> </p>
+<p><span m="2770000">And when that happens the current relates to C dv/dt.</span> </p>
+<p><span m="2777000">Let's go back to our op amp pattern here,</span> <span m="2782000">op amp circuit. So far I have achieved --</span> <span m="2789000">I just repeated this out there. And so somehow I need to take</span> <span m="2793000">this pattern here and learn from that pattern and apply the</span> <span m="2798000">pattern here. So, what I can do is,</span> <span m="2800000">this is a ground node, correct?</span> </p>
+<p><span m="2803000">Now, the poor little capacitor, what does it care,</span> <span m="2807000">whether it's a ground node or a virtual ground node?</span> </p>
+<p><span m="2811000">As long as it's a zero volt node down here what does it</span> <span m="2815000">care? What I am going to do is stick</span> <span m="2819000">this point, not here but into a virtual ground node.</span> </p>
+<p><span m="2824000">I am going to grab that point, take it here and stick it here.</span> </p>
+<p><span m="2830000">The poor little capacitor doesn't know the difference.</span> </p>
+<p><span m="2834000">I have really suckered the little beast.</span> </p>
+<p><span m="2838000">This is vI. Remember this.</span> </p>
+<p><span m="2840000">My i through the capacitor is proportional to C dv/dt.</span> </p>
+<p><span m="2845000">Instead what I have done is taken this guy and stuck it here</span> <span m="2851000">to get something like this. Just remember these four or</span> <span m="2856000">five little tricks. And you apply them in op amp</span> <span m="2859000">circuits again and again and again and again.</span> </p>
+<p><span m="2862000">So, this is vI, this is my virtual ground.</span> </p>
+<p><span m="2865000">As far as this poor little capacitor is concerned,</span> <span m="2868000">it is chugging along merrily thinking that it is connected to</span> <span m="2872000">ground. Little does it know it is only</span> <span m="2875000">a virtual ground, all right?</span> </p>
+<p><span m="2878000">But the current i here is simply C dvI/dt.</span> </p>
+<p><span m="2883000">And that current, the C dvI/dt,</span> <span m="2888000">that current flows through here and gives me vO as iR.</span> </p>
+<p><span m="2895000">So, vO is simply minus R. Let me substitute for i there,</span> <span m="2903000">C dvI/dt. OK, so notice then that my vO</span> <span m="2909000">is now proportional to dvI/dt. So, vO is some RC time constant</span> <span m="2917000">times dvI/dt. Therefore, I have my</span> <span m="2921000">differentiator circuit. Remember this as a closing</span> <span m="2925000">thought. Remember this v plus more or</span> <span m="2929000">less equal to v minus trick. And to the extent possible</span> <span m="2934000">simply use that trick to analyze op amp circuits under feedback</span> <span m="2939000">and not in saturation. Just remember these two.</span> </p>
+<p><span m="2944000">Very quickly for the demo, I have a square wave input here</span> <span m="2949000">to the op amp, that's my vI to the integrator.</span> </p>
+<p><span m="2952000">And this is the output vO. The integral of a square wave</span> <span m="2956000">is a triangular wave, as you can see.</span> </p>
+<p><span m="2959000">And we will do the same thing for a differentiator.</span> </p>
+<p><span m="2962000">And for the differentiator, I input the square wave to this</span> <span m="2967000">differentiator circuit. And I get this,</span> <span m="2971000">wherever there is a sharp rise, I get this huge negative spike</span> <span m="2975000">and a positive spike because of the minus sign.</span> </p>
+<p><span m="2979000">So, this is the differentiator circuit.</span> </p>
+<p><span m="2981000">Then I feed this into the op amp.</span> </p>
+<p><span m="2984000">OK. Thank you.</span> </p>
+</div>
+        <div id="vid_transcript" itemprop="description" class="tabContent hide">
+<h2 class="subhead">Free Downloads</h2>
+<h3 class="subsubhead">Video</h3>
+<ul>
+<li>iTunes U (<a href="https://itunes.apple.com/us/itunes-u/id341597464">MP4 - 121MB</a>)</li>
+<li>Internet Archive (<a href="http://www.archive.org/download/MIT6.002S07/ocw-6.002-lec-mit-10250-20nov2003-220k.mp4">MP4 - 205MB</a>)</li>
+</ul>
+<br>
+<h3 class="subsubhead">Caption</h3>
+<ul>
+<li>English-US (<a href="../../../contents/video-lectures/lecture-20/2SwT6JnfCq8.srt">SRT</a>)</li>
+</ul>
+</div>
+    
+   </div>  
+
+
+
+
+      					 
+        <div class="" id="parent-fieldname-bottom_html_area">
+            
+            
+        </div>
+    
+               </main><!--Course_inner_media tag close -->
+           		</div>
+<!--Course_wrapper tag close -->
+            </div>
+<!--left tag close -->
+            <aside id="right">
+                <!--Begin Right Portion -->
+                    <div>
+    
+
+
+
+</div>
+
+                	<div>
+    
+
+
+
+</div>
+
+
+        <div class="" id="parent-fieldname-rsi_top_html_area">
+            
+            
+        </div>
+    
+
+<!-- RSI google ad space-->
+
+
+
+<div id="google_ads">    
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script type="text/javascript">var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];</script>
+    <script type="text/javascript">
+googletag.cmd.push(function() {googletag.defineSlot('/1064917/VIDEO_INDIVIDUAL_SLOT_A_DL', [[300, 250], [300, 300], [180, 200], [180, 150], [160, 600]], 'VIDEO_INDIVIDUAL_SLOT_A_DL').addService(googletag.pubads());googletag.defineSlot('/1064917/VIDEO_INDIVIDUAL_SLOT_B_DL', [[300, 250], [300, 300], [180, 200], [180, 150], [160, 600]], 'VIDEO_INDIVIDUAL_SLOT_B_DL').addService(googletag.pubads());googletag.defineSlot('/1064917/VIDEO_INDIVIDUAL_SLOT_C_DL', [[300, 250], [300, 300], [180, 200], [180, 150], [160, 600]], 'VIDEO_INDIVIDUAL_SLOT_C_DL').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+ googletag.enableServices();
+});</script>
+    <script language="javascript" type="text/javascript">
+googletag.cmd.push(function() {googletag.pubads().set("TYPE","HOUSE");googletag.pubads().set("DEPARTMENT","6");googletag.pubads().set("CRS_BEG2","00");googletag.pubads().set("CRS_END","2");googletag.pubads().set("SESSION","S");googletag.pubads().set("YEAR","07");})
+</script>
+    
+    <div id="VIDEO_INDIVIDUAL_SLOT_A_DL">
+    	<script>googletag.cmd.push(function() { googletag.display('VIDEO_INDIVIDUAL_SLOT_A_DL'); });</script>
+    </div>
+    <div id="VIDEO_INDIVIDUAL_SLOT_B_DL">
+    	<script>googletag.cmd.push(function() { googletag.display('VIDEO_INDIVIDUAL_SLOT_B_DL'); });</script>
+    </div>
+    <div id="VIDEO_INDIVIDUAL_SLOT_C_DL">
+    	<script>googletag.cmd.push(function() { googletag.display('VIDEO_INDIVIDUAL_SLOT_C_DL'); });</script>
+    </div>
+</div>
+
+<!-- End RSI ads--> 
+
+
+<div>
+    
+
+
+
+</div>
+
+            </aside><!--Right div close -->
+            <div class="clear"></div>
+        </div>
+<!--grid tag close -->
+      </div>
+		
+		<footer id="bottom">
+			<div id="grid">
+				
+<div id="portletwrapper-6f63772e626f74746f6d706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d666f6f746572" class="portletWrapper kssattr-portlethash-6f63772e626f74746f6d706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d666f6f746572">
+<div class="portletStaticText portlet-static-site-footer"><div id="footer">
+<nav aria-label="Footer">     <nav id="foot-c1" class="grid_2 alpha" aria-labelledby="f-find-courses">       <span class="footer" id="f-find-courses" aria-hidden="true">Find Courses</span>
+<ul class="foot-bullet" role="presentation">
+    <li><a href="https://ocw.mit.edu/courses/find-by-topic/">Find by Topic</a></li>
+    <li><a href="https://ocw.mit.edu/courses/find-by-number/">Find by Course Number</a></li>
+    <li><a href="https://ocw.mit.edu/courses/find-by-department/">Find by Department</a></li>
+    <li><a href="https://ocw.mit.edu/courses/new-courses/">New Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/most-visited-courses/">Most Visited Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/ocw-scholar/">OCW Scholar Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/audio-video-courses/">Audio/Video Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/online-textbooks/">Online Textbooks</a></li>
+    <li><a href="https://ocw.mit.edu/courses/instructor-insights/">Instructor Insights</a></li>
+    <li><a href="https://ocw.mit.edu/resources/">Supplemental Resources</a></li>
+    <li><a href="https://ocw.mit.edu/courses/mitx-related-courseware/">MITx &amp; Related OCW Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/mit-open-learning-library/">MIT Open Learning Library</a></li>
+    <li><a href="https://ocw.mit.edu/courses/translated-courses/">Translated Courses</a></li>
+</ul>
+</nav>
+<div id="foot-c2" class="grid_2"><nav aria-labelledby="f-for-educators">         <span id="f-for-educators" class="footer" aria-hidden="true">For Educators</span>
+<ul class="foot-bullet" role="presentation">
+    <li><a href="https://chalk-radio.simplecast.com/">Chalk Radio Podcast</a></li>
+    <li><a href="https://ocw.mit.edu/educator/">OCW Educator Portal </a></li>
+    <li><a href="https://ocw.mit.edu/courses/instructor-insights/">Instructor Insights by Department</a></li>
+    <li><a href="https://openlearning.mit.edu/campus/digital-innovations/" aria-label="External Link: Residential Digital Innovations">Residential Digital Innovations </a></li>
+    <li><a href="https://ocw.mit.edu/high-school/">OCW Highlights for High School</a></li>
+    <li><a href="https://ocw.mit.edu/educator/additional-resources/">Additional Resources</a></li>
+</ul>
+</nav></div>
+<nav class="grid_2" id="foot-c3" aria-labelledby="f-donate">       <span id="f-donate" class="footer" aria-hidden="true">Give Now</span>
+<ul class="foot-bullet" role="presentation">
+    <li><a href="https://ocw.mit.edu/give/">Make a Donation</a></li>
+    <li><a href="https://ocw.mit.edu/give/why-give/">Why Give?</a></li>
+    <li><a href="https://ocw.mit.edu/give/our-supporters/">Our Supporters</a></li>
+    <li><a href="https://ocw.mit.edu/give/other-ways-to-contribute/">Other Ways to Contribute</a></li>
+    <li><a href="https://ocw.mit.edu/support/">Become a Corporate Sponsor</a></li>
+</ul>
+</nav>
+<div class="grid_2" id="foot-c4">
+<nav aria-labelledby="f-about">         <span id="f-about" class="footer" aria-hidden="true">About</span>
+<ul class="foot-bullet" role="presentation">
+    <li><a href="https://ocw.mit.edu/about/">About OpenCourseWare</a></li>
+    <li><a href="https://ocw.mit.edu/about/site-statistics/">Site Statistics</a></li>
+    <li><a href="https://ocw.mit.edu/about/ocw-stories/">OCW Stories</a></li>
+    <li><a href="https://ocw.mit.edu/about/newsletter/">Newsletter</a></li>
+    <li><a href="https://www.ocw-openmatters.org/">Open Matters Blog</a></li>
+</ul>
+</nav><!--about-->       <nav aria-labelledby="f-tools">         <span id="f-tools" class="footer" aria-hidden="true">Tools</span>
+<ul class="foot-bullet" role="presentation">
+    <li><a href="https://ocw.mit.edu/help/">Help &amp; FAQs</a></li>
+    <li><a href="https://ocw.mit.edu/about/contactus">Contact Us</a></li>
+    <li><a href="https://accessibility.mit.edu/" target="_blank">Accessibility</a></li>
+    <li><a href="https://ocw.mit.edu/help/site-map/">Site Map</a></li>
+    <li><a href="../../../common/terms/index.htm">Privacy &amp; Terms of Use</a></li>
+    <li><a href="https://ocw.mit.edu/help/rss/">RSS Feeds</a></li>
+</ul>
+</nav><!--tools-->
+</div>
+</nav> <aside style="min-height: 289px;" aria-labelledby="f-our-corporate-supporters" class="grid_4 omega" id="foot-c5">           <span aria-hidden="true" class="footer" id="f-our-corporate-supporters">Our Corporate Supporters</span>           <!-- HOME_CORP_LOGO_1 -->
+<div id="div-gpt-ad-1388181177156-0" class="sponsors_google_ads_even"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-0'); });
+            </script></div>
+<!-- HOME_CORP_LOGO_2 -->
+<div id="div-gpt-ad-1388181177156-1" class="sponsors_google_ads_odd"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-1'); });
+            </script></div>
+<!-- HOME_CORP_LOGO_3 -->
+<div id="div-gpt-ad-1388181177156-2" class="sponsors_google_ads_even"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-2'); });
+            </script></div>
+<!-- HOME_CORP_LOGO_4 -->
+<div id="div-gpt-ad-1388181177156-3" class="sponsors_google_ads_odd"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-3'); });
+            </script></div>
+<!-- HOME_CORP_LOGO_5 -->
+<div id="div-gpt-ad-1388181177156-4" class="sponsors_google_ads_even"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-4'); });
+              </script></div>
+<!-- HOME_CORP_LOGO_6 -->
+<div id="div-gpt-ad-1388181177156-5" class="sponsors_google_ads_odd"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-5'); });
+              </script></div>
+</aside>
+<div class="grid_12 alpha omega" itemprop="publisher" itemscope="" itemtype="http://schema.org/CollegeOrUniversity">
+<h4 class="footer" style="border-top: thin solid #d5c9ba; padding-top: 10px; margin-bottom: 10px;">About <span itemprop="name">MIT OpenCourseWare</span>
+</h4>
+<p style="color: #999; font-size: 1em; line-height: 1.5em; margin-top: 10px;" itemprop="description">MIT OpenCourseWare is an online publication of materials from over 2,500 MIT courses, freely sharing knowledge with learners and educators around the world. <a href="https://ocw.mit.edu/about/">Learn more »</a></p>
+</div>
+<div id="foot-copy" class="grid_12 alpha omega" style="border-top: none;">
+<a href="http://web.mit.edu"><img src="../../../common/images/logo_mit.png" alt="Massachusetts Institute of Technology logo and name." style="width: 195; height: 44;"></a><a href="https://openlearning.mit.edu/"><img src="https://ocw.mit.edu/images/mitol_logo.png" alt="MIT Open Learning logo and name." style="width: 265; height: 50; vertical-align: top; padding-left:30px;"></a><a href="https://www.oeglobal.org/"><img src="https://ocw.mit.edu/images/oeg_logo.gif" alt="Open Education Consortium logo." style="width: 219px; height: 59px; vertical-align: top; padding-left:20px;"></a><a rel="license" itemprop="useRightsUrl" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="../../../common/images/cc_by-nc-sa.png" alt="Creative Commons logo with terms BY-NC-SA." style="width: 126px; height: 44px; margin-right: 0; padding-left: 20px;"></a>
+<p class="copyright">© 2001–2018<br>
+Massachusetts Institute of Technology</p>
+<p style="font-size: 0.9em; margin-bottom: 15px;">Your use of the MIT OpenCourseWare site and materials is subject to our <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">Creative Commons License</a> and other <a href="../../../common/terms/index.htm" rel="cc:morePermissions">terms of use</a>.</p>
+</div>
+</div></div>
+
+</div>
+
+
+
+
+
+                
+			</div> <!-- bottom grid end -->
+		</footer><!-- footer bottom end -->
+
+
+   </body>
+ </html>
