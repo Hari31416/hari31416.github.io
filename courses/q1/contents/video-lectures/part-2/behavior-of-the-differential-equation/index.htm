@@ -1,0 +1,859 @@
+<!DOCTYPE html><html lang="en">
+      
+      
+        
+    
+    
+    
+    
+
+      
+      
+      <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">  
+        
+        <title>Behavior of the differential equation | Part 2: Quantum Physics in One-dimensional Potentials | Video Lectures | Quantum Physics I | Physics | MIT OpenCourseWare</title>
+    <!-- Begin Automatic Metadata Insertion -->
+    <meta content="8-04-quantum-physics-i-spring-2016" name="WT.cg_n">
+    <meta content="Behavior of the differential equation" name="WT.cg_s">
+    <meta content="" name="Description">
+    <meta content="Zwiebach, Barton" name="Author">
+    <meta content="8.04,quantum physics: photoelectric effect,Compton scattering,photons,Franck-Hertz experiment,the Bohr atom,electron diffraction,deBroglie waves,wave-particle duality of matter and light,wave mechanics: Schroedinger's equation,wave functions,wave packets,probability amplitudes,stationary states,the Heisenberg uncertainty principle,zero-point energies,transmission and reflection at a barrier,barrier penetration,potential wells,simple harmonic oscillator,Schroedinger's equation in three dimensions: central potentials, and introduction to hydrogenic systems.,Quantum Mechanics" name="keywords">
+    <meta content="8.04 Quantum Physics I | Behavior of the differential equation" name="Search_Display">
+    <meta content="Quantum Mechanics" itemprop="about">
+    <!-- End Automatic Metadata Insertion -->
+
+	<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/grid.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/base.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/menu.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/jquery.bubblepopup.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/search.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/courses.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/courses_new.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/jquery.jscrollpane.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/media_tabs.css">
+	<link href="../../../../common/xml/ocwcc.rdf" type="application/rdf+xml" rel="metadata">
+	<link rel="canonical" href="https://ocw.mit.edu/courses/physics/8-04-quantum-physics-i-spring-2016/video-lectures/part-2/behavior-of-the-differential-equation/">
+	<link rel="apple-touch-icon" href="../../../../common/images/apple-touch-icon.png">
+	
+	
+      
+	
+	<script type="text/javascript" src="../../../../common/scripts/jquery.js"></script>
+	<script type="text/javascript" src="../../../../common/scripts/ocw-media-utils-offline.js"></script>
+	<script type="text/javascript" src="../../../../common/scripts/ocw-offline.js"></script>
+	<script type="text/javascript" src="../../../../common/scripts/jquery.bubblepopup.min.js"></script>
+	<script type="text/javascript" src="../../../../common/scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../../../common/scripts/jquery.jscrollpane.min.js"></script>
+	<script type="text/javascript" src="../../../../common/scripts/expandy.js"></script>
+	<script type="text/javascript" src="../../../../common/scripts/bubble-popup-offline.js"></script>
+	
+	
+	
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#tabs").tabs();
+        IpadScroller();
+      });
+    </script>
+    
+    
+    
+    
+    
+    
+      
+       
+		 
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </head>
+    <body itemscope itemtype="http://schema.org/WebPage">
+        
+	
+
+        <header id="top">
+			<div id="grid">
+				
+				
+					
+<div id="portletwrapper-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d686561646572" class="portletWrapper kssattr-portlethash-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d686561646572">
+<div class="portletStaticText portlet-static-site-header">
+<!--googleoff: index-->
+<div class="grid_6 alpha" id="banner"><a href="https://ocw.mit.edu/"><img src="../../../../common/images/ocw_mast.png" class="logo" alt="MIT OpenCourseWare, Massachusetts Institute of Technology"></a></div>
+<div class="grid_6 omega" id="subscribe">
+<aside class="module" aria-label="Connect with OCW">
+<table class="social">
+    <tbody>
+        <tr>
+            <td class="socialbutton"><a aria-label="Subscribe to the OCW Newsletter" href="https://ocw.mit.edu/subscribe/index.htm?utm_source=header"><img src="../../../../common/images/trans.gif" alt="An icon depicting an envelope.">Subscribe to the OCW Newsletter</a></td>
+            <td>
+<a aria-label="Facebook" href="https://facebook.com/mitocw"><img src="../../../../common/images/icon_fb.png" alt="Click to visit our Facebook page."></a>  <a aria-label="Instagram" href="https://www.instagram.com/mitocw/"><img src="https://ocw.mit.edu/images/icon_ig.png" alt="Click to visit our Instagram page."></a> <a aria-label="Twitter" href="https://twitter.com/mitocw"><img src="https://ocw.mit.edu/images/icon_twitter.png" alt="Click to visit our Twitter feed."></a><a aria-label="YouTube" href="https://www.youtube.com/mitocw" style="font-size: 12.208px;"><img src="https://ocw.mit.edu/images/icon_yt.png" alt="Click to visit our YouTube page."></a><span style="font-size: 12.208px;">   </span><a aria-label="Open Matters blog on WordPress" href="https://www.ocw-openmatters.org/" style="font-size: 12.208px;"><img src="https://ocw.mit.edu/images/icon_wp.png" alt="Click to visit our blog on WordPress."></a>
+</td>
+        </tr>
+    </tbody>
+</table>
+</aside><nav aria-label="Help Links" class="helplinks">     <a aria-label="OCW Site Help" href="https://ocw.mit.edu/help">Help</a><span aria-hidden="true">|</span>     <a href="../../../../common/about/contactus.htm">Contact Us</a>   </nav>
+</div>
+<div class="clear"> </div>
+<!--googleon: index-->
+</div>
+
+</div>
+
+<div id="portletwrapper-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a6d6567612d6d656e75" class="portletWrapper kssattr-portlethash-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a6d6567612d6d656e75">
+<div class="portletStaticText portlet-static-mega-menu"><div><nav id="mega" class="grid_8 alpha" aria-label="Site">
+<ul id="menu" role="presentation">
+    <li id="menu_home">
+<a href="https://ocw.mit.edu/" aria-label="Homepage"><img src="../../../../common/images/top-nav_home.png" class="home_icon" alt="Click for site home page."></a><!-- Begin Home Item -->
+</li>
+    <!-- End Home Item -->
+    <li id="drop_1" aria-label="Find Courses">
+<a href="#" aria-hidden="true">FIND COURSES</a><!-- Begin 5 columns Item -->
+    <div class="dropdown_5columns-a mega-courses">
+    <div class="col_1a">
+    <div class="row_1a">
+<nav aria-labelledby="mm-find-courses-by">     <span id="mm-find-courses-by" class="nav" aria-hidden="true">Find courses by:</span>
+    <ul class="find_by" role="presentation">
+        <li><a href="https://ocw.mit.edu/courses/find-by-topic/">Topic</a></li>
+        <li><a href="https://ocw.mit.edu/courses/find-by-number/">MIT Course Number</a></li>
+        <li><a href="https://ocw.mit.edu/courses/find-by-department/">Department</a></li>
+    </ul>
+    </nav>     <nav aria-labelledby="mm-collections">     <span id="mm-collections" class="nav" aria-hidden="true">Collections</span>
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/courses/new-courses/">New Courses</a></li>
+        <li><a href="https://ocw.mit.edu/courses/most-visited-courses/">Most Visited Courses</a></li>
+        <li><a href="https://ocw.mit.edu/courses/ocw-scholar/">OCW Scholar Courses</a></li>
+        <li><a href="https://ocw.mit.edu/courses/audio-video-courses/">Audio/Video Lectures</a></li>
+        <li><a href="https://ocw.mit.edu/courses/online-textbooks/">Online Textbooks</a></li>
+        <li><a href="https://ocw.mit.edu/resources/">Supplemental Resources</a></li>
+        <li><a href="https://ocw.mit.edu/high-school/">OCW Highlights for High School</a></li>
+        <li><a href="https://ocw.mit.edu/courses/mitx-related-courseware/">MITx &amp; Related OCW Courses</a></li>
+        <li><a href="https://ocw.mit.edu/courses/mit-open-learning-library/">MIT Open Learning Library</a></li>
+    </ul>
+    </nav>     <nav class="col_1b" aria-labelledby="mm-translated-courses">     <span id="mm-translated-courses" class="nav" aria-hidden="true" style="line-height: 1.3;">Cross-Disciplinary Topic Lists</span>
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/courses/energy-courses">Energy</a></li>
+        <li><a href="https://ocw.mit.edu/courses/entrepreneurship">Entrepreneurship</a></li>
+        <li><a href="https://ocw.mit.edu/courses/environment-courses">Environment</a></li>
+        <li><a href="https://ocw.mit.edu/courses/intro-programming">Introductory Programming</a></li>
+        <li><a href="https://ocw.mit.edu/courses/life-sciences">Life Sciences</a></li>
+        <li><a href="https://ocw.mit.edu/courses/transportation-courses">Transportation</a></li>
+    </ul>
+    </nav>
+</div>
+    <div class="row_1b"><nav aria-labelledby="mm-cross-disciplinary-topic-lists">     <span id="mm-cross-disciplinary-topic-lists" class="nav" aria-hidden="true">Translated Courses</span>
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/courses/translated-courses/traditional-chinese" aria-label="Traditional Chinese">繁體字 / Traditional Chinese</a></li>
+        <li><a href="https://ocw.mit.edu/courses/translated-courses/turkish" aria-label="Turkish">Türkçe / Turkish</a></li>
+        <li><a href="https://ocw.mit.edu/courses/translated-courses/korean" aria-label="Korean">(비디오)한국 / Korean</a></li>
+    </ul>
+    </nav></div>
+    </div>
+    </div>
+    </li>
+    <li id="drop_2">
+<a href="#" aria-label="For Educators">For Educators</a>
+    <div class="dropdown_1column-a" style="width: 270px;"><nav aria-labelledby="mm-find-courses-by">
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/educator/chalk-radio-podcast">Chalk Radio Podcast</a></li>
+        <li><a href="https://ocw.mit.edu/educator/">OCW Educator Portal</a></li>
+    </ul>
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/courses/instructor-insights/">Instructor Insights by Department</a></li>
+        <li><a href="https://openlearning.mit.edu/campus/digital-innovations/">Residential Digital Innovations </a></li>
+    </ul>
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/high-school/">OCW Highlights for High School</a></li>
+    </ul>
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/educator/additional-resources/">Additional Resources</a></li>
+    </ul>
+    </nav></div>
+    </li>
+    <li id="drop_3">
+<a href="#" aria-hidden="true">Give Now</a>
+    <div class="dropdown_1column-a"><nav class="col_1" aria-label="Donate">
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/give/">Make a Donation</a></li>
+        <li><a href="https://ocw.mit.edu/give/why-give/">Why Give?</a></li>
+        <li><a href="https://ocw.mit.edu/give/our-supporters/">Our Supporters</a></li>
+        <li><a href="https://ocw.mit.edu/give/other-ways-to-contribute/">Other Ways to Contribute</a></li>
+        <li><a href="https://ocw.mit.edu/support/">Become a Corporate Sponsor</a></li>
+    </ul>
+    </nav></div>
+    </li>
+    <li id="drop_4">
+<a href="#" aria-hidden="true">About</a>
+    <div class="dropdown_1column-a"><nav class="col_1" aria-label="About">
+    <ul role="presentation">
+        <li><a href="https://ocw.mit.edu/about/">About MIT OpenCourseWare</a></li>
+        <li><a href="https://ocw.mit.edu/about/site-statistics/">Site Statistics</a></li>
+        <li><a href="https://ocw.mit.edu/about/ocw-stories/">OCW Stories</a></li>
+        <li><a href="https://ocw.mit.edu/about/newsletter/">Newsletter</a></li>
+        <li><a href="https://chalk-radio.simplecast.com/">Chalk Radio Podcast</a></li>
+        <li><a href="https://www.ocw-openmatters.org/">Open Matters Blog</a></li>
+    </ul>
+    </nav></div>
+    </li>
+</ul>
+</nav></div></div>
+
+</div>
+
+
+
+
+
+<!--googleoff: index-->
+<script>
+  (function() {
+	var cx = '012626166551961672889:owjdpuboktq';
+	var gcse = document.createElement('script');
+	gcse.type = 'text/javascript';
+	gcse.async = true;
+	gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(gcse, s);
+  })();
+  window.onload = function(){
+	document.getElementById('gsc-i-id1').placeholder = 'Search';	
+  };
+
+$(document).ready(function(){
+
+$('.advanceSearch a').keydown(function(event){showSearchTips($(this),event);})
+$('#searchTipsModal').keydown(function(event){showSearchTips($(this),event);})
+
+function showSearchTips(obj,evt) {
+// if pressed enter key
+	if ( evt.which == 13 || evt.which == 32) {
+		showModal();
+		ga('send', 'pageview', "AdvanceSearch");
+		$(".advanceSearch a").attr('aria-expanded', 'true');
+		$('.searchTipsModal').focus();
+		evt.preventDefault();
+		}
+	if ( evt.which == 27 ) {
+		hideModal();
+		$(".advanceSearch a").attr('aria-expanded', 'false');
+		var modal = document.getElementById('searchTipsModal');
+		modal.style.display = "none";
+		$(".advanceSearch a").focus();
+		evt.preventDefault();
+		}
+}
+
+});
+function showModal(){
+	var modal = document.getElementById('searchTipsModal');
+	modal.style.display = "block";
+	ga('send', 'pageview', "AdvanceSearch");
+	document.getElementById("searchTipsBtn").setAttribute("aria-expanded", true);
+	window.setTimeout(function () {
+    document.getElementById('searchTipsModal').focus(); }, 0);
+}
+
+function hideModal(){
+	var modal = document.getElementById('searchTipsModal');
+	modal.style.display = "none";
+	document.getElementById("searchTipsBtn").setAttribute("aria-expanded", false);
+}
+</script>
+<div id="search" role="search" class="grid_4 omega">
+    	<table class="search">
+				<tbody>
+					<tr>
+						<td><div class="searchboxheader"><searchbox-only resultsurl="/search/ocwsearch.htm"></searchbox-only></div></td>
+						<td>
+							<div class="advanceSearch">
+								<a id="searchTipsBtn" onclick="showModal();" href="#" role="button" aria-label="search tips" aria-expanded="false" aria-describedby="searchtips">Search Tips</a>
+
+								<!-- The Modal -->
+								<div id="searchTipsModal" class="modal" tabindex="-1">
+								  <!-- Modal content -->
+									<div class="modal-content">
+										<div class="modal-body">
+											<button class="close" onclick="hideModal();" aria-label="close">X</button>
+											<span>
+												<b>Exclude words from your search</b>
+												<br>Put - in front of a word you want to leave out. For example, jaguar speed -car
+												<br><br>
+												<b>Search for an exact match</b>
+												<br>Put a word or phrase inside quotes. For example, "tallest building".
+												<br><br>
+												<b>Search for wildcards or unknown words</b>
+												<br>Put a * in your word or phrase where you want to leave a placeholder. For example, "largest * in the world".
+												<br><br>
+												<b>Search within a range of numbers</b>
+												<br>Put .. between two numbers. For example, camera $50..$100.
+												<br><br>
+												<b>Combine searches</b>
+												<br>Put "OR" between each search query. For example,  marathon OR race.
+												<br><br>
+											</span>
+										</div>
+								  </div>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+		</table>
+</div>
+<div class="clear"></div>
+<!--googleon: index-->
+<!-- *end header* -->
+
+				
+				
+			</div>
+<!-- top grid end -->
+		</header><!-- top end -->
+			
+		<div id="center_media">
+      	<div id="grid">
+      		<div id="left">
+        		<nav id="breadcrumb_media" aria-label="Breadcrumb">
+                	<p>
+
+    <a href="https://ocw.mit.edu/">Home</a>
+    
+        »
+        
+    
+    
+        
+            <a href="https://ocw.mit.edu/courses">Courses</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="https://ocw.mit.edu/courses/physics">Physics</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="../../../../contents/index.htm">Quantum Physics I</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="../../../../contents/video-lectures/index.htm">Video Lectures</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="../../../../contents/video-lectures/part-2/index.htm">Quantum Physics in One-dimensional Potentials</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            
+            
+            Behavior of the differential equation
+         
+    
+</p>
+
+            	</nav>
+            	<div class="clear"></div>
+        		<div id="media_title">
+        		<h1 class="title" itemprop="name" property="dct:title">
+        <span class="" id="parent-fieldname-title">
+            Behavior of the differential equation
+        </span>
+    </h1>
+        		</div>
+           		<div class="clear"></div>
+           		<div id="course_wrapper_media">
+           			<nav id="course_nav" aria-label="Course">
+           				<script language="javascript" type="text/javascript">
+function toggleMenu(objID) {
+  if (!document.getElementById) return;
+  var ob = document.getElementById(objID);
+  ob.className = (ob.className == 'selected')?'': 'selected';
+}
+function toggleClass(id)
+{
+  var divtoggleClass= document.getElementById(id);
+  divtoggleClass.className = (divtoggleClass.className == 'mO')?'mC': 'mO';
+  return false;
+}
+function changeAlt(id)
+{
+  id.alt = (id.alt == 'Expand Menu')?'Collapse Menu' : 'Expand Menu';
+  id.title = (id.title == 'Expand Menu')?'Collapse Menu' : 'Expand Menu';
+}
+</script>
+<!--Left Nav Starts -->
+
+
+	<ul>			  
+	
+	    	
+	    	    <li class="">
+			   			<a href="../../../../contents/index.htm">
+		                  Course Home  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="../../../../contents/syllabus/index.htm">
+		                  Syllabus  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="../../../../contents/lecture-notes/index.htm">
+		                  Lecture Notes  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+         	<li class="">
+       		<div class="tlp_links">
+	        	<div id="video-lectures" class="mC">
+						<a href="#" class="" onclick="toggleMenu('menuvideo-lectures'); toggleClass('video-lectures'); return false">
+		                  <img src="../../../../common/images/trans.gif" class="expandCollapseTrans" border="0" width="10" height="12" onclick="changeAlt(this)" alt="Collapse Menu" title="Collapse Menu">
+		                </a>
+		                <a href="../../../../contents/video-lectures/index.htm" class="">
+		                  Video Lectures  			                
+	                    </a>
+	                 			                
+	            </div>
+			    
+	        	<ul id="menuvideo-lectures" class="selected">
+					               
+		            <li class="">
+				 		<a href="../../../../contents/video-lectures/part-1/index.htm" class="">Basic Concepts</a>
+		            </li>
+		            <li class="selected">
+				 		<a href="../../../../contents/video-lectures/part-2/index.htm" class="selected">Quantum Physics in One-dimensional Potentials</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/video-lectures/part-3/index.htm" class="">One-dimensional Scattering, Angular Momentum &amp; Central Potentials</a>
+		            </li>
+			    </ul>
+			    
+			</div>
+			</li>
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="../../../../contents/assignments/index.htm">
+		                  Assignments  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="../../../../contents/exams/index.htm">
+		                  Exams  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    
+		    
+         	
+	<!--second tal block close-->  
+	
+</ul>
+
+
+<!--Left Nav Ends -->
+
+
+
+
+
+           			</nav>
+           			<main id="course_inner_media" aria-labelledby="media_title">
+      					 
+        <div class="" id="parent-fieldname-text">
+            
+            
+        </div>
+    
+      					     
+    
+    
+
+
+
+<script type="text/javascript">var caption_embed_1 ={'English - US': '/courses/physics/8-04-quantum-physics-i-spring-2016/video-lectures/part-2/behavior-of-the-differential-equation/eNf8nH1yEYc.srt'}</script>     
+     <div id="media-embed">
+         <div class="attention_message" id="embed_1">
+<p>Flash and JavaScript are required for this feature.</p>
+<p>Download the video from <a href="https://itunes.apple.com/us/itunes-u/id1251079217">iTunes U</a> or the <a href="https://archive.org/download/MIT8.04S16/MIT8_04S16_lec13_s5_300k.mp4">Internet Archive</a>.</p>
+</div>
+     </div>
+    
+     <script type="text/javascript">ocw_embed_chapter_media('embed_1', 'https://www.youtube.com/v/eNf8nH1yEYc', 'youtube', '/courses/physics/8-04-quantum-physics-i-spring-2016/video-lectures/part-2/behavior-of-the-differential-equation', 'https://img.youtube.com/vi/eNf8nH1yEYc/0.jpg',0,0, 'https://ocw.mit.edu/courses/physics/8-04-quantum-physics-i-spring-2016/video-lectures/part-2/behavior-of-the-differential-equation/eNf8nH1yEYc.srt')</script>
+	 
+	 
+	 		
+	 		<div id="transcript1"></div>
+				 <script type="text/javascript">createThreePlayParams(2, 1731176, "embed_1", 0, 0)</script>
+			 
+	
+
+     
+ 
+
+
+<script type="text/javascript">
+		window.onload=function(){
+		init();
+		
+		}
+		var tabLinks = new Array();
+		var contentDivs = new Array();
+		function init() {
+		  // Grab the tab links and content divs from the page
+		  var tabListItems = document.getElementById('tabs').childNodes;
+		  for ( var i = 0; i < tabListItems.length; i++ ) {
+			if ( tabListItems[i].nodeName == "LI" ) {
+			  var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
+			  var id = getHash( tabLink.getAttribute('href') );
+			  tabLinks[id] = tabLink;
+			  contentDivs[id] = document.getElementById( id );
+			}
+		  }
+		  // Assign onclick events to the tab links, and
+		  // highlight the first tab
+		  var i = 0;
+		  for ( var id in tabLinks ) {
+			tabLinks[id].onclick = showTab;
+			tabLinks[id].onfocus = function() { this.blur() };
+			if ( i == 0 ) tabLinks[id].className = 'selected';
+			i++;
+		  }
+		  // Hide all content divs except the first
+		  var i = 0;
+		  for ( var id in contentDivs ) {
+			if ( i != 0 ) contentDivs[id].className = 'tabContent hide';
+			i++;
+		  }
+		}
+		function showTab() {
+		  var selectedId = getHash( this.getAttribute('href') );
+		  // Highlight the selected tab, and dim all others.
+		  // Also show the selected content div, and hide all others.
+		  for ( var id in contentDivs ) {
+			if ( id == selectedId ) {
+			  tabLinks[id].className = 'selected';
+			  contentDivs[id].className = 'tabContent';
+			} else {
+			  tabLinks[id].className = '';
+			  contentDivs[id].className = 'tabContent hide';
+			}
+		  }
+		  // Stop the browser following the link
+		  return false;
+		}
+		function getFirstChildWithTagName( element, tagName ) {
+		  for ( var i = 0; i < element.childNodes.length; i++ ) {
+			if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
+		  }
+		}
+		function getHash( url ) {
+		  var hashPos = url.lastIndexOf ( '#' );
+		  return url.substring( hashPos + 1 );
+		}
+ </script>	
+ 
+
+  <div id="media_tabs">
+     
+        <ul id="tabs">
+            <li class="first">
+                <a href="#vid_about" class="selected">Transcript</a>
+            </li>
+            <li class="">
+                <a href="#vid_index" class="">Download this Video</a>
+            </li>
+        </ul>
+   
+        <div id="vid_about" itemprop="description" class="tabContent">
+<ul><li><a class="transcript-link" title="Open in a new window." alt="Open in a new window." style="text-decoration: none; font-size: 1.0em;" target="_blank" text-decoration: none font-size: href="../../../../contents/video-lectures/part-2/behavior-of-the-differential-equation/eNf8nH1yEYc.pdf"> Download English-US transcript (PDF)</a></li></ul>
+<p><span m="0">PROFESSOR:</span> <span m="202">Now,</span> <span m="2029">what</span> <span m="2450">should</span> <span m="2750">happen?</span> <span m="5590">Somehow,</span> <span m="7600">this</span> <span m="7890">equation</span> <span m="9080">probably</span> <span m="9380">has</span> <span m="9660">solutions</span> <span m="10350">for</span> <span m="10560">all</span> <span m="10920">values</span> <span m="11400">of</span> <span m="11520">the</span> <span m="11700">energy,</span> <span m="12660">but</span> <span m="12960">those</span> <span m="13200">solutions</span> <span m="14400">diverge</span> <span m="14865">and</span> <span m="15330">are</span> <span m="15480">not</span> <span m="15890">normalizeable.</span> <span m="17120">It's</span> <span m="17310">the</span> <span m="17460">kind</span> <span m="17910">of</span> <span m="18000">thing</span> <span m="18300">you</span> <span m="18450">will</span> <span m="18660">find</span> <span m="18960">with</span> <span m="19140">a</span> <span m="19250">shooting</span> <span m="19830">method</span> <span m="20640">that</span> <span m="20820">you're</span> <span m="21060">doing</span> <span m="21360">with your</span> <span m="21630">computer.</span> <span m="22920">Count the</span> <span m="23420">solution</span> <span m="23875">and</span> <span m="24330">it</span> <span m="24480">suddenly</span> <span m="24810">diverges</span> <span m="25710">up</span> <span m="26010">or</span> <span m="26130">diverges</span> <span m="26910">down</span> <span m="27330">and</span> <span m="27420">cannot</span> <span m="27810">be</span> <span m="27960">normalized.</span> <span m="28620">But</span> <span m="28800">for</span> <span m="29010">some</span> <span m="29400">specific</span> <span m="30120">values,</span> <span m="30720">it</span> <span m="30780">can</span> <span m="31020">be</span> <span m="31140">normalized.</span> <span m="32680">So</span> <span m="33210">what</span> <span m="33450">we</span> <span m="33690">need</span> <span m="34290">is</span> <span m="34630">an</span> <span m="35050">intuition</span> <span m="36090">why</span> <span m="36570">this</span> <span m="36780">differential</span> <span m="37620">equation</span> <span m="39480">has</span> <span m="39870">normalizeable</span> <span m="40950">solutions,</span> <span m="41970">only</span> <span m="42960">if</span> <span m="43140">the</span> <span m="43350">energies,</span> <span m="45090">curly</span> <span m="45540">E,</span> <span m="46530">take</span> <span m="46830">specific</span> <span m="47430">values.</span> <span m="48820">That's</span> <span m="49050">intuition</span> <span m="49590">that</span> <span m="49740">we</span> <span m="49920">need.</span> </p>
+<p><span m="51030">For</span> <span m="51360">that,</span> <span m="51840">we'll</span> <span m="52110">look</span> <span m="52410">at</span> <span m="52500">the</span> <span m="52560">equation</span> <span m="53190">a</span> <span m="53280">little</span> <span m="53640">closer,</span> <span m="55110">and</span> <span m="55290">try</span> <span m="55680">to</span> <span m="55860">understand</span> <span m="57450">what</span> <span m="57750">happens</span> <span m="58590">at</span> <span m="58740">the</span> <span m="58890">place</span> <span m="59310">where</span> <span m="59490">it</span> <span m="59640">can</span> <span m="59940">get</span> <span m="60120">in</span> <span m="60300">trouble,</span> <span m="60960">which</span> <span m="61260">is</span> <span m="61740">large</span> <span m="62340">X.</span> <span m="63450">That's</span> <span m="63750">where</span> <span m="63930">you</span> <span m="64110">expect</span> <span m="64510">it</span> <span m="64650">to</span> <span m="65069">get</span> <span m="65280">in</span> <span m="65489">trouble.</span> <span m="66130">So</span> <span m="67050">what</span> <span m="67320">does</span> <span m="67530">this</span> <span m="67770">equation</span> <span m="68490">become</span> <span m="69180">as</span> <span m="72680">u</span> <span m="73010">goes</span> <span m="73330">to</span> <span m="73460">plus</span> <span m="73890">minus</span> <span m="74420">infinity?</span> <span m="78600">Well</span> <span m="78930">this</span> <span m="79170">equation,</span> <span m="80640">at</span> <span m="80820">that</span> <span m="81330">stage,</span> <span m="81990">becomes</span> <span m="82680">like</span> <span m="82980">this.</span> <span m="83400">The</span> <span m="83580">second</span> <span m="84210">phi,</span> <span m="85310">the</span> <span m="85630">u</span> <span m="86010">squared</span> <span m="86640">is</span> <span m="87540">roughly</span> <span m="88230">equal</span> <span m="88740">to</span> <span m="88960">u</span> <span m="89320">squared</span> <span m="89910">phi.</span> <span m="93670">Because</span> <span m="94270">e</span> <span m="95470">is</span> <span m="95620">a</span> <span m="95710">constant,</span> <span m="96340">it</span> <span m="96460">doesn't</span> <span m="96880">blow</span> <span m="97180">up,</span> <span m="97390">so</span> <span m="97570">the</span> <span m="97690">differential</span> <span m="98290">equation,</span> <span m="99380">the</span> <span m="99520">terms</span> <span m="99910">that</span> <span m="100120">are</span> <span m="100330">supposed</span> <span m="100810">to</span> <span m="100930">be</span> <span m="101620">largest</span> <span m="102370">in</span> <span m="102580">this</span> <span m="103060">right</span> <span m="103420">hand</span> <span m="103630">side,</span> <span m="104080">is</span> <span m="105100">the</span> <span m="105260">u</span> <span m="105550">squared.</span> </p>
+<p><span m="107560">So</span> <span m="107830">how</span> <span m="108190">does</span> <span m="109000">this</span> <span m="109330">look</span> <span m="109650">as</span> <span m="109820">a</span> <span m="109920">solution?</span> <span m="112030">And</span> <span m="113140">you</span> <span m="113320">can</span> <span m="113530">see</span> <span m="113770">that</span> <span m="113950">that's</span> <span m="114280">definitely</span> <span m="115090">not</span> <span m="115690">like</span> <span m="116020">a</span> <span m="116110">power</span> <span m="116740">solution.</span> <span m="118250">If</span> <span m="118270">you</span> <span m="118360">have</span> <span m="118630">a</span> <span m="118720">power</span> <span m="119410">of</span> <span m="119590">u,</span> <span m="120430">say</span> <span m="121000">phi</span> <span m="121380">equals</span> <span m="121690">u</span> <span m="121930">to</span> <span m="122110">the</span> <span m="122590">n,</span> <span m="126330">after</span> <span m="126690">u</span> <span m="126900">differentiates,</span> <span m="128880">the</span> <span m="129000">power</span> <span m="129449">goes</span> <span m="129780">down.</span> <span m="130470">But</span> <span m="130800">here</span> <span m="131400">it</span> <span m="131580">goes</span> <span m="131940">up.</span> <span m="133390">You have</span> <span m="133850">a</span> <span m="134310">u</span> <span m="135240">to</span> <span m="135420">the</span> <span m="135600">end.</span> <span m="136190">The</span> <span m="136480">relative</span> <span m="136775">is</span> <span m="137070">supposed</span> <span m="137540">to give</span> <span m="137760">you</span> <span m="137940">u to</span> <span m="138120">the</span> <span m="138470">n</span> <span m="138820">plus 2,</span> <span m="139080">but</span> <span m="139200">that</span> <span m="139590">doesn't</span> <span m="139950">work.</span> <span m="140550">So</span> <span m="141360">that's</span> <span m="141630">not</span> <span m="141920">a</span> <span m="141990">power</span> <span m="142440">solution.</span> <span m="143410">So</span> <span m="143550">it</span> <span m="143700">has</span> <span m="143910">to</span> <span m="144060">be</span> <span m="144990">different.</span> </p>
+<p><span m="146520">So</span> <span m="146710">what</span> <span m="147030">it</span> <span m="147180">is,</span> <span m="148050">you</span> <span m="148140">can</span> <span m="148380">try</span> <span m="150340">a</span> <span m="150600">phi.</span> <span m="151840">And</span> <span m="152150">what</span> <span m="152450">it</span> <span m="152600">should</span> <span m="153020">be</span> <span m="153920">is</span> <span m="154100">of</span> <span m="154250">the</span> <span m="154370">form</span> <span m="154880">e</span> <span m="155350">to the</span> <span m="155530">u</span> <span m="156010">squared.</span> <span m="159400">It's</span> <span m="159640">kind</span> <span m="160030">of</span> <span m="160150">like</span> <span m="160360">that,</span> <span m="160750">because</span> <span m="161080">this</span> <span m="161290">is</span> <span m="161440">the</span> <span m="161560">function</span> <span m="162190">that</span> <span m="162370">when</span> <span m="162550">you're</span> <span m="162730">differentiate,</span> <span m="165390">you</span> <span m="165540">bring</span> <span m="166080">down</span> <span m="166530">the</span> <span m="166620">derivative</span> <span m="167400">of</span> <span m="167520">this</span> <span m="167730">quantity,</span> <span m="168260">which is</span> <span m="168420">a</span> <span m="168720">u.</span> <span m="169770">When</span> <span m="169920">you</span> <span m="170070">differentiate</span> <span m="171100">again,</span> <span m="172770">you</span> <span m="172890">can</span> <span m="173130">bring</span> <span m="173490">another</span> <span m="173940">u</span> <span m="174250">to</span> <span m="174390">get</span> <span m="174600">the</span> <span m="174750">u</span> <span m="175020">squared,</span> <span m="175590">or</span> <span m="175710">you</span> <span m="175830">can</span> <span m="176040">differentiate</span> <span m="176580">this</span> <span m="176850">one.</span> <span m="177090">But</span> <span m="177300">if</span> <span m="177450">you</span> <span m="177570">differentiate</span> <span m="178110">the</span> <span m="178260">thing</span> <span m="178500">that</span> <span m="178640">is</span> <span m="178800">in</span> <span m="178950">the</span> <span m="179070">bottom,</span> <span m="180030">you</span> <span m="180150">get</span> <span m="180330">something</span> <span m="180750">that</span> <span m="180930">diverges</span> <span m="181920">less.</span> <span m="182310">So</span> <span m="182910">morally</span> <span m="183480">speaking,</span> <span m="184440">this</span> <span m="184710">function</span> <span m="185250">is</span> <span m="185430">about</span> <span m="185820">right.</span> <span m="187390">So</span> <span m="187670">I'll</span> <span m="187980">put</span> <span m="188290">here,</span> <span m="189430">for</span> <span m="189580">example,</span> <span m="190580">e</span> <span m="190790">to</span> <span m="191050">the</span> <span m="192030">alpha</span> <span m="192670">over</span> <span m="193540">2.</span> <span m="194300">And</span> <span m="194580">I'll</span> <span m="194830">even</span> <span m="195190">put</span> <span m="195510">here</span> <span m="196360">a</span> <span m="196770">uk.</span> </p>
+<p><span m="199940">Can</span> <span m="200260">this</span> <span m="202170">work?</span> <span m="203115">A</span> <span m="203460">u</span> <span m="203830">to</span> <span m="204000">the</span> <span m="204180">k</span> <span m="204660">times</span> <span m="205290">alpha</span> <span m="205860">u</span> <span m="206160">squared.</span> <span m="208640">Well</span> <span m="209210">if</span> <span m="209360">we</span> <span m="209480">take</span> <span m="209870">two</span> <span m="210200">derivatives,</span> <span m="210990">if</span> <span m="211180">we</span> <span m="211280">take</span> <span m="211580">one</span> <span m="211970">derivative,</span> <span m="214500">if</span> <span m="214710">I</span> <span m="214860">differentiate</span> <span m="216260">the</span> <span m="216410">u</span> <span m="216650">to</span> <span m="216830">the</span> <span m="217030">k,</span> <span m="219090">I</span> <span m="219270">get</span> <span m="219960">u to</span> <span m="220260">the</span> <span m="220400">k</span> <span m="220680">minus</span> <span m="221190">1.</span> <span m="222390">I</span> <span m="222600">lose</span> <span m="222960">powers</span> <span m="223490">of</span> <span m="223590">u.</span> <span m="223980">If I</span> <span m="224290">differentiate</span> <span m="224660">the</span> <span m="225030">exponential,</span> <span m="226490">I</span> <span m="226750">can</span> <span m="226840">get</span> <span m="229400">alpha</span> <span m="231460">times</span> <span m="232060">u</span> <span m="234130">times</span> <span m="234610">the</span> <span m="235000">same</span> <span m="236380">function.</span> <span m="240130">See,</span> <span m="240740">that's,</span> <span m="241160">roughly</span> <span m="241820">speaking,</span> <span m="242330">what's</span> <span m="242570">happening.</span> <span m="243210">You</span> <span m="243370">differentiate</span> <span m="244070">the</span> <span m="244160">thing</span> <span m="244490">that</span> <span m="244750">diverges</span> <span m="245390">the</span> <span m="245510">most.</span> </p>
+<p><span m="247200">So</span> <span m="247670">if</span> <span m="247850">you</span> <span m="248030">differentiate</span> <span m="248690">twice,</span> <span m="250160">each</span> <span m="250460">time</span> <span m="250760">you</span> <span m="250880">differentiate</span> <span m="251540">you</span> <span m="251690">get</span> <span m="251930">a</span> <span m="251990">factor</span> <span m="252560">of</span> <span m="252830">alpha</span> <span m="254130">times</span> <span m="254510">u</span> <span m="255240">squared</span> <span m="256335">phi,</span> <span m="257610">roughly.</span> <span m="258370">This</span> <span m="258610">is</span> <span m="259040">plus</span> <span m="259839">subleading.</span> <span m="263990">When</span> <span m="264140">you</span> <span m="264230">differentiate</span> <span m="265070">a</span> <span m="265130">function</span> <span m="266450">and</span> <span m="266570">you're</span> <span m="266750">wanting</span> <span m="267015">to</span> <span m="267280">show</span> <span m="267500">the</span> <span m="267650">most</span> <span m="268130">divergent</span> <span m="268940">thing,</span> <span m="269450">then</span> <span m="269670">you--</span> <span m="270470">because</span> <span m="270710">we're</span> <span m="270880">looking</span> <span m="271120">at</span> <span m="271310">the</span> <span m="271460">most</span> <span m="271820">divergent</span> <span m="272510">part,</span> <span m="272840">you</span> <span m="272990">will</span> <span m="273170">always</span> <span m="273470">differentiate</span> <span m="274100">this,</span> <span m="274580">and</span> <span m="274700">this</span> <span m="274930">u to</span> <span m="275270">the</span> <span m="275420">k</span> <span m="275810">is really a</span> <span m="276140">spectator,</span> <span m="276820">it</span> <span m="277160">doesn't</span> <span m="277490">do</span> <span m="277700">anything,</span> <span m="278780">because</span> <span m="279080">when</span> <span m="279230">you</span> <span m="279320">differentiate</span> <span m="279980">that,</span> <span m="280680">you</span> <span m="280700">get</span> <span m="280910">something</span> <span m="281360">much</span> <span m="281720">smaller,</span> <span m="282065">that</span> <span m="283740">doesn't</span> <span m="284030">matter.</span> </p>
+<p><span m="285400">So</span> <span m="285690">yes,</span> <span m="286290">with</span> <span m="286470">these</span> <span m="287640">exponentials,</span> <span m="288660">we</span> <span m="288910">get</span> <span m="289710">something</span> <span m="290340">like</span> <span m="290610">this.</span> <span m="291210">Beside</span> <span m="291570">double</span> <span m="291930">pronged</span> <span m="292280">should</span> <span m="292470">have</span> <span m="292630">been</span> <span m="292890">here.</span> <span m="295900">And</span> <span m="296230">therefore,</span> <span m="297340">you</span> <span m="297580">see</span> <span m="298150">that</span> <span m="298480">alpha</span> <span m="299160">is</span> <span m="299470">plus</span> <span m="299860">minus</span> <span m="300500">1.</span> <span m="307500">Alpha is</span> <span m="308000">plus</span> <span m="308420">minus</span> <span m="308990">1,</span> <span m="310316">and</span> <span m="310760">those</span> <span m="311210">are</span> <span m="311420">likely</span> <span m="312140">to</span> <span m="312320">be</span> <span m="313100">approximate</span> <span m="313910">solutions</span> <span m="316190">as</span> <span m="316580">x</span> <span m="317090">goes</span> <span m="317480">to</span> <span m="317670">infinity.</span> <span m="318170">So</span> <span m="318410">we</span> <span m="318560">could</span> <span m="318800">expect</span> <span m="319370">solutions</span> <span m="320810">for</span> <span m="321060">alpha</span> <span m="321350">equals</span> <span m="321870">1,</span> <span m="322220">and</span> <span m="322370">I</span> <span m="322460">will</span> <span m="322700">write</span> <span m="323120">that</span> <span m="323360">it,</span> <span m="323760">and</span> <span m="324020">all</span> <span m="324410">this,</span> <span m="326030">I</span> <span m="326210">should</span> <span m="326480">say</span> <span m="326770">is</span> <span m="326930">always</span> <span m="327560">as</span> <span m="327935">u</span> <span m="328310">goes</span> <span m="328640">to</span> <span m="328790">infinity.</span> <span m="329700">So</span> <span m="330350">always</span> <span m="331020">as</span> <span m="331370">u</span> <span m="331660">go</span> <span m="332060">to</span> <span m="332300">infinity,</span> <span m="333050">all of</span> <span m="333650">this</span> <span m="333860">in</span> <span m="334010">this</span> <span m="334190">blackboard.</span> </p>
+<p><span m="336110">So</span> <span m="338810">also</span> <span m="339350">as</span> <span m="339560">u</span> <span m="339830">go</span> <span m="340130">to</span> <span m="340220">infinity,</span> <span m="340950">we</span> <span m="341000">would</span> <span m="341180">expect</span> <span m="341690">maybe</span> <span m="342130">solutions</span> <span m="342950">of</span> <span m="343100">the</span> <span m="343220">form</span> <span m="343730">A</span> <span m="344650">u</span> <span m="345010">to</span> <span m="345220">the</span> <span m="345390">k,</span> <span m="346130">e</span> <span m="346400">to</span> <span m="346790">the</span> <span m="346940">minus</span> <span m="347580">u</span> <span m="347810">squared</span> <span m="348320">over</span> <span m="348710">2</span> <span m="349610">plus</span> <span m="350000">B</span> <span m="351140">u</span> <span m="351590">to</span> <span m="351830">the</span> <span m="351980">k</span> <span m="352670">e</span> <span m="353090">to the</span> <span m="353270">u</span> <span m="353540">squared</span> <span m="354170">over</span> <span m="354490">2.</span> <span m="355180">The</span> <span m="355460">two</span> <span m="355700">values</span> <span m="356270">of</span> <span m="356570">alpha</span> <span m="359060">equal</span> <span m="359420">plus</span> <span m="359930">minus</span> <span m="360590">1</span> <span m="361070">are</span> <span m="361550">the</span> <span m="361670">possibilities</span> <span m="362570">for</span> <span m="362750">these</span> <span m="362960">two</span> <span m="363140">equations</span> <span m="363800">to</span> <span m="363920">match.</span> <span m="366010">So</span> <span m="366190">you</span> <span m="366340">would</span> <span m="366520">expect</span> <span m="367000">things</span> <span m="367360">like</span> <span m="367600">this</span> <span m="368590">to</span> <span m="368710">be</span> <span m="368890">solutions.</span> </p>
+<p><span m="369280">And</span> <span m="369670">here</span> <span m="369940">you</span> <span m="370070">are</span> <span m="370190">seeing</span> <span m="370410">the</span> <span m="370510">beginning</span> <span m="371080">of</span> <span m="371200">the</span> <span m="371350">danger.</span> <span m="373270">Well</span> <span m="373550">a</span> <span m="373830">minus</span> <span m="374590">u</span> <span m="374800">squared</span> <span m="375280">over</span> <span m="375640">2</span> <span m="376150">times</span> <span m="376510">a</span> <span m="376660">power</span> <span m="377920">sounds</span> <span m="378400">pretty</span> <span m="378760">good,</span> <span m="381240">but a</span> <span m="381600">u</span> <span m="381990">squared</span> <span m="382440">over</span> <span m="382710">2</span> <span m="382920">times</span> <span m="383220">a</span> <span m="383310">power</span> <span m="383700">sounds</span> <span m="384090">pretty</span> <span m="384360">bad.</span> <span m="384870">So</span> <span m="385770">maybe</span> <span m="387360">this</span> <span m="387690">is</span> <span m="387840">what</span> <span m="388050">we</span> <span m="388470">want</span> <span m="389820">to</span> <span m="389970">happen.</span> <span m="391910">This</span> <span m="392110">is</span> <span m="392260">not</span> <span m="392590">an</span> <span m="392710">exact</span> <span m="393160">solution</span> <span m="393790">of</span> <span m="393940">anything</span> <span m="394510">yet.</span> <span m="394940">We're</span> <span m="395110">just</span> <span m="395410">looking</span> <span m="395890">at</span> <span m="396070">u</span> <span m="397060">going</span> <span m="397420">to</span> <span m="397570">plus</span> <span m="397880">and</span> <span m="397950">minus</span> <span m="398410">infinity,</span> <span m="399220">and</span> <span m="399400">maybe</span> <span m="399970">we'll</span> <span m="400210">have</span> <span m="401200">such</span> <span m="401590">a</span> <span m="401650">behavior</span> <span m="402430">or</span> <span m="402670">such</span> <span m="403070">behavior.</span> <span m="404200">But</span> <span m="404350">we</span> <span m="404590">want</span> <span m="404890">this</span> <span m="405220">one,</span> <span m="405580">otherwise</span> <span m="406180">we</span> <span m="406300">will</span> <span m="406480">never</span> <span m="406840">be</span> <span m="406990">able</span> <span m="407260">to</span> <span m="407380">normalize</span> <span m="408250">it.</span> </p>
+<p><span m="409330">So</span> <span m="410860">here</span> <span m="411160">it</span> <span m="411280">is.</span> <span m="411610">Without</span> <span m="412450">any</span> <span m="413170">loss</span> <span m="413620">of</span> <span m="413800">generality</span> <span m="415230">and</span> <span m="415510">inspired</span> <span m="416680">by</span> <span m="416980">this,</span> <span m="417960">this</span> <span m="418450">analysis</span> <span m="418990">is</span> <span m="419230">absolutely</span> <span m="420010">crucial,</span> <span m="420740">you</span> <span m="420860">see,</span> <span m="422400">we're</span> <span m="422890">following</span> <span m="423700">a</span> <span m="423790">very</span> <span m="424090">logical</span> <span m="424690">procedure.</span> <span m="425470">Cleaning</span> <span m="426070">the</span> <span m="426160">equation</span> <span m="427780">then</span> <span m="428080">looking</span> <span m="428650">where</span> <span m="428830">the</span> <span m="428980">divergence</span> <span m="429790">would</span> <span m="430050">happen</span> <span m="430630">and</span> <span m="430990">learning</span> <span m="431590">something</span> <span m="432010">about</span> <span m="432250">the</span> <span m="432370">form</span> <span m="432820">of</span> <span m="432940">the</span> <span m="433060">solution.</span> <span m="434200">Now</span> <span m="434650">without</span> <span m="435190">any</span> <span m="435520">loss</span> <span m="435940">of</span> <span m="436090">generality,</span> <span m="437020">I</span> <span m="437200">can</span> <span m="437500">write,</span> <span m="440230">I</span> <span m="440350">will</span> <span m="441070">write</span> <span m="441440">5x</span> <span m="444830">is</span> <span m="445010">going</span> <span m="445160">to</span> <span m="445250">be</span> <span m="446060">a--</span> <span m="446380">not</span> <span m="446650">of</span> <span m="446790">x</span> <span m="447070">anymore.</span> <span m="447470">U,</span> <span m="448590">h</span> <span m="448875">of</span> <span m="449160">u</span> <span m="450680">times</span> <span m="450965">e</span> <span m="451250">to</span> <span m="451690">the</span> <span m="451880">minus</span> <span m="452600">u</span> <span m="452990">squared</span> <span m="453500">over</span> <span m="453900">2.</span> </p>
+<p><span m="455984">So it's</span> <span m="456410">an</span> <span m="456660">an</span> <span m="456990">sat,</span> <span m="457680">but</span> <span m="457860">it's</span> <span m="458070">without</span> <span m="458640">any</span> <span m="458850">loss</span> <span m="459150">of</span> <span m="459300">generality,</span> <span m="460140">because</span> <span m="461430">you</span> <span m="461610">can</span> <span m="461850">always</span> <span m="462390">write</span> <span m="463140">any</span> <span m="463530">function</span> <span m="464250">as</span> <span m="464430">another</span> <span m="464820">function</span> <span m="465320">times e</span> <span m="465600">to</span> <span m="465930">the</span> <span m="466080">minus</span> <span m="466510">u</span> <span m="466700">over</span> <span m="467060">2,</span> <span m="467320">because</span> <span m="467670">you</span> <span m="467790">take</span> <span m="468060">the</span> <span m="468150">function,</span> <span m="468690">you</span> <span m="468750">multiply</span> <span m="469280">by</span> <span m="469710">e to</span> <span m="470040">the</span> <span m="470210">plus</span> <span m="470500">u</span> <span m="470790">over</span> <span m="471120">2</span> <span m="471720">and</span> <span m="471900">e</span> <span m="472200">to the</span> <span m="472370">minus</span> <span m="472690">u</span> <span m="473010">over</span> <span m="473250">2</span> <span m="473500">and</span> <span m="473850">it's</span> <span m="474060">written</span> <span m="474390">like</span> <span m="474630">that.</span> <span m="475680">But</span> <span m="475980">this</span> <span m="476520">should</span> <span m="476880">be</span> <span m="477120">nice,</span> <span m="478440">because</span> <span m="478920">it</span> <span m="479100">has</span> <span m="479490">sort</span> <span m="479850">of</span> <span m="480000">the</span> <span m="480150">right</span> <span m="480540">behavior</span> <span m="481860">already.</span> <span m="483270">And</span> <span m="483450">here</span> <span m="483840">is</span> <span m="483990">the</span> <span m="484080">hope.</span> <span m="485550">The</span> <span m="485670">hope</span> <span m="486060">is</span> <span m="486210">that</span> <span m="486510">this</span> <span m="486900">function</span> <span m="487560">now</span> <span m="488520">is</span> <span m="488790">a</span> <span m="488880">proxy</span> <span m="489540">for</span> <span m="489780">phi.</span> <span m="490290">If</span> <span m="490560">you</span> <span m="490680">know</span> <span m="491010">h,</span> <span m="491400">you</span> <span m="491490">know</span> <span m="491730">phi,</span> <span m="492370">which</span> <span m="492480">is</span> <span m="492600">what</span> <span m="492810">you</span> <span m="492960">want.</span> <span m="493810">And</span> <span m="493920">this</span> <span m="494250">function,</span> <span m="495840">hopefully,</span> <span m="496860">won't</span> <span m="497220">diverge.</span> <span m="500490">This</span> <span m="500870">will</span> <span m="501080">be</span> <span m="501290">into</span> <span m="501690">[INAUDIBLE].</span> </p>
+<p><span m="502070">So</span> <span m="502310">if</span> <span m="502490">this</span> <span m="502790">function</span> <span m="503300">doesn't</span> <span m="503780">diverge,</span> <span m="504110">it</span> <span m="504260">will</span> <span m="504890">be</span> <span m="505100">a</span> <span m="505190">great</span> <span m="505580">thing.</span> <span m="506270">In</span> <span m="506450">particular,</span> <span m="507330">we</span> <span m="507410">could</span> <span m="507710">hope</span> <span m="510530">that</span> <span m="510800">h</span> <span m="511190">of</span> <span m="511370">u</span> <span m="512510">is</span> <span m="512809">a</span> <span m="512900">polynomial.</span> <span m="517780">You</span> <span m="517870">see,</span> <span m="518559">if</span> <span m="518679">somebody</span> <span m="519340">with</span> <span m="519520">have</span> <span m="519730">come and</span> <span m="520240">said,</span> <span m="520460">look</span> <span m="520760">at</span> <span m="520870">that</span> <span m="521110">equation.</span> <span m="521750">Could</span> <span m="522059">that</span> <span m="522460">be</span> <span m="522850">a</span> <span m="522940">polynomial?</span> <span m="523880">A</span> <span m="523929">polynomial</span> <span m="524214">is</span> <span m="524500">something</span> <span m="524890">that</span> <span m="525280">ends</span> <span m="526060">up</span> <span m="526280">to</span> <span m="526420">some</span> <span m="526750">power</span> <span m="527380">x to</span> <span m="527890">the</span> <span m="528400">20</span> <span m="529000">or</span> <span m="529120">x to the</span> <span m="529510">30,</span> <span m="529870">but it</span> <span m="530140">doesn't</span> <span m="530440">go</span> <span m="530650">up</span> <span m="530830">forever.</span> <span m="531660">An</span> <span m="531790">exponential</span> <span m="532480">has</span> <span m="532690">all</span> <span m="532870">powers.</span> <span m="533780">This</span> <span m="535090">equation</span> <span m="535720">doesn't</span> <span m="536230">have</span> <span m="536500">a</span> <span m="536590">polynomial</span> <span m="537340">solution.</span> <span m="538660">No</span> <span m="538990">polynomial</span> <span m="539710">will</span> <span m="539890">ever</span> <span m="540130">solve</span> <span m="540490">this.</span> <span m="541210">But</span> <span m="541540">now</span> <span m="542140">that</span> <span m="542290">you've</span> <span m="542620">isolated</span> <span m="543670">the</span> <span m="543790">divergence,</span> <span m="544840">there</span> <span m="545050">is</span> <span m="545200">a</span> <span m="545290">hope</span> <span m="545860">that</span> <span m="546130">a</span> <span m="546220">polynomial</span> <span m="546940">will</span> <span m="547180">work.</span> </p>
+<p><span m="550210">So</span> <span m="550840">for</span> <span m="551110">doing</span> <span m="551560">that,</span> <span m="552280">exploring</span> <span m="553000">that</span> <span m="553210">hope,</span> <span m="553660">I</span> <span m="553840">now</span> <span m="554260">have</span> <span m="554740">to</span> <span m="555250">substitute--</span> <span m="556480">this</span> <span m="556660">is</span> <span m="556840">no</span> <span m="557140">assumption--</span> <span m="558340">the</span> <span m="558470">differential</span> <span m="559270">equation</span> <span m="559960">for</span> <span m="560230">phi</span> <span m="561460">implies</span> <span m="562480">a</span> <span m="562540">differential</span> <span m="563260">equation</span> <span m="563800">for</span> <span m="564190">h,</span> <span m="564730">you</span> <span m="564850">just</span> <span m="565060">substitute</span> <span m="565840">this</span> <span m="566200">and</span> <span m="566350">look</span> <span m="566570">at</span> <span m="566710">it.</span> <span m="567920">That's</span> <span m="568160">a</span> <span m="568280">one</span> <span m="568640">line</span> <span m="569000">computation</span> <span m="569930">or</span> <span m="570110">two</span> <span m="570320">line</span> <span m="570650">computation.</span> <span m="571340">I'll</span> <span m="571550">give</span> <span m="571900">the</span> <span m="572100">answer.</span> <span m="573200">So</span> <span m="573410">what</span> <span m="573740">is</span> <span m="573890">the</span> <span m="573980">differential</span> <span m="574760">equation</span> <span m="575300">for</span> <span m="575570">h?</span> <span m="576900">So</span> <span m="577250">back</span> <span m="579830">in</span> <span m="580280">star,</span> <span m="582890">you'll</span> <span m="583030">get</span> <span m="583340">the</span> <span m="583580">second</span> <span m="584360">h,</span> <span m="585080">the</span> <span m="585380">u</span> <span m="585650">squared</span> <span m="586880">minus</span> <span m="587510">2u</span> <span m="588420">dh</span> <span m="590000">du</span> <span m="591500">plus</span> <span m="592310">e</span> <span m="592700">minus</span> <span m="593390">1h</span> <span m="595190">equals</span> <span m="595700">zero.</span> </p>
+<p><span m="599290">So</span> <span m="599430">you</span> <span m="599670">substitute</span> <span m="600470">that</span> <span m="601310">into</span> <span m="601640">this</span> <span m="602000">equation</span> <span m="603740">and</span> <span m="603890">you</span> <span m="604010">get</span> <span m="604520">this</span> <span m="604970">differential</span> <span m="605630">equation.</span> <span m="607140">And</span> <span m="607290">now</span> <span m="607760">this</span> <span m="607970">is</span> <span m="608120">a</span> <span m="608180">differential</span> <span m="608990">equation</span> <span m="611240">for</span> <span m="611600">h.</span> <span m="612620">We</span> <span m="612830">hope</span> <span m="613790">it</span> <span m="613970">has</span> <span m="614240">a</span> <span m="614300">polynomial</span> <span m="615080">solution.</span> <span m="616640">You</span> <span m="616850">will</span> <span m="617090">see</span> <span m="617450">that</span> <span m="617630">it</span> <span m="617870">wants</span> <span m="618570">to</span> <span m="618950">have</span> <span m="619190">a</span> <span m="619250">polynomial</span> <span m="619940">solution,</span> <span m="620570">but it</span> <span m="620870">doesn't</span> <span m="621440">quite</span> <span m="621860">make</span> <span m="622280">it.</span> <span m="623620">And</span> <span m="623700">then</span> <span m="623910">you</span> <span m="624060">will</span> <span m="624270">discover</span> <span m="624840">quantization</span> <span m="626070">helps,</span> <span m="626700">and</span> <span m="626850">suddenly</span> <span m="627300">you</span> <span m="627390">get</span> <span m="627540">the</span> <span m="627740">other</span> <span m="627890">normal</span> <span m="628230">solution</span> <span m="629250">and</span> <span m="629430">everything</span> <span m="630030">works</span> <span m="630330">out.</span> </p>
+</div>
+        <div id="vid_index" itemprop="description" class="tabContent hide">
+<h2 class="subhead">Free Downloads</h2>
+<h3 class="subsubhead">Video</h3>
+<ul>
+<li>iTunes U (<a href="https://itunes.apple.com/us/itunes-u/id1251079217">MP4 - 24MB</a>)</li>
+<li>Internet Archive (<a href="https://archive.org/download/MIT8.04S16/MIT8_04S16_lec13_s5_300k.mp4">MP4 - 24MB</a>)</li>
+</ul>
+<br>
+<h3 class="subsubhead">Caption</h3>
+<ul>
+<li>English-US (<a href="../../../../contents/video-lectures/part-2/behavior-of-the-differential-equation/eNf8nH1yEYc.srt">SRT</a>)</li>
+</ul>
+</div>
+    
+   </div>  
+
+
+
+
+      					 
+        <div class="" id="parent-fieldname-bottom_html_area">
+            
+            
+        </div>
+    
+               </main><!--Course_inner_media tag close -->
+           		</div>
+<!--Course_wrapper tag close -->
+            </div>
+<!--left tag close -->
+            <aside id="right">
+                <!--Begin Right Portion -->
+                    <div>
+    
+
+
+
+</div>
+
+                	<div>
+    
+
+
+
+</div>
+
+
+        <div class="" id="parent-fieldname-rsi_top_html_area">
+            
+            
+        </div>
+    
+
+<!-- RSI google ad space-->
+
+
+
+<div id="google_ads">    
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script type="text/javascript">var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];</script>
+    <script type="text/javascript">
+googletag.cmd.push(function() {googletag.defineSlot('/1064917/VIDEO_INDIVIDUAL_SLOT_A_DL', [[300, 250], [300, 300], [180, 200], [180, 150], [160, 600]], 'VIDEO_INDIVIDUAL_SLOT_A_DL').addService(googletag.pubads());googletag.defineSlot('/1064917/VIDEO_INDIVIDUAL_SLOT_B_DL', [[300, 250], [300, 300], [180, 200], [180, 150], [160, 600]], 'VIDEO_INDIVIDUAL_SLOT_B_DL').addService(googletag.pubads());googletag.defineSlot('/1064917/VIDEO_INDIVIDUAL_SLOT_C_DL', [[300, 250], [300, 300], [180, 200], [180, 150], [160, 600]], 'VIDEO_INDIVIDUAL_SLOT_C_DL').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+ googletag.enableServices();
+});</script>
+    <script language="javascript" type="text/javascript">
+googletag.cmd.push(function() {googletag.pubads().set("TYPE","HOUSE");googletag.pubads().set("DEPARTMENT","8");googletag.pubads().set("CRS_BEG2","04");googletag.pubads().set("CRS_END","");googletag.pubads().set("SESSION","S");googletag.pubads().set("YEAR","16");})
+</script>
+    
+    <div id="VIDEO_INDIVIDUAL_SLOT_A_DL">
+    	<script>googletag.cmd.push(function() { googletag.display('VIDEO_INDIVIDUAL_SLOT_A_DL'); });</script>
+    </div>
+    <div id="VIDEO_INDIVIDUAL_SLOT_B_DL">
+    	<script>googletag.cmd.push(function() { googletag.display('VIDEO_INDIVIDUAL_SLOT_B_DL'); });</script>
+    </div>
+    <div id="VIDEO_INDIVIDUAL_SLOT_C_DL">
+    	<script>googletag.cmd.push(function() { googletag.display('VIDEO_INDIVIDUAL_SLOT_C_DL'); });</script>
+    </div>
+</div>
+
+<!-- End RSI ads--> 
+
+
+<div>
+    
+
+
+
+</div>
+
+            </aside><!--Right div close -->
+            <div class="clear"></div>
+        </div>
+<!--grid tag close -->
+      </div>
+		
+		<footer id="bottom">
+			<div id="grid">
+				
+<div id="portletwrapper-6f63772e626f74746f6d706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d666f6f746572" class="portletWrapper kssattr-portlethash-6f63772e626f74746f6d706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d666f6f746572">
+<div class="portletStaticText portlet-static-site-footer"><div id="footer">
+<nav aria-label="Footer">     <nav id="foot-c1" class="grid_2 alpha" aria-labelledby="f-find-courses">       <span class="footer" id="f-find-courses" aria-hidden="true">Find Courses</span>
+<ul class="foot-bullet" role="presentation">
+    <li><a href="https://ocw.mit.edu/courses/find-by-topic/">Find by Topic</a></li>
+    <li><a href="https://ocw.mit.edu/courses/find-by-number/">Find by Course Number</a></li>
+    <li><a href="https://ocw.mit.edu/courses/find-by-department/">Find by Department</a></li>
+    <li><a href="https://ocw.mit.edu/courses/new-courses/">New Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/most-visited-courses/">Most Visited Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/ocw-scholar/">OCW Scholar Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/audio-video-courses/">Audio/Video Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/online-textbooks/">Online Textbooks</a></li>
+    <li><a href="https://ocw.mit.edu/courses/instructor-insights/">Instructor Insights</a></li>
+    <li><a href="https://ocw.mit.edu/resources/">Supplemental Resources</a></li>
+    <li><a href="https://ocw.mit.edu/courses/mitx-related-courseware/">MITx &amp; Related OCW Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/mit-open-learning-library/">MIT Open Learning Library</a></li>
+    <li><a href="https://ocw.mit.edu/courses/translated-courses/">Translated Courses</a></li>
+</ul>
+</nav>
+<div id="foot-c2" class="grid_2"><nav aria-labelledby="f-for-educators">         <span id="f-for-educators" class="footer" aria-hidden="true">For Educators</span>
+<ul class="foot-bullet" role="presentation">
+    <li><a href="https://chalk-radio.simplecast.com/">Chalk Radio Podcast</a></li>
+    <li><a href="https://ocw.mit.edu/educator/">OCW Educator Portal </a></li>
+    <li><a href="https://ocw.mit.edu/courses/instructor-insights/">Instructor Insights by Department</a></li>
+    <li><a href="https://openlearning.mit.edu/campus/digital-innovations/" aria-label="External Link: Residential Digital Innovations">Residential Digital Innovations </a></li>
+    <li><a href="https://ocw.mit.edu/high-school/">OCW Highlights for High School</a></li>
+    <li><a href="https://ocw.mit.edu/educator/additional-resources/">Additional Resources</a></li>
+</ul>
+</nav></div>
+<nav class="grid_2" id="foot-c3" aria-labelledby="f-donate">       <span id="f-donate" class="footer" aria-hidden="true">Give Now</span>
+<ul class="foot-bullet" role="presentation">
+    <li><a href="https://ocw.mit.edu/give/">Make a Donation</a></li>
+    <li><a href="https://ocw.mit.edu/give/why-give/">Why Give?</a></li>
+    <li><a href="https://ocw.mit.edu/give/our-supporters/">Our Supporters</a></li>
+    <li><a href="https://ocw.mit.edu/give/other-ways-to-contribute/">Other Ways to Contribute</a></li>
+    <li><a href="https://ocw.mit.edu/support/">Become a Corporate Sponsor</a></li>
+</ul>
+</nav>
+<div class="grid_2" id="foot-c4">
+<nav aria-labelledby="f-about">         <span id="f-about" class="footer" aria-hidden="true">About</span>
+<ul class="foot-bullet" role="presentation">
+    <li><a href="https://ocw.mit.edu/about/">About OpenCourseWare</a></li>
+    <li><a href="https://ocw.mit.edu/about/site-statistics/">Site Statistics</a></li>
+    <li><a href="https://ocw.mit.edu/about/ocw-stories/">OCW Stories</a></li>
+    <li><a href="https://ocw.mit.edu/about/newsletter/">Newsletter</a></li>
+    <li><a href="https://www.ocw-openmatters.org/">Open Matters Blog</a></li>
+</ul>
+</nav><!--about-->       <nav aria-labelledby="f-tools">         <span id="f-tools" class="footer" aria-hidden="true">Tools</span>
+<ul class="foot-bullet" role="presentation">
+    <li><a href="https://ocw.mit.edu/help/">Help &amp; FAQs</a></li>
+    <li><a href="https://ocw.mit.edu/about/contactus">Contact Us</a></li>
+    <li><a href="https://accessibility.mit.edu/" target="_blank">Accessibility</a></li>
+    <li><a href="https://ocw.mit.edu/help/site-map/">Site Map</a></li>
+    <li><a href="../../../../common/terms/index.htm">Privacy &amp; Terms of Use</a></li>
+    <li><a href="https://ocw.mit.edu/help/rss/">RSS Feeds</a></li>
+</ul>
+</nav><!--tools-->
+</div>
+</nav> <aside style="min-height: 289px;" aria-labelledby="f-our-corporate-supporters" class="grid_4 omega" id="foot-c5">           <span aria-hidden="true" class="footer" id="f-our-corporate-supporters">Our Corporate Supporters</span>           <!-- HOME_CORP_LOGO_1 -->
+<div id="div-gpt-ad-1388181177156-0" class="sponsors_google_ads_even"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-0'); });
+            </script></div>
+<!-- HOME_CORP_LOGO_2 -->
+<div id="div-gpt-ad-1388181177156-1" class="sponsors_google_ads_odd"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-1'); });
+            </script></div>
+<!-- HOME_CORP_LOGO_3 -->
+<div id="div-gpt-ad-1388181177156-2" class="sponsors_google_ads_even"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-2'); });
+            </script></div>
+<!-- HOME_CORP_LOGO_4 -->
+<div id="div-gpt-ad-1388181177156-3" class="sponsors_google_ads_odd"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-3'); });
+            </script></div>
+<!-- HOME_CORP_LOGO_5 -->
+<div id="div-gpt-ad-1388181177156-4" class="sponsors_google_ads_even"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-4'); });
+              </script></div>
+<!-- HOME_CORP_LOGO_6 -->
+<div id="div-gpt-ad-1388181177156-5" class="sponsors_google_ads_odd"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-5'); });
+              </script></div>
+</aside>
+<div class="grid_12 alpha omega" itemprop="publisher" itemscope="" itemtype="http://schema.org/CollegeOrUniversity">
+<h4 class="footer" style="border-top: thin solid #d5c9ba; padding-top: 10px; margin-bottom: 10px;">About <span itemprop="name">MIT OpenCourseWare</span>
+</h4>
+<p style="color: #999; font-size: 1em; line-height: 1.5em; margin-top: 10px;" itemprop="description">MIT OpenCourseWare is an online publication of materials from over 2,500 MIT courses, freely sharing knowledge with learners and educators around the world. <a href="https://ocw.mit.edu/about/">Learn more »</a></p>
+</div>
+<div id="foot-copy" class="grid_12 alpha omega" style="border-top: none;">
+<a href="http://web.mit.edu"><img src="../../../../common/images/logo_mit.png" alt="Massachusetts Institute of Technology logo and name." style="width: 195; height: 44;"></a><a href="https://openlearning.mit.edu/"><img src="https://ocw.mit.edu/images/mitol_logo.png" alt="MIT Open Learning logo and name." style="width: 265; height: 50; vertical-align: top; padding-left:30px;"></a><a href="https://www.oeglobal.org/"><img src="https://ocw.mit.edu/images/oeg_logo.gif" alt="Open Education Consortium logo." style="width: 219px; height: 59px; vertical-align: top; padding-left:20px;"></a><a rel="license" itemprop="useRightsUrl" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="../../../../common/images/cc_by-nc-sa.png" alt="Creative Commons logo with terms BY-NC-SA." style="width: 126px; height: 44px; margin-right: 0; padding-left: 20px;"></a>
+<p class="copyright">© 2001–2018<br>
+Massachusetts Institute of Technology</p>
+<p style="font-size: 0.9em; margin-bottom: 15px;">Your use of the MIT OpenCourseWare site and materials is subject to our <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">Creative Commons License</a> and other <a href="../../../../common/terms/index.htm" rel="cc:morePermissions">terms of use</a>.</p>
+</div>
+</div></div>
+
+</div>
+
+
+
+
+
+                
+			</div> <!-- bottom grid end -->
+		</footer><!-- footer bottom end -->
+
+
+   </body>
+ </html>

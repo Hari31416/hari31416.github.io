@@ -1,0 +1,395 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     14327,        385]
+NotebookOptionsPosition[     13241,        343]
+NotebookOutlinePosition[     13841,        367]
+CellTagsIndexPosition[     13798,        364]
+WindowTitle->Spherical Harmonics - Source
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Spherical Harmonics", "Section",
+ CellFrameColor->RGBColor[
+  0.6449835965514611, 0.758632791638056, 0.2516823071641108],
+ FontColor->RGBColor[
+  0.6449835965514611, 0.758632791638056, 0.2516823071641108]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"ParametricPlot3D", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Evaluate", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"Cos", "[", "p", "]"}], 
+          RowBox[{"Sin", "[", "t", "]"}]}], ",", 
+         RowBox[{
+          RowBox[{"Sin", "[", "p", "]"}], 
+          RowBox[{"Sin", "[", "t", "]"}]}], ",", 
+         RowBox[{"Cos", "[", "t", "]"}]}], "}"}], 
+       RowBox[{"Abs", "[", 
+        RowBox[{"SphericalHarmonicY", "[", 
+         RowBox[{"l", ",", "m", ",", "t", ",", "p"}], "]"}], "]"}]}], "]"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"p", ",", "0", ",", 
+       RowBox[{"2", "Pi"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", "Pi"}], "}"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", ".5"}], ",", ".5"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", ".5"}], ",", ".5"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "1.1"}], ",", "1.1"}], "}"}]}], "}"}]}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Mesh", "\[Rule]", "False"}], ",", 
+     RowBox[{"PlotPoints", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"90", ",", "90"}], "}"}]}], ",", 
+     RowBox[{"MaxRecursion", "\[Rule]", 
+      RowBox[{"ControlActive", "[", 
+       RowBox[{"0", ",", "2"}], "]"}]}], ",", "\[IndentingNewLine]", 
+     RowBox[{"ViewAngle", "\[Rule]", ".246"}], ",", 
+     RowBox[{"ImageSize", " ", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"800", ",", "600"}], "}"}]}], ",", 
+     RowBox[{"Axes", "\[Rule]", "False"}], ",", 
+     RowBox[{"SphericalRegion", "\[Rule]", "True"}], ",", 
+     RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+     RowBox[{"PlotLabel", "\[Rule]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+        RowBox[{"With", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"l", "=", "l"}], ",", 
+            RowBox[{"m", "=", 
+             RowBox[{"Round", "@", "m"}]}]}], "}"}], ",", 
+          RowBox[{"TraditionalForm", "[", 
+           RowBox[{"HoldForm", "[", 
+            RowBox[{"r", "==", 
+             RowBox[{"SphericalHarmonicY", "[", 
+              RowBox[{"l", ",", "m", ",", "\[Theta]", ",", "\[Phi]"}], 
+              "]"}]}], "]"}], "]"}]}], "]"}], ",", "14"}], "]"}]}]}], "]"}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"l", ",", "2", ",", "\"\<degree l\>\""}], "}"}], ",", "0", ",", 
+     "7", ",", "1", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"m", ",", "0", ",", "\"\<order m\>\""}], "}"}], ",", 
+     RowBox[{"-", "l"}], ",", "l", ",", "1", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{
+  3.35264968450764*^9, {3.36327217342188*^9, 3.36327219760938*^9}, {
+   3.36327227621875*^9, 3.36327228157813*^9}, {3.37141684824303*^9, 
+   3.37141685981645*^9}, 3.37141689716403*^9, {3.37141706864582*^9, 
+   3.37141707447928*^9}, {3.37141717452415*^9, 3.37141718858686*^9}, {
+   3.3714174872445*^9, 3.37141763002204*^9}, {3.37141782291421*^9, 
+   3.37141793644002*^9}, {3.37142816971687*^9, 3.37142818749846*^9}, {
+   3.3782287007540503`*^9, 3.378228720603299*^9}, {3.378228874325667*^9, 
+   3.3782288748639517`*^9}, {3.378228987204692*^9, 3.378229044407482*^9}, {
+   3.378229076322403*^9, 3.3782290814979258`*^9}, {3.378229146220326*^9, 
+   3.3782292313122396`*^9}, {3.3782294512200203`*^9, 3.37822945435454*^9}, {
+   3.378229637493128*^9, 3.378229670095272*^9}, {3.378643047314404*^9, 
+   3.378643048482533*^9}, {3.378688934188416*^9, 3.378688957069816*^9}, {
+   3.3786889964309464`*^9, 3.378688996992764*^9}, {3.37868903581819*^9, 
+   3.378689039427528*^9}, {3.378689070506419*^9, 3.378689139206118*^9}, 
+   3.378689169616585*^9, {3.3786892541021137`*^9, 3.378689274401804*^9}, {
+   3.378689445531608*^9, 3.3786894490396*^9}, {3.378689517244156*^9, 
+   3.3786896265577993`*^9}, {3.378689731488573*^9, 3.3786897366706247`*^9}, {
+   3.378689789242156*^9, 3.378689815932637*^9}, {3.378689895666855*^9, 
+   3.3786898981105137`*^9}, {3.3786899289552183`*^9, 3.37868995730921*^9}, {
+   3.380893671374487*^9, 3.380893672218237*^9}, {3.380893977436987*^9, 
+   3.380893981265112*^9}, {3.3815258719538937`*^9, 3.3815258917829847`*^9}, {
+   3.381525958747656*^9, 3.381525985916768*^9}, {3.381526051671184*^9, 
+   3.381526090936517*^9}, {3.3815261784671993`*^9, 3.381526180336578*^9}, {
+   3.381526211866322*^9, 3.3815262215224743`*^9}, {3.38152625664355*^9, 
+   3.381526287012438*^9}, {3.479510158690544*^9, 3.47951016556172*^9}, {
+   3.479510224528084*^9, 3.479510276502103*^9}, {3.479510809865747*^9, 
+   3.47951084423669*^9}, {3.479510887946126*^9, 3.479510942030405*^9}, {
+   3.479552750084258*^9, 3.479552752266317*^9}},
+ CellID->1496021318],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`l$$ = 2, $CellContext`m$$ = 0., 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`l$$], 2, "degree l"}, 0, 7, 1}, {{
+       Hold[$CellContext`m$$], 0, "order m"}, 
+      Dynamic[-$CellContext`l$$], 
+      Dynamic[$CellContext`l$$], 1}}, Typeset`size$$ = {800., {298., 302.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`l$6914$$ = 0, $CellContext`m$6915$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`l$$ = 2, $CellContext`m$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`l$$, $CellContext`l$6914$$, 0], 
+        Hold[$CellContext`m$$, $CellContext`m$6915$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ParametricPlot3D[
+        Evaluate[{
+          Cos[$CellContext`p] Sin[$CellContext`t], Sin[$CellContext`p] 
+           Sin[$CellContext`t], 
+           Cos[$CellContext`t]} Abs[
+           
+           SphericalHarmonicY[$CellContext`l$$, $CellContext`m$$, \
+$CellContext`t, $CellContext`p]]], {$CellContext`p, 0, 2 Pi}, {$CellContext`t,
+          0, Pi}, PlotRange -> {{-0.5, 0.5}, {-0.5, 0.5}, {-1.1, 1.1}}, Mesh -> 
+        False, PlotPoints -> {90, 90}, MaxRecursion -> ControlActive[0, 2], 
+        ViewAngle -> 0.246, ImageSize -> {800, 600}, Axes -> False, 
+        SphericalRegion -> True, Boxed -> False, PlotLabel -> Style[
+          
+          With[{$CellContext`l = $CellContext`l$$, $CellContext`m = 
+            Round[$CellContext`m$$]}, 
+           TraditionalForm[
+            
+            HoldForm[$CellContext`r == 
+             
+             SphericalHarmonicY[$CellContext`l, $CellContext`m, $CellContext`\
+\[Theta], $CellContext`\[Phi]]]]], 14]], 
+      "Specifications" :> {{{$CellContext`l$$, 2, "degree l"}, 0, 7, 1, 
+         Appearance -> "Labeled"}, {{$CellContext`m$$, 0, "order m"}, 
+         Dynamic[-$CellContext`l$$], 
+         Dynamic[$CellContext`l$$], 1, Appearance -> "Labeled"}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{843., {356.34375, 361.65625}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.479510166291744*^9, {3.479510225570449*^9, 3.479510277021419*^9}, 
+   3.4795108116374807`*^9, 3.479510844681576*^9, {3.479510889552017*^9, 
+   3.479510902709476*^9}, 3.479510943330921*^9, 3.479552753678789*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["THIS NOTEBOOK IS THE SOURCE CODE FROM", "Text",
+ CellFrame->{{0, 0}, {0, 1}},
+ CellMargins->{{48, 10}, {4, 28}},
+ CellGroupingRules->{"SectionGrouping", 25},
+ CellFrameMargins->{{48, 48}, {6, 5}},
+ CellFrameColor->RGBColor[0.691905, 0.790311, 0.300252],
+ FontFamily->"Helvetica",
+ FontSize->10,
+ FontWeight->"Bold",
+ FontColor->RGBColor[0.691905, 0.790311, 0.300252]],
+
+Cell[TextData[{
+ "\"",
+ ButtonBox["Spherical Harmonics",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://demonstrations.wolfram.com/SphericalHarmonics/"], None},
+  ButtonNote->"http://demonstrations.wolfram.com/SphericalHarmonics/"],
+ "\"",
+ " from ",
+ ButtonBox["The Wolfram Demonstrations Project",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://demonstrations.wolfram.com/"], None},
+  ButtonNote->"http://demonstrations.wolfram.com/"],
+ "\[ParagraphSeparator]\[NonBreakingSpace]",
+ ButtonBox["http://demonstrations.wolfram.com/SphericalHarmonics/",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://demonstrations.wolfram.com/SphericalHarmonics/"], None},
+  ButtonNote->"http://demonstrations.wolfram.com/SphericalHarmonics/"]
+}], "Text",
+ CellMargins->{{48, Inherited}, {0, Inherited}},
+ FontFamily->"Verdana",
+ FontSize->10,
+ FontColor->GrayLevel[0.5]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[" ", "Text",
+ CellFrame->{{0, 0}, {0, 1}},
+ CellMargins->{{48, 10}, {4, 28}},
+ CellGroupingRules->{"SectionGrouping", 25},
+ CellFrameMargins->{{48, 48}, {6, 5}},
+ CellFrameColor->RGBColor[0.691905, 0.790311, 0.300252],
+ FontFamily->"Helvetica",
+ FontSize->10,
+ FontWeight->"Bold",
+ FontColor->RGBColor[0.691905, 0.790311, 0.300252]],
+
+Cell[TextData[{
+ "Contributed by: ",
+ ButtonBox["Stephen Wolfram",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://demonstrations.wolfram.com/author.html?author=Stephen+\
+Wolfram"], None},
+  ButtonNote->
+   "http://demonstrations.wolfram.com/author.html?author=Stephen+Wolfram"]
+}], "Text",
+ CellDingbat->"\[FilledSmallSquare]",
+ CellMargins->{{66, 48}, {2, 4}},
+ FontFamily->"Verdana",
+ FontSize->10,
+ FontColor->GrayLevel[0.6],
+ CellID->123754884],
+
+Cell[TextData[{
+ "A full-function Wolfram ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " 6 system is required to edit this notebook.\n",
+ StyleBox[ButtonBox["GET WOLFRAM MATHEMATICA 6 \[RightGuillemet]",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://www.wolfram.com/products/mathematica/"], None},
+  ButtonNote->"http://www.wolfram.com/products/mathematica/"],
+  FontFamily->"Helvetica",
+  FontWeight->"Bold",
+  FontSlant->"Italic",
+  FontColor->RGBColor[1, 0.42, 0]]
+}], "Text",
+ CellFrame->True,
+ CellMargins->{{48, 68}, {8, 28}},
+ CellFrameMargins->12,
+ CellFrameColor->RGBColor[0.865507, 0.90634, 0.680751],
+ CellChangeTimes->{3.3750111182355957`*^9},
+ ParagraphSpacing->{1., 1.},
+ FontFamily->"Verdana",
+ FontSize->10,
+ FontColor->GrayLevel[0.411765],
+ Background->RGBColor[0.986023, 0.991363, 0.969818]],
+
+Cell[TextData[{
+ "\[Copyright] ",
+ StyleBox[ButtonBox["The Wolfram Demonstrations Project & Contributors",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://demonstrations.wolfram.com/"], None},
+  ButtonNote->"http://demonstrations.wolfram.com/"],
+  FontColor->GrayLevel[0.6]],
+ "\[ThickSpace]\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+ StyleBox[ButtonBox["Terms of Use",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://demonstrations.wolfram.com/termsofuse.html"], None},
+  ButtonNote->"http://demonstrations.wolfram.com/termsofuse.html"],
+  FontColor->GrayLevel[0.6]],
+ "\[ThickSpace]\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+ StyleBox[ButtonBox["Make a new version of this Demonstration \
+\[RightGuillemet]",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://demonstrations.wolfram.com/participate/upload.jsp?id=\
+SphericalHarmonics"], None},
+  ButtonNote->None],
+  FontColor->GrayLevel[0.6]]
+}], "Text",
+ CellFrame->{{0, 0}, {0, 0.5}},
+ CellMargins->{{48, 10}, {20, 50}},
+ CellFrameMargins->{{6, 0}, {6, 6}},
+ CellFrameColor->GrayLevel[0.6],
+ FontFamily->"Verdana",
+ FontSize->9,
+ FontColor->GrayLevel[0.6]]
+}, Open  ]]
+},
+Editable->True,
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{961, 852},
+WindowMargins->{{89, Automatic}, {Automatic, 0}},
+WindowElements->{
+ "StatusArea", "MemoryMonitor", "MagnificationPopUp", "VerticalScrollBar", 
+  "MenuBar"},
+WindowTitle->"Spherical Harmonics - Source",
+DockedCells->{},
+CellContext->Notebook,
+FrontEndVersion->"7.0 for Mac OS X x86 (32-bit) (November 11, 2008)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[609, 23, 211, 4, 67, "Section"],
+Cell[CellGroupData[{
+Cell[845, 31, 5100, 112, 133, "Input",
+ CellID->1496021318],
+Cell[5948, 145, 3101, 62, 735, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9098, 213, 373, 9, 50, "Text",
+ CellGroupingRules->{"SectionGrouping", 25}],
+Cell[9474, 224, 886, 24, 35, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10397, 253, 337, 9, 50, "Text",
+ CellGroupingRules->{"SectionGrouping", 25}],
+Cell[10737, 264, 459, 15, 18, "Text",
+ CellID->123754884],
+Cell[11199, 281, 829, 24, 98, "Text"],
+Cell[12031, 307, 1194, 33, 88, "Text"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+(* NotebookSignature BS4ZogSMJStp1D0iPcvpOpyR *)
