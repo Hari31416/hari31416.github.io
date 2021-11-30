@@ -142,3 +142,14 @@ h2 {
   font-size: 40px;
   width: auto;
 }
+
+/* After */
+
+.btn-xl {
+  padding: 18px 28px;
+  font-size: 30px;
+  line-height: normal;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
