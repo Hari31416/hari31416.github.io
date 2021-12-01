@@ -1,0 +1,124 @@
+{
+    "items": [
+        {
+            "name": "Dune",
+            "author": "Frank Herbert",
+            "low_links": [
+                "https://m.media-amazon.com/images/I/81fuj9MOHfL._AC_UY218_.jpg",
+                "https://m.media-amazon.com/images/I/61mlLxveN-L._AC_UY218_.jpg",
+                "https://m.media-amazon.com/images/I/71pUK2k0uHL._AC_UY218_.jpg"
+            ],
+            "high_links": [
+                "https://images-na.ssl-images-amazon.com/images/I/81fuj9MOHfL.jpg",
+                "https://images-na.ssl-images-amazon.com/images/I/61mlLxveN-L.jpg",
+                "https://images-na.ssl-images-amazon.com/images/I/71pUK2k0uHL.jpg"
+            ],
+            "low_file_paths": [
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\low\\Dune_1_122x218.jpg",
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\low\\Dune_2_142x218.jpg",
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\low\\Dune_3_147x218.jpg"
+            ],
+            "high_file_paths": [
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\high\\h_Dune_1_1430x2560.jpg",
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\high\\h_Dune_2_651x1000.jpg",
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\high\\h_Dune_3_900x1333.jpg"
+            ]
+        },
+        {
+            "name": "Pride and Prejudice",
+            "author": "Jane Austen",
+            "low_links": [
+                "https://m.media-amazon.com/images/I/91uoGUArEHL._AC_UY218_.jpg",
+                "https://m.media-amazon.com/images/I/91a0udfIPKL._AC_UY218_.jpg",
+                "https://m.media-amazon.com/images/I/71zNpKMRIwL._AC_UY218_.jpg"
+            ],
+            "high_links": [
+                "https://images-na.ssl-images-amazon.com/images/I/91uoGUArEHL.jpg",
+                "https://images-na.ssl-images-amazon.com/images/I/91a0udfIPKL.jpg",
+                "https://images-na.ssl-images-amazon.com/images/I/71zNpKMRIwL.jpg"
+            ],
+            "low_file_paths": [
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\low\\Pride and Prejudice_1_171x218.jpg",
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\low\\Pride and Prejudice_2_141x218.jpg",
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\low\\Pride and Prejudice_3_138x218.jpg"
+            ],
+            "high_file_paths": [
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\high\\h_Pride and Prejudice_1_2008x2560.jpg",
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\high\\h_Pride and Prejudice_2_1557x2409.jpg",
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\high\\h_Pride and Prejudice_3_1264x1996.jpg"
+            ]
+        },
+        {
+            "name": "The Eye of the World",
+            "author": "Robert Jordan",
+            "low_links": [
+                "https://m.media-amazon.com/images/I/91iK4KuFF8L._AC_UY218_.jpg",
+                "https://m.media-amazon.com/images/I/81hM-kGHY7L._AC_UY218_.jpg",
+                "https://m.media-amazon.com/images/I/A1lIUWXBteS._AC_UY218_.jpg"
+            ],
+            "high_links": [
+                "https://images-na.ssl-images-amazon.com/images/I/91iK4KuFF8L.jpg",
+                "https://images-na.ssl-images-amazon.com/images/I/81hM-kGHY7L.jpg",
+                "https://images-na.ssl-images-amazon.com/images/I/A1lIUWXBteS.jpg"
+            ],
+            "low_file_paths": [
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\low\\The Eye of the World_1_139x218.jpg",
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\low\\The Eye of the World_2_144x218.jpg",
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\low\\The Eye of the World_3_171x218.jpg"
+            ],
+            "high_file_paths": [
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\high\\h_The Eye of the World_1_1488x2339.jpg",
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\high\\h_The Eye of the World_2_1400x2125.jpg",
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\high\\h_The Eye of the World_3_2013x2560.jpg"
+            ]
+        },
+        {
+            "name": "The Name of the Wind",
+            "author": "Patrick Rothfuss",
+            "low_links": [
+                "https://m.media-amazon.com/images/I/81GW++lxV-L._AC_UY218_.jpg",
+                "https://m.media-amazon.com/images/I/71jJcPTGd3L._AC_UY218_.jpg",
+                "https://m.media-amazon.com/images/I/A1hqBSoxzhL._AC_UY218_.jpg"
+            ],
+            "high_links": [
+                "https://images-na.ssl-images-amazon.com/images/I/81GW++lxV-L.jpg",
+                "https://images-na.ssl-images-amazon.com/images/I/71jJcPTGd3L.jpg",
+                "https://images-na.ssl-images-amazon.com/images/I/A1hqBSoxzhL.jpg"
+            ],
+            "low_file_paths": [
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\low\\The Name of the Wind_1_358x218.jpg",
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\low\\The Name of the Wind_2_142x218.jpg",
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\low\\The Name of the Wind_3_144x218.jpg"
+            ],
+            "high_file_paths": [
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\high\\h_The Name of the Wind_1_2560x1539.jpg",
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\high\\h_The Name of the Wind_2_651x1000.jpg",
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\high\\h_The Name of the Wind_3_1696x2560.jpg"
+            ]
+        },
+        {
+            "name": "Harry Potter and the Prisoner of Azkaban",
+            "author": "J.K. Rowling",
+            "low_links": [
+                "https://m.media-amazon.com/images/I/81EbEWM54ML._AC_UY218_.jpg",
+                "https://m.media-amazon.com/images/I/71Uw7tBtffL._AC_UY218_.jpg",
+                "https://m.media-amazon.com/images/I/71f9MWKEynL._AC_UY218_.jpg"
+            ],
+            "high_links": [
+                "https://images-na.ssl-images-amazon.com/images/I/81EbEWM54ML.jpg",
+                "https://images-na.ssl-images-amazon.com/images/I/71Uw7tBtffL.jpg",
+                "https://images-na.ssl-images-amazon.com/images/I/71f9MWKEynL.jpg"
+            ],
+            "low_file_paths": [
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\low\\Harry Potter and the Prisoner of Azkaban_1_141x218.jpg",
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\low\\Harry Potter and the Prisoner of Azkaban_2_187x218.jpg",
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\low\\Harry Potter and the Prisoner of Azkaban_3_185x218.jpg"
+            ],
+            "high_file_paths": [
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\high\\h_Harry Potter and the Prisoner of Azkaban_1_1659x2560.jpg",
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\high\\h_Harry Potter and the Prisoner of Azkaban_2_1893x2356.jpg",
+                "c:\\Users\\harik\\Desktop\\hari31416.github.io\\Projects\\Book_Library\\Python\\img\\high\\h_Harry Potter and the Prisoner of Azkaban_3_1001x1001.jpg"
+            ]
+        }
+    ]
+}
