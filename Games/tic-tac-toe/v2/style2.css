@@ -58,11 +58,26 @@ nav {
 } */
 @media (max-width: 768px) {
   .btn-xl {
-    padding: 12px 15px;
-    font-size: 25px;
+    padding: 15px 22px;
+    font-size: 22px;
+    text-align: center;
   }
   .rounded {
     height: 200px;
     width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-xl {
+    padding: 10px 10px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .btn-xl {
+    padding: 10px 10px;
+    font-size: 15px;
   }
 }

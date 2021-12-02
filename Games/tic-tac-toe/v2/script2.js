@@ -76,12 +76,12 @@ fills.forEach((fill) => {
     if (giveWinner(marker1)) {
       box.classList.add("hidden");
       winner.textContent = `Player with the marker ${marker1} wins!`;
-      document.querySelector("body").style.backgroundColor = "#b7f6bf";
+      document.querySelector("body").style.backgroundColor = "#cff0f5";
       winner.classList.remove("hidden");
     } else if (giveWinner(marker2)) {
       box.classList.add("hidden");
       winner.textContent = `Player with the marker ${marker2} wins!`;
-      document.querySelector("body").style.backgroundColor = "#b7f6bf";
+      document.querySelector("body").style.backgroundColor = "#cff0f5";
       winner.classList.remove("hidden");
     }
   });
