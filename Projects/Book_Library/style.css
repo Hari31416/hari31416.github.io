@@ -1,0 +1,10 @@
+body {
+  background-color: #aadcfd;
+}
+
+.blank {
+  height: 100px;
+}
+#listItems {
+  border-bottom: 2px solid #92d3ff;
+}
