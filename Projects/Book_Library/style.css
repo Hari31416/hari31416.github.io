@@ -1,9 +1,9 @@
 body {
-  background-color: rgb(208, 233, 250);
+  background-color: rgb(213, 230, 241);
 }
 
 .blank {
-  height: 100px;
+  height: 50px;
 }
 #listItems {
   border-bottom: 2px solid #b5dffa;
@@ -41,8 +41,8 @@ body {
   #details {
     border-top: 2px solid #b5dffa;
     border-bottom: 2px solid #b5dffa;
-    padding: 10px 0px;
-    margin-top: 10px;
+    padding-top: 18px;
+    margin-top: 15px;
     font-size: 1rem;
   }
 }
@@ -56,5 +56,8 @@ body {
   }
   #listItems {
     border-bottom: none;
+  }
+  .heading {
+    font-size: 2rem;
   }
 }
