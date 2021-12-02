@@ -1,10 +1,60 @@
 body {
-  background-color: #aadcfd;
+  background-color: rgb(208, 233, 250);
 }
 
 .blank {
   height: 100px;
 }
 #listItems {
-  border-bottom: 2px solid #92d3ff;
+  border-bottom: 2px solid #b5dffa;
+}
+#series {
+  font-size: 1rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* border-bottom: 2px solid #5e86a1; */
+  padding: 0px;
+  margin: 0px;
+}
+
+#details {
+  line-height: 0.7;
+  margin: none;
+  padding: 0px;
+}
+
+@media (max-width: 1050px) {
+  #series {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 766px) {
+  #series {
+    font-size: 1rem;
+  }
+  #bookName {
+    font-size: 1.2rem;
+  }
+  #listItems {
+    border-bottom: none;
+  }
+  #details {
+    border-top: 2px solid #b5dffa;
+    border-bottom: 2px solid #b5dffa;
+    padding: 10px 0px;
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 520px) {
+  #series {
+    font-size: 0.8rem;
+  }
+  #bookName {
+    font-size: 1rem;
+  }
+  #listItems {
+    border-bottom: none;
+  }
 }
