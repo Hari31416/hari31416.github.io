@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
 
@@ -162,4 +163,170 @@
         crossorigin="anonymous"></script>
 </body>
 
+=======
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style2.css">
+    <title>Tic-To-Toe Version 2</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../../../index.html">Home</a>
+        <!-- Collapsable Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <!-- Starting the Navbar -->
+            <ul class="navbar-nav">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Dictionaries
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../../../Dictionaries/dict1/index.html" target="blank">Dictionary
+                            Lite</a>
+                        <a class="dropdown-item" href="../../../Dictionaries/dict2/index.html" target="blank">Dictionary
+                            2.0</a>
+                        <a class="dropdown-item" href="../../../Dictionaries/dict3/index.html" target="blank">Dictionary
+                            2.1</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Games
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                        <a class="dropdown-item" href="../index.html" target="blank">Tic Tac Toe Version
+                            1</a>
+                        <a class="dropdown-item active" href="#" target="blank">Tic Tac
+                            Toe
+                            Version 2</a>
+                        <a class="dropdown-item" href="../../Guess_My_Number/index.html" target="blank">Guess My
+                            Number</a>
+                    </div>
+
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../../../Projects/Museum_Of_Candy/index.html"
+                            target="blank">Museum Of
+                            Candy</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Notebooks
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item " href="../../../Notebooks/ppt/index.html" target="blank">MP
+                            Presentation</a>
+                        <a class="dropdown-item " href="../../../Notebooks/spotify/index.html"
+                            target="blank">Spotify</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container text-center my-2">
+        <h1 class="sm-display-1 text-primary">Welcome To Tic-Tac-Toe</h1>
+        <div class='playingbtns row '>
+
+            <div class="col-12 my-4 markerChoose">
+                <div class="col-12">
+                    <img src="https://images.unsplash.com/photo-1608111283390-2e333b9b279c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        alt="" class="rounded">
+                    <p class="lead text-info text-bold">Bored? Play Tic-Tac-Toe with your friend (or with yourself)!
+                    </p>
+                    <h3 class="text-center text-info">First Player may choose the marker!</h3>
+                </div>
+                <button class="marker0 btn btn-primary btn-lg p-3 display-1">🔴</button>
+                <button class="marker1 btn btn-primary btn-lg p-3">❌</button>
+            </div>
+        </div>
+        <div class="col-12"><button class='start btn btn-success btn-lg'>Start</button>
+            <button class='replay hidden btn btn-danger btn-lg'>Replay</button>
+        </div>
+    </div>
+
+    <!-- Boxes -->
+    <div class="boxes hidden container py-2">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-10 col-lg-8">
+                <div class="row my-3 ">
+                    <div class="col-4"><button class='btn btn-secondary btn-xl py-5 m-2  fill empty '>Click
+                            Me!</button>
+                    </div>
+                    <div class="col-4"><button class='btn btn-secondary btn-xl py-5 m-2 fill empty'>Click
+                            Me!</button>
+                    </div>
+                    <div class="col-4"><button class='btn btn-secondary btn-xl py-5 m-2 fill empty'>Click
+                            Me!</button>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-4"><button class='btn btn-secondary btn-xl py-5 m-2  fill empty'>Click
+                            Me!</button>
+                    </div>
+                    <div class="col-4"><button class='btn btn-secondary btn-xl py-5 m-2 fill empty'>Click
+                            Me!</button>
+                    </div>
+                    <div class="col-4"><button class='btn btn-secondary btn-xl py-5 m-2 fill empty'>Click
+                            Me!</button>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-4"><button class='btn btn-secondary btn-xl py-5 m-2  fill empty'>Click
+                            Me!</button>
+                    </div>
+                    <div class="col-4"><button class='btn btn-secondary btn-xl py-5 m-2 fill empty'>Click
+                            Me!</button>
+                    </div>
+                    <div class="col-4"><button class='btn btn-secondary btn-xl py-5 m-2 fill empty'>Click
+                            Me!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="winner hidden"></p>
+
+    <script src=" script2.js">
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+>>>>>>> main
 </html>
