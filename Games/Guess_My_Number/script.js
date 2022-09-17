@@ -1,8 +1,8 @@
 "use strict";
 console.log(document.querySelector(".guess").value);
-let score = 20;
-//Generating a random number between 1 and 20
-let randomNumber = Math.floor(Math.random() * 20) + 1;
+let score = 50;
+//Generating a random number between 1 and 50
+let randomNumber = Math.floor(Math.random() * 50) + 1;
 let highScore = 0;
 
 document.querySelector(".check").addEventListener("click", function () {
@@ -37,11 +37,11 @@ document.querySelector(".check").addEventListener("click", function () {
 });
 
 document.querySelector(".again").addEventListener("click", function () {
-  score = 20;
+  score = 50;
   document.querySelector(".message").textContent = "Start Guessing";
   document.querySelector(".score").textContent = score;
-  randomNumber = Math.floor(Math.random() * 20) + 1;
-  document.querySelector("body").style.backgroundColor = "#222";
+  randomNumber = Math.floor(Math.random() * 50) + 1;
+  document.querySelector("body").style.backgroundColor = "rgb(61, 59, 59)";
   document.querySelector(".guess").value = "";
   document.querySelector(".number").textContent = "?";
 });
